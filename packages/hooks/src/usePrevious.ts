@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react"
 
 /**
  * React hook that tracks previous value
@@ -6,11 +6,11 @@ import { useEffect, useRef } from 'react';
  * @param value the value to track
  */
 export default function usePrevious<T>(value: T) {
-  const valueRef = useRef<T>();
+  const valueRef = useRef<T>()
 
   useEffect(() => {
-    valueRef.current = value;
-  }, [value]);
+    valueRef.current = value
+  }, [value])
 
-  return valueRef.current as T;
+  return valueRef.current as T
 }
