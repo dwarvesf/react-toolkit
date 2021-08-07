@@ -3,6 +3,11 @@
   "version": "0.0.2",
   "description": "Official React utilities for @dwarvesf",
   "author": "Dwarves Foundation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwarvesf/react-sdk.git",
+    "directory": "packages/utils"
+  },
   "scripts": {
     "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",

@@ -5,7 +5,7 @@
   "author": "Dwarves Foundation",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mono/mono.git",
+    "url": "git+https://github.com/dwarvesf/react-sdk.git",
     "directory": "packages/hooks"
   },
   "scripts": {
