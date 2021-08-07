@@ -1,0 +1,14 @@
+examples:
+  - example/*
+  - example/**/*
+
+hooks:
+  - packages/hooks/*
+  - packages/hooks/**/*
+
+utils:
+  - packages/utils/*
+  - packages/utils/**/*
+
+repo:
+  - ./*
