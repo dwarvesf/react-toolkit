@@ -1,8 +1,8 @@
 {
   "name": "@dwarvesf/react-hooks",
   "version": "0.0.3",
-  "description": "Official React library for @dwarvesf",
-  "author": "Jared Palmer",
+  "description": "Official React hooks for @dwarvesf",
+  "author": "Dwarves Foundation",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mono/mono.git",

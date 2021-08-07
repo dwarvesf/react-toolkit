@@ -1,8 +1,8 @@
 {
   "name": "@dwarvesf/react-utils",
   "version": "0.0.2",
-  "description": "Internal, shared utilities",
-  "author": "Jared Palmer",
+  "description": "Official React utilities for @dwarvesf",
+  "author": "Dwarves Foundation",
   "scripts": {
     "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
