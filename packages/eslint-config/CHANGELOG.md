@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- [`811428e`](https://github.com/dwarvesf/react-sdk/commit/811428e5c977dbd4321e94946d1d2792bcabe17a)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Fix downgrade node
+  engine 12.
+
 ## 0.0.6
 
 ### Patch Changes
