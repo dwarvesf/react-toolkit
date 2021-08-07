@@ -1,6 +1,6 @@
 {
   "name": "@dwarvesf/react-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Official React library for @dwarvesf",
   "author": "Jared Palmer",
   "repository": {
@@ -27,7 +27,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@dwarvesf/react-utils": "^0.0.2",
+    "@dwarvesf/react-utils": "^0.0.3",
     "tslib": "^2.3.0"
   },
   "publishConfig": {
