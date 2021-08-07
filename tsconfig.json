@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": ["packages", "types", "scripts", "example"],
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      "@dwarvesf/react-utils": ["packages/utils/src"],
+      "@dwarvesf/react-hooks": ["packages/hooks/src"],
+      "$test/*": ["test/*"]
+    }
+  }
+}
