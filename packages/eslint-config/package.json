@@ -1,6 +1,6 @@
 {
   "name": "@dwarvesf/react-eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Official React ESLint config for @dwarvesf",
   "author": "Dwarves Foundation",
   "repository": {
