@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "Official React ESLint config for @dwarvesf",
   "author": "Dwarves Foundation",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mono/mono.git",
