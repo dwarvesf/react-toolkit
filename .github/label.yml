@@ -10,5 +10,8 @@ utils:
   - packages/utils/*
   - packages/utils/**/*
 
+eslint:
+  - packages/eslint-config/*
+
 repo:
   - ./*
