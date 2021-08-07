@@ -17,6 +17,7 @@
     "@typescript-eslint/parser": "4.x",
     "babel-eslint": "10.x",
     "eslint": "7.x",
+    "eslint-config-airbnb": "18.x",
     "eslint-config-airbnb-typescript": "12.x",
     "eslint-config-prettier": "7.x",
     "eslint-config-react": "1.x",

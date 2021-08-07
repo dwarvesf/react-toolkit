@@ -32,9 +32,7 @@ export default function createContext<ContextType>(
     return context
   }
 
-  return [
-    Context.Provider,
-    useContext,
-    Context,
-  ] as CreateContextReturn<ContextType>
+  return [Context.Provider, useContext, Context] as CreateContextReturn<
+    ContextType
+  >
 }
