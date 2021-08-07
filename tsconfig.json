@@ -8,6 +8,7 @@
     "paths": {
       "@dwarvesf/react-utils": ["packages/utils/src"],
       "@dwarvesf/react-hooks": ["packages/hooks/src"],
+      "@dwarvesf/react-eslint-config": ["packages/eslint-config"],
       "$test/*": ["test/*"]
     }
   }
