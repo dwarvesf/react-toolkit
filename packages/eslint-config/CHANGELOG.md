@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- [`9a566a6`](https://github.com/dwarvesf/react-sdk/commit/9a566a66a76d33f47fdccb4777a380f92d009333)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Upgrade
+  eslint-config-prettier@8.x.
+
 ## 0.0.4
 
 ### Patch Changes
