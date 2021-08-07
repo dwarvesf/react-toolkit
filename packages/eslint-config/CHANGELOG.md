@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- [`9ec2dc0`](https://github.com/dwarvesf/react-sdk/commit/9ec2dc05197d1bc86b8e7a098744fc9560debb03)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Change node
+  engine >= 14.
+
 ## 0.0.5
 
 ### Patch Changes
