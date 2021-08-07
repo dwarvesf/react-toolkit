@@ -17,6 +17,10 @@
     "README.md",
     "dist"
   ],
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
