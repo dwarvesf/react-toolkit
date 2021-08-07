@@ -1,6 +1,6 @@
 {
   "name": "@dwarvesf/react-eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Official React ESLint config for @dwarvesf",
   "author": "Dwarves Foundation",
   "main": "index.js",
