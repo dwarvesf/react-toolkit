@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [`93e810d`](https://github.com/dwarvesf/react-sdk/commit/93e810d43b0ca317282b0f5bb0afce55c6ee1725)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Fix missing main
+  reference.
+
 ## 0.0.3
 
 ### Patch Changes
