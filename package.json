@@ -1,5 +1,5 @@
 {
-  "name": "@dwarvesf/react-sdk",
+  "name": "dwarvesf-react-toolkit",
   "private": true,
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.0",
