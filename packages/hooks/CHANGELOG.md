@@ -1,5 +1,32 @@
 # @dwarvesf/react-hooks
 
+## 0.2.0
+
+### Minor Changes
+
+- [`b099946`](https://github.com/dwarvesf/react-sdk/commit/b0999461c07ec8464decec950f82e4adbf98e0fe)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `useConstant`.
+
+* [`a0ea98f`](https://github.com/dwarvesf/react-sdk/commit/a0ea98f05aea66f9254583ede2f4239c9d7e2aa5)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `useDebounce`.
+
+- [`99b35a4`](https://github.com/dwarvesf/react-sdk/commit/99b35a426961d337b8fd9647176bea61470883a6)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `useMergeRefs`.
+
+* [`f570ce1`](https://github.com/dwarvesf/react-sdk/commit/f570ce1f60ed371e7f547dbbc19ca92dae36d1cb)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add
+  `useWhyDidYouUpdate`.
+
+### Patch Changes
+
+- [`a0e6a68`](https://github.com/dwarvesf/react-sdk/commit/a0e6a683ba51eeb90a4c7a408daef91623642e93)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add
+  `useLockBodyScroll`.
+
+- Updated dependencies
+  [[`d7f7e13`](https://github.com/dwarvesf/react-sdk/commit/d7f7e13c4b472d7c8b62fc02553f7301bbda251f)]:
+  - @dwarvesf/react-utils@0.1.0
+
 ## 0.1.0
 
 ### Minor Changes
