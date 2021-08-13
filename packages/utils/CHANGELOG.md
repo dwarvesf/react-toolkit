@@ -1,5 +1,12 @@
 # @dwarvesf/react-utils
 
+## 0.2.0
+
+### Minor Changes
+
+- [`d2a8779`](https://github.com/dwarvesf/react-toolkit/commit/d2a87790d7f782b262e8b3b0521953811bed7c1b)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `truncate`.
+
 ## 0.1.0
 
 ### Minor Changes

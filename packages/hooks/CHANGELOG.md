@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`d2a8779`](https://github.com/dwarvesf/react-toolkit/commit/d2a87790d7f782b262e8b3b0521953811bed7c1b)]:
+  - @dwarvesf/react-utils@0.2.0
+
 ## 0.2.0
 
 ### Minor Changes
