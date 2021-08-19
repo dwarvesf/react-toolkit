@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.1.0
+
+### Minor Changes
+
+- [`dab41ef`](https://github.com/dwarvesf/react-toolkit/commit/dab41efa51352abd25d6666f00f5faa64f27b915)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Set error and warning
+  rules for no-shadow, console and remove some unnecessary rules.
+
 ## 0.0.7
 
 ### Patch Changes
