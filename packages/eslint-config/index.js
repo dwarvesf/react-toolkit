@@ -51,14 +51,14 @@ module.exports = {
     "no-alert": "off",
     "no-redeclare": "off",
     "import/no-extraneous-dependencies": "off",
-    "no-shadow": "error",
+    "no-shadow": "off",
 
     // TypeScript
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/dot-notation": "off",
     "@typescript-eslint/naming-convention": "off",
-    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/lines-between-class-members": "off",
 
     // React
