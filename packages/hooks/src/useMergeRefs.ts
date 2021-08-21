@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import * as React from "react"
+import * as React from 'react'
 
 type ReactRef<T> = React.Ref<T> | React.MutableRefObject<T>
 
 export function assignRef<T = any>(ref: ReactRef<T> | undefined, value: T) {
   if (ref == null) return
 
-  if (typeof ref === "function") {
+  if (typeof ref === 'function') {
     ref(value)
     return
   }

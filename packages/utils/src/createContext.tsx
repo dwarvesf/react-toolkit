@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 export interface CreateContextOptions {
   /**
@@ -17,7 +17,7 @@ export default function createContext<ContextType>(
 ) {
   const {
     strict = true,
-    errorMessage = "useContext must be inside a Provider with a value",
+    errorMessage = 'useContext must be inside a Provider with a value',
     name,
   } = options
 
@@ -32,7 +32,9 @@ export default function createContext<ContextType>(
     return context
   }
 
-  return [Context.Provider, useContext, Context] as CreateContextReturn<
-    ContextType
-  >
+  return [
+    Context.Provider,
+    useContext,
+    Context,
+  ] as CreateContextReturn<ContextType>
 }

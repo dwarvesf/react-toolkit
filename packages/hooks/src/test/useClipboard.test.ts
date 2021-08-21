@@ -1,11 +1,11 @@
-import copy from "copy-to-clipboard"
-import { renderHook, act } from "@testing-library/react-hooks"
-import useClipboard from "../useClipboard"
+import copy from 'copy-to-clipboard'
+import { renderHook, act } from '@testing-library/react-hooks'
+import useClipboard from '../useClipboard'
 
-jest.mock("copy-to-clipboard")
+jest.mock('copy-to-clipboard')
 jest.useFakeTimers()
 
-const text = "lorem ipsum"
+const text = 'lorem ipsum'
 
 test.each`
   params               | expected
@@ -13,7 +13,7 @@ test.each`
   ${{ timeout: 2000 }} | ${2000}
   ${{}}                | ${1500}
   ${0}                 | ${1500}
-`("calls setTimeout with proper value", ({ params, expected }) => {
+`('calls setTimeout with proper value', ({ params, expected }) => {
   ;(copy as jest.Mock).mockReturnValue(true)
 
   const { result } = renderHook(() => useClipboard(text, params))

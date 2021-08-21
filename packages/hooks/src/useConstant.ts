@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef } from 'react'
 
 /**
  * Creates a constant value over the lifecycle of a component.
@@ -11,7 +11,7 @@ export default function useConst<T extends any | (() => any)>(init: T) {
   const ref = useRef<T | null>(null)
 
   if (ref.current === null) {
-    ref.current = typeof init === "function" ? init() : init
+    ref.current = typeof init === 'function' ? init() : init
   }
 
   return ref.current as T

@@ -1,4 +1,4 @@
-import { FunctionArguments } from "./types"
+import { FunctionArguments } from './types'
 
 export default function callAllHandlers<T extends (event: any) => void>(
   ...fns: (T | undefined)[]

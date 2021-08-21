@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from 'react'
 
 export default function useWhyDidYouUpdate(
   name: string,
@@ -27,7 +27,7 @@ export default function useWhyDidYouUpdate(
       // If changesObj not empty then output to console
       if (Object.keys(changesObj).length) {
         // eslint-disable-next-line no-console
-        console.log("[why-did-you-update]", name, changesObj)
+        console.log('[why-did-you-update]', name, changesObj)
       }
     }
     // Finally update previousProps with current props for next hook call

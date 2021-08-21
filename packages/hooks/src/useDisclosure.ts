@@ -1,5 +1,5 @@
-import { useState, useCallback } from "react"
-import usePrevious from "./usePrevious"
+import { useState, useCallback } from 'react'
+import usePrevious from './usePrevious'
 
 export interface UseDisclosureProps {
   defaultIsOpen?: boolean

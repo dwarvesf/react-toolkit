@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect } from "react"
-import copy from "copy-to-clipboard"
+import { useState, useCallback, useEffect } from 'react'
+import copy from 'copy-to-clipboard'
 
 export interface UseClipboardOptions {
   /**
@@ -28,7 +28,7 @@ export default function useClipboard(
   const [hasCopied, setHasCopied] = useState(false)
 
   const { timeout = 1500, ...copyOptions } =
-    typeof optionsOrTimeout === "number"
+    typeof optionsOrTimeout === 'number'
       ? { timeout: optionsOrTimeout }
       : optionsOrTimeout
 

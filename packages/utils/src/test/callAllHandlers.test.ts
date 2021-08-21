@@ -1,8 +1,8 @@
-import callAllHandlers from "../callAllHandlers"
+import callAllHandlers from '../callAllHandlers'
 
 const event = { target: { value: 1 } }
 
-test("should call all passed functions on event triggered", () => {
+test('should call all passed functions on event triggered', () => {
   let val1 = 0
   let val2 = 0
   const func1 = (e: any) => {

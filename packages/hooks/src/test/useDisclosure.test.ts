@@ -1,14 +1,14 @@
-import { renderHook, act } from "@testing-library/react-hooks"
-import useDisclosure from "../useDisclosure"
+import { renderHook, act } from '@testing-library/react-hooks'
+import useDisclosure from '../useDisclosure'
 
-describe("useDisclosure", () => {
-  it("Should allow to set default value for isOpen", () => {
+describe('useDisclosure', () => {
+  it('Should allow to set default value for isOpen', () => {
     const { result } = renderHook(() => useDisclosure({ defaultIsOpen: true }))
 
     expect(result.current.isOpen).toBeTruthy()
   })
 
-  it("onOpen and onClose should modify isOpen and trigger passed-in callback correctly", () => {
+  it('onOpen and onClose should modify isOpen and trigger passed-in callback correctly', () => {
     const onCloseSpy = jest.fn()
     const onOpenSpy = jest.fn()
     const { result } = renderHook(() =>
@@ -32,7 +32,7 @@ describe("useDisclosure", () => {
     expect(onCloseSpy).toHaveBeenCalledTimes(1)
   })
 
-  it("onToggle should modify isOpen and trigger passed-in callback correctly", () => {
+  it('onToggle should modify isOpen and trigger passed-in callback correctly', () => {
     const onCloseSpy = jest.fn()
     const onOpenSpy = jest.fn()
     const { result } = renderHook(() =>
