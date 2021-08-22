@@ -1,5 +1,13 @@
 # @dwarvesf/react-eslint-config
 
+## 0.1.2
+
+### Patch Changes
+
+- [`eeae2c7`](https://github.com/dwarvesf/react-toolkit/commit/eeae2c71e3fb83da43d7f507d1650f18fcd38f42)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Turn off no-shadow
+  rule.
+
 ## 0.1.1
 
 ### Patch Changes
