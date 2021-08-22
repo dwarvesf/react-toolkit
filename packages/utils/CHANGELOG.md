@@ -1,5 +1,12 @@
 # @dwarvesf/react-utils
 
+## 0.2.1
+
+### Patch Changes
+
+- [`2b3376d`](https://github.com/dwarvesf/react-toolkit/commit/2b3376d3ec1ac5cc35863a72a7c23970adfe58a5)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `cleanChildren`.
+
 ## 0.2.0
 
 ### Minor Changes
