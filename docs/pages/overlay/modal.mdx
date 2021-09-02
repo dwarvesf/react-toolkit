@@ -1,7 +1,7 @@
 ---
 title: Modal Dialog
-package: "@chakra-ui/modal"
-image: "components/modal.svg"
+package: '@chakra-ui/modal'
+image: 'components/modal.svg'
 description:
   A dialog is a window overlaid on either the primary window or another dialog
   window
@@ -12,12 +12,10 @@ window. Content behind a modal dialog is **inert**, meaning that users cannot
 interact with it.
 
 <ComponentLinks
-  theme={{ componentName: "modal" }}
-  github={{ package: "modal" }}
-  npm={{ package: "@chakra-ui/modal" }}
+  theme={{ componentName: 'modal' }}
+  github={{ package: 'modal' }}
+  npm={{ package: '@chakra-ui/modal' }}
 />
-
-<carbon-ad></carbon-ad>
 
 > 🚨 Version (v1.0.0) introduced a breaking change to this component's API.
 > Kindly update accordingly.
@@ -43,7 +41,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react'
 ```
 
 ## Usage
@@ -346,7 +344,7 @@ If the content within the modal overflows beyond the viewport, you can use the
 ```jsx
 function ScrollingExample() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [scrollBehavior, setScrollBehavior] = React.useState("inside")
+  const [scrollBehavior, setScrollBehavior] = React.useState('inside')
 
   const btnRef = React.useRef()
   return (
@@ -393,14 +391,14 @@ Pass the `size` prop if you need to adjust the size of the modal. Values can be
 ```jsx
 function SizeExample() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [size, setSize] = React.useState("md")
+  const [size, setSize] = React.useState('md')
 
   const handleSizeClick = (newSize) => {
     setSize(newSize)
     onOpen()
   }
 
-  const sizes = ["xs", "sm", "md", "lg", "xl", "full"]
+  const sizes = ['xs', 'sm', 'md', 'lg', 'xl', 'full']
 
   return (
     <>

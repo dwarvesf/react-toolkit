@@ -1,7 +1,7 @@
 ---
 title: Tabs
-package: "@chakra-ui/tabs"
-image: "components/tabs.svg"
+package: '@chakra-ui/tabs'
+image: 'components/tabs.svg'
 description:
   A React component that helps you build accessible tabs, by providing keyboard
   interactions and ARIA attributes described in the WAI-ARIA Tab Panel Design
@@ -13,17 +13,15 @@ attributes described in the
 [WAI-ARIA Tabs Design Pattern](https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel).
 
 <ComponentLinks
-  theme={{ componentName: "tabs" }}
-  github={{ package: "tabs" }}
-  npm={{ package: "@chakra-ui/tabs" }}
+  theme={{ componentName: 'tabs' }}
+  github={{ package: 'tabs' }}
+  npm={{ package: '@chakra-ui/tabs' }}
 />
-
-<carbon-ad></carbon-ad>
 
 ## Import
 
 ```js
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 ```
 
 - **Tabs**: Provides context and state for all components
@@ -181,8 +179,8 @@ to `unstyled`, and use the `_selected`, `_hover`, `_active` style props.
 ```jsx
 <Tabs variant="unstyled">
   <TabList>
-    <Tab _selected={{ color: "white", bg: "blue.500" }}>Tab 1</Tab>
-    <Tab _selected={{ color: "white", bg: "green.400" }}>Tab 2</Tab>
+    <Tab _selected={{ color: 'white', bg: 'blue.500' }}>Tab 1</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.400' }}>Tab 2</Tab>
   </TabList>
   <TabPanels>
     <TabPanel>
@@ -204,8 +202,8 @@ tabs. If you intend to control the tabs programmatically, use this with the
 ```jsx
 function Example() {
   const colors = useColorModeValue(
-    ["red.50", "teal.50", "blue.50"],
-    ["red.900", "teal.900", "blue.900"],
+    ['red.50', 'teal.50', 'blue.50'],
+    ['red.900', 'teal.900', 'blue.900'],
   )
   const [tabIndex, setTabIndex] = React.useState(0)
   const bg = colors[tabIndex]
@@ -399,12 +397,12 @@ to pass state internally. Your custom `Tab` component must use
 ```jsx
 function CustomTabs() {
   // 1. Reuse the styles for the Tab
-  const StyledTab = chakra("button", { themeKey: "Tabs.Tab" })
+  const StyledTab = chakra('button', { themeKey: 'Tabs.Tab' })
 
   const CustomTab = React.forwardRef((props, ref) => {
     // 2. Reuse the `useTab` hook
-    const tabProps = useTab({...props, ref})
-    const isSelected = !!tabProps["aria-selected"]
+    const tabProps = useTab({ ...props, ref })
+    const isSelected = !!tabProps['aria-selected']
 
     // 3. Hook into the Tabs `size`, `variant`, props
     const styles = useStyles()
@@ -412,7 +410,7 @@ function CustomTabs() {
     return (
       <StyledTab __css={styles.tab} {...tabProps}>
         <Box as="span" mr="2">
-          {isSelected ? "😎" : "😐"}
+          {isSelected ? '😎' : '😐'}
         </Box>
         {tabProps.children}
       </StyledTab>
@@ -464,13 +462,13 @@ function Example() {
   // 2. Create an array of data
   const tabData = [
     {
-      label: "Nigerian Jollof",
-      content: "Perhaps the greatest dish ever invented.",
+      label: 'Nigerian Jollof',
+      content: 'Perhaps the greatest dish ever invented.',
     },
     {
-      label: "Pounded Yam & Egusi",
+      label: 'Pounded Yam & Egusi',
       content:
-        "Perhaps the surest dish ever invented but fills the stomach more than rice.",
+        'Perhaps the surest dish ever invented but fills the stomach more than rice.',
     },
   ]
 
@@ -513,7 +511,7 @@ Tabs composes `Box` so you call pass all `Box` related props.
 
 <PropsTable
   of="Tabs"
-  omit={["isTruncated", "layerStyle", "noOfLines", "textStyle", "styleConfig"]}
+  omit={['isTruncated', 'layerStyle', 'noOfLines', 'textStyle', 'styleConfig']}
 />
 
 ### Tab Props

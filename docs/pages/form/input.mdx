@@ -1,7 +1,7 @@
 ---
 title: Input
-package: "@chakra-ui/input"
-image: "components/input.svg"
+package: '@chakra-ui/input'
+image: 'components/input.svg'
 description:
   Input component is a component that is used to get user input in a text field.
 ---
@@ -10,17 +10,15 @@ The `Input` component is a component that is used to get user input in a text
 field.
 
 <ComponentLinks
-  theme={{ componentName: "input" }}
-  github={{ package: "input" }}
-  npm={{ package: "@chakra-ui/input" }}
+  theme={{ componentName: 'input' }}
+  github={{ package: 'input' }}
+  npm={{ package: '@chakra-ui/input' }}
 />
-
-<carbon-ad></carbon-ad>
 
 ## Import
 
 ```js
-import { Input } from "@chakra-ui/react"
+import { Input } from '@chakra-ui/react'
 ```
 
 ## Usage
@@ -132,12 +130,12 @@ function PasswordInput() {
     <InputGroup size="md">
       <Input
         pr="4.5rem"
-        type={show ? "text" : "password"}
+        type={show ? 'text' : 'password'}
         placeholder="Enter password"
       />
       <InputRightElement width="4.5rem">
         <Button h="1.75rem" size="sm" onClick={handleClick}>
-          {show ? "Hide" : "Show"}
+          {show ? 'Hide' : 'Show'}
         </Button>
       </InputRightElement>
     </InputGroup>
@@ -149,7 +147,7 @@ function PasswordInput() {
 
 ```jsx
 function Example() {
-  const [value, setValue] = React.useState("")
+  const [value, setValue] = React.useState('')
   const handleChange = (event) => setValue(event.target.value)
 
   return (

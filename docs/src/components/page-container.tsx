@@ -1,33 +1,32 @@
-import { useRouter } from "next/router"
-import * as React from "react"
-import { Badge, Box, chakra, Flex } from "@chakra-ui/react"
-import { SkipNavContent, SkipNavLink } from "@chakra-ui/skip-nav"
-import EditPageLink from "components/edit-page-button"
-import Footer from "components/footer"
-import Header from "components/header"
-import SEO from "components/seo"
-import TableOfContent from "components/table-of-content"
-import { convertBackticksToInlineCode } from "utils/convert-backticks-to-inline-code"
-import PageTransition from "./page-transition"
-import { AdBanner } from "./chakra-pro/ad-banner"
+import { useRouter } from 'next/router'
+import * as React from 'react'
+import { Badge, Box, chakra, Flex } from '@chakra-ui/react'
+import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav'
+import EditPageLink from 'components/edit-page-button'
+import Footer from 'components/footer'
+import Header from 'components/header'
+import SEO from 'components/seo'
+import TableOfContent from 'components/table-of-content'
+import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
+import PageTransition from './page-transition'
 
 function useHeadingFocusOnRouteChange() {
   const router = useRouter()
 
   React.useEffect(() => {
     const onRouteChange = () => {
-      const [heading] = Array.from(document.getElementsByTagName("h1"))
+      const [heading] = Array.from(document.getElementsByTagName('h1'))
       heading?.focus()
     }
-    router.events.on("routeChangeComplete", onRouteChange)
+    router.events.on('routeChangeComplete', onRouteChange)
     return () => {
-      router.events.off("routeChangeComplete", onRouteChange)
+      router.events.off('routeChangeComplete', onRouteChange)
     }
   }, [router.events])
 }
 
 export interface Heading {
-  level: "h2" | "h3"
+  level: 'h2' | 'h3'
   text: string
   id: string
 }
@@ -56,10 +55,9 @@ function PageContainer(props: PageContainerProps) {
     <>
       <SEO title={title} description={description} />
       <SkipNavLink zIndex={20}>Skip to Content</SkipNavLink>
-      <AdBanner />
       <Header />
       <Box as="main" className="main-content" w="full" maxW="8xl" mx="auto">
-        <Box display={{ md: "flex" }}>
+        <Box display={{ md: 'flex' }}>
           {sidebar || null}
           <Box flex="1" minW="0">
             <SkipNavContent />
@@ -68,10 +66,10 @@ function PageContainer(props: PageContainerProps) {
                 <Box
                   minW="0"
                   flex="auto"
-                  px={{ base: "4", sm: "6", xl: "8" }}
+                  px={{ base: '4', sm: '6', xl: '8' }}
                   pt="10"
                 >
-                  <PageTransition style={{ maxWidth: "48rem" }}>
+                  <PageTransition style={{ maxWidth: '48rem' }}>
                     <chakra.h1 tabIndex={-1} outline={0} apply="mdx.h1">
                       {convertBackticksToInlineCode(title)}
                     </chakra.h1>
@@ -91,7 +89,7 @@ function PageContainer(props: PageContainerProps) {
                   </PageTransition>
                 </Box>
                 <TableOfContent
-                  visibility={headings.length === 0 ? "hidden" : "initial"}
+                  visibility={headings.length === 0 ? 'hidden' : 'initial'}
                   headings={headings}
                 />
               </Flex>

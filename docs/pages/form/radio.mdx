@@ -1,7 +1,7 @@
 ---
 title: Radio
-package: "@chakra-ui/radio"
-image: "components/radio.svg"
+package: '@chakra-ui/radio'
+image: 'components/radio.svg'
 description:
   Radios are used when only one choice may be selected in a series of options.
 ---
@@ -9,12 +9,10 @@ description:
 Radios are used when only one choice may be selected in a series of options.
 
 <ComponentLinks
-  theme={{ componentName: "radio" }}
-  github={{ package: "radio" }}
-  npm={{ package: "@chakra-ui/radio" }}
+  theme={{ componentName: 'radio' }}
+  github={{ package: 'radio' }}
+  npm={{ package: '@chakra-ui/radio' }}
 />
-
-<carbon-ad></carbon-ad>
 
 Native HTML radios are 100% accessible by default, so we used a
 [very common CSS technique](https://dev.to/lkopacz/create-custom-keyboard-accessible-radio-buttons-22eh)
@@ -23,14 +21,14 @@ to style the radio.
 ## Import
 
 ```js
-import { Radio, RadioGroup } from "@chakra-ui/react"
+import { Radio, RadioGroup } from '@chakra-ui/react'
 ```
 
 ### Usage
 
 ```jsx
 function RadioExample() {
-  const [value, setValue] = React.useState("1")
+  const [value, setValue] = React.useState('1')
   return (
     <RadioGroup onChange={setValue} value={value}>
       <Stack direction="row">
@@ -140,12 +138,12 @@ function RadioCard(props) {
         borderRadius="md"
         boxShadow="md"
         _checked={{
-          bg: "teal.600",
-          color: "white",
-          borderColor: "teal.600",
+          bg: 'teal.600',
+          color: 'white',
+          borderColor: 'teal.600',
         }}
         _focus={{
-          boxShadow: "outline",
+          boxShadow: 'outline',
         }}
         px={5}
         py={3}
@@ -158,11 +156,11 @@ function RadioCard(props) {
 
 // Step 2: Use the `useRadioGroup` hook to control a group of custom radios.
 function Example() {
-  const options = ["react", "vue", "svelte"]
+  const options = ['react', 'vue', 'svelte']
 
   const { getRootProps, getRadioProps } = useRadioGroup({
-    name: "framework",
-    defaultValue: "react",
+    name: 'framework',
+    defaultValue: 'react',
     onChange: console.log,
   })
 

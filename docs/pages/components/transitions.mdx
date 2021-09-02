@@ -1,7 +1,7 @@
 ---
 title: Transitions
-package: "@chakra-ui/transition"
-image: "components/transition.svg"
+package: '@chakra-ui/transition'
+image: 'components/transition.svg'
 description:
   Chakra exports four components `Fade`, `ScaleFade`, `Slide`, and `SlideFade`
   to provide simple transitions.
@@ -11,12 +11,10 @@ Chakra exports four components `Fade`, `ScaleFade`, `Slide`, and `SlideFade` to
 provide simple transitions.
 
 <ComponentLinks
-  theme={{ componentName: "transition" }}
-  github={{ package: "transition" }}
-  npm={{ package: "@chakra-ui/transition" }}
+  theme={{ componentName: 'transition' }}
+  github={{ package: 'transition' }}
+  npm={{ package: '@chakra-ui/transition' }}
 />
-
-<carbon-ad></carbon-ad>
 
 ## Import
 
@@ -28,7 +26,7 @@ following props:
 - `unmountOnExit` prop used to unmount the component when it is not visible.
 
 ```js
-import { Fade, ScaleFade, Slide, SlideFade } from "@chakra-ui/react"
+import { Fade, ScaleFade, Slide, SlideFade } from '@chakra-ui/react'
 ```
 
 ## Usage
@@ -183,7 +181,7 @@ function Example() {
         labore wes anderson cred nesciunt sapiente ea proident.
       </Collapse>
       <Button size="sm" onClick={handleToggle} mt="1rem">
-        Show {show ? "Less" : "More"}
+        Show {show ? 'Less' : 'More'}
       </Button>
     </>
   )
@@ -197,24 +195,24 @@ The transition components extends the
 
 ### Fade Props
 
-<PropsTable of="Fade" only={["in", "unmountOnExit"]} />
+<PropsTable of="Fade" only={['in', 'unmountOnExit']} />
 
 ### ScaleFade Props
 
 <PropsTable
   of="ScaleFade"
-  only={["initialScale", "reverse", "unmountOnExit", "in"]}
+  only={['initialScale', 'reverse', 'unmountOnExit', 'in']}
 />
 
 ### Slide Props
 
-<PropsTable of="Slide" only={["unmountOnExit", "direction", "in"]} />
+<PropsTable of="Slide" only={['unmountOnExit', 'direction', 'in']} />
 
 ### SlideFade Props
 
 <PropsTable
   of="SlideFade"
-  only={["offsetX", "offsetY", "reverse", "unmountOnExit", "in"]}
+  only={['offsetX', 'offsetY', 'reverse', 'unmountOnExit', 'in']}
 />
 
 ### Collapse Props
@@ -222,10 +220,10 @@ The transition components extends the
 <PropsTable
   of="Collapse"
   only={[
-    "animateOpacity",
-    "unmountOnExit",
-    "in",
-    "startingHeight",
-    "endingHeight",
+    'animateOpacity',
+    'unmountOnExit',
+    'in',
+    'startingHeight',
+    'endingHeight',
   ]}
 />

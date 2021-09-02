@@ -1,7 +1,7 @@
 ---
 title: Drawer
-package: "@chakra-ui/drawer"
-image: "components/drawer.svg"
+package: '@chakra-ui/drawer'
+image: 'components/drawer.svg'
 description:
   The Drawer component is a panel that slides out from the edge of the screen.
   It can be useful when you need users to complete a task or view some details
@@ -13,12 +13,10 @@ It can be useful when you need users to complete a task or view some details
 without leaving the current page.
 
 <ComponentLinks
-  theme={{ componentName: "drawer" }}
-  github={{ package: "modal" }}
-  npm={{ package: "@chakra-ui/modal" }}
+  theme={{ componentName: 'drawer' }}
+  github={{ package: 'modal' }}
+  npm={{ package: '@chakra-ui/modal' }}
 />
-
-<carbon-ad></carbon-ad>
 
 ## Import
 
@@ -31,7 +29,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react'
 ```
 
 ## Usage
@@ -84,7 +82,7 @@ set it to `top`, `right`, `bottom`, or `left`.
 ```jsx
 function PlacementExample() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [placement, setPlacement] = React.useState("right")
+  const [placement, setPlacement] = React.useState('right')
 
   return (
     <>
@@ -205,7 +203,7 @@ Pass the `size` prop if you need to adjust the size of the drawer. Values can be
 
 ```jsx
 function SizeExample() {
-  const [size, setSize] = React.useState("md")
+  const [size, setSize] = React.useState('md')
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const handleClick = (newSize) => {
@@ -213,7 +211,7 @@ function SizeExample() {
     onOpen()
   }
 
-  const sizes = ["xs", "sm", "md", "lg", "xl", "full"]
+  const sizes = ['xs', 'sm', 'md', 'lg', 'xl', 'full']
 
   return (
     <>
@@ -230,7 +228,7 @@ function SizeExample() {
         <DrawerContent>
           <DrawerHeader>{`${size} drawer contents`}</DrawerHeader>
           <DrawerBody>
-            {size === "full"
+            {size === 'full'
               ? `You're trapped 😆 , refresh the page to leave or press 'Esc' key.`
               : null}
           </DrawerBody>
@@ -267,7 +265,7 @@ export const App = () => {
               id="my-form"
               onSubmit={(e) => {
                 e.preventDefault()
-                console.log("submitted")
+                console.log('submitted')
               }}
             >
               <Input name="nickname" placeholder="Type here..." />
