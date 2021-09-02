@@ -6,19 +6,19 @@
       "routes": [
         {
           "title": "Installation",
-          "path": "/docs/getting-started"
+          "path": "/getting-started"
         },
         {
           "title": "Upgrade to v1",
-          "path": "/docs/migration"
+          "path": "/migration"
         },
         {
           "title": "Design Principles",
-          "path": "/docs/principles"
+          "path": "/principles"
         },
         {
           "title": "Comparison",
-          "path": "/docs/comparison"
+          "path": "/comparison"
         },
         {
           "title": "Changelog",
@@ -26,428 +26,428 @@
         },
         {
           "title": "Features",
-          "path": "/docs/features",
+          "path": "/features",
           "open": true,
           "routes": [
             {
               "title": "Style Props",
-              "path": "/docs/features/style-props"
+              "path": "/features/style-props"
             },
             {
               "title": "Gradient",
-              "path": "/docs/features/gradient"
+              "path": "/features/gradient"
             },
             {
               "title": "Color Mode",
-              "path": "/docs/features/color-mode"
+              "path": "/features/color-mode"
             },
             {
               "title": "CSS Variables",
-              "path": "/docs/features/css-variables",
+              "path": "/features/css-variables",
               "new": true
             },
             {
               "title": "Responsive Styles",
-              "path": "/docs/features/responsive-styles"
+              "path": "/features/responsive-styles"
             },
             {
               "title": "Chakra Factory",
-              "path": "/docs/features/chakra-factory"
+              "path": "/features/chakra-factory"
             },
             {
               "title": "Global Styles",
-              "path": "/docs/features/global-styles"
+              "path": "/features/global-styles"
             },
             {
               "title": "Text & Layer Styles",
-              "path": "/docs/features/text-and-layer-styles"
+              "path": "/features/text-and-layer-styles"
             },
             {
               "title": "The `sx` Prop",
-              "path": "/docs/features/the-sx-prop"
+              "path": "/features/the-sx-prop"
             },
             {
               "title": "RTL Support",
-              "path": "/docs/features/rtl-support"
+              "path": "/features/rtl-support"
             }
           ]
         },
 
         {
           "title": "Theming",
-          "path": "/docs/theming",
+          "path": "/theming",
           "open": true,
           "routes": [
             {
               "title": "Default Theme",
-              "path": "/docs/theming/theme"
+              "path": "/theming/theme"
             },
             {
               "title": "Customize Theme",
-              "path": "/docs/theming/customize-theme"
+              "path": "/theming/customize-theme"
             },
             {
               "title": "Component Style",
-              "path": "/docs/theming/component-style"
+              "path": "/theming/component-style"
             },
             {
               "title": "Advanced",
-              "path": "/docs/theming/advanced"
+              "path": "/theming/advanced"
             }
           ]
         },
         {
           "title": "Layout",
-          "path": "/docs/layout",
+          "path": "/layout",
           "sort": true,
           "open": true,
           "routes": [
             {
               "title": "Aspect Ratio",
-              "path": "/docs/layout/aspect-ratio"
+              "path": "/layout/aspect-ratio"
             },
             {
               "title": "Box",
-              "path": "/docs/layout/box"
+              "path": "/layout/box"
             },
             {
               "title": "Center",
-              "path": "/docs/layout/center"
+              "path": "/layout/center"
             },
             {
               "title": "Container",
-              "path": "/docs/layout/container"
+              "path": "/layout/container"
             },
             {
               "title": "Flex",
-              "path": "/docs/layout/flex"
+              "path": "/layout/flex"
             },
             {
               "title": "Grid",
-              "path": "/docs/layout/grid"
+              "path": "/layout/grid"
             },
             {
               "title": "SimpleGrid",
-              "path": "/docs/layout/simple-grid"
+              "path": "/layout/simple-grid"
             },
             {
               "title": "Stack",
-              "path": "/docs/layout/stack"
+              "path": "/layout/stack"
             },
             {
               "title": "Wrap",
-              "path": "/docs/layout/wrap"
+              "path": "/layout/wrap"
             }
           ]
         },
         {
           "title": "Forms",
-          "path": "/docs/form",
+          "path": "/form",
           "sort": true,
           "open": true,
           "routes": [
             {
               "title": "Button",
-              "path": "/docs/form/button"
+              "path": "/form/button"
             },
             {
               "title": "Checkbox",
-              "path": "/docs/form/checkbox"
+              "path": "/form/checkbox"
             },
             {
               "title": "Editable",
-              "path": "/docs/form/editable"
+              "path": "/form/editable"
             },
             {
               "title": "Form Control",
-              "path": "/docs/form/form-control"
+              "path": "/form/form-control"
             },
             {
               "title": "Icon Button",
-              "path": "/docs/form/icon-button"
+              "path": "/form/icon-button"
             },
             {
               "title": "Input",
-              "path": "/docs/form/input"
+              "path": "/form/input"
             },
             {
               "title": "Number Input",
-              "path": "/docs/form/number-input"
+              "path": "/form/number-input"
             },
             {
               "title": "Pin Input",
-              "path": "/docs/form/pin-input"
+              "path": "/form/pin-input"
             },
             {
               "title": "Radio",
-              "path": "/docs/form/radio"
+              "path": "/form/radio"
             },
             {
               "title": "Select",
-              "path": "/docs/form/select"
+              "path": "/form/select"
             },
             {
               "title": "Slider",
-              "path": "/docs/form/slider"
+              "path": "/form/slider"
             },
             {
               "title": "Switch",
-              "path": "/docs/form/switch"
+              "path": "/form/switch"
             },
             {
               "title": "Textarea",
-              "path": "/docs/form/textarea"
+              "path": "/form/textarea"
             }
           ]
         },
         {
           "title": "Data Display",
-          "path": "/docs/data-display",
+          "path": "/data-display",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Badge",
-              "path": "/docs/data-display/badge"
+              "path": "/data-display/badge"
             },
             {
               "title": "Close Button",
-              "path": "/docs/components/close-button"
+              "path": "/components/close-button"
             },
             {
               "title": "Code",
-              "path": "/docs/data-display/code"
+              "path": "/data-display/code"
             },
             {
               "title": "Divider",
-              "path": "/docs/data-display/divider"
+              "path": "/data-display/divider"
             },
             {
               "title": "Kbd",
-              "path": "/docs/data-display/kbd"
+              "path": "/data-display/kbd"
             },
             {
               "title": "List",
-              "path": "/docs/data-display/list"
+              "path": "/data-display/list"
             },
             {
               "title": "Stat",
-              "path": "/docs/data-display/stat"
+              "path": "/data-display/stat"
             },
             {
               "title": "Table",
-              "path": "/docs/data-display/table"
+              "path": "/data-display/table"
             },
             {
               "title": "Tag",
-              "path": "/docs/data-display/tag"
+              "path": "/data-display/tag"
             }
           ]
         },
         {
           "title": "Feedback",
-          "path": "/docs/feedback",
+          "path": "/feedback",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Alert",
-              "path": "/docs/feedback/alert"
+              "path": "/feedback/alert"
             },
             {
               "title": "Circular Progress",
-              "path": "/docs/feedback/circular-progress"
+              "path": "/feedback/circular-progress"
             },
             {
               "title": "Progress",
-              "path": "/docs/feedback/progress"
+              "path": "/feedback/progress"
             },
             {
               "title": "Skeleton",
-              "path": "/docs/feedback/skeleton"
+              "path": "/feedback/skeleton"
             },
             {
               "title": "Spinner",
-              "path": "/docs/feedback/spinner"
+              "path": "/feedback/spinner"
             },
             {
               "title": "Toast",
-              "path": "/docs/feedback/toast"
+              "path": "/feedback/toast"
             }
           ]
         },
         {
           "title": "Typography",
-          "path": "/docs/typography",
+          "path": "/typography",
           "open": true,
           "routes": [
             {
               "title": "Text",
-              "path": "/docs/typography/text"
+              "path": "/typography/text"
             },
             {
               "title": "Heading",
-              "path": "/docs/typography/heading"
+              "path": "/typography/heading"
             }
           ]
         },
         {
           "title": "Overlay",
-          "path": "/docs/overlay",
+          "path": "/overlay",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Alert Dialog",
-              "path": "/docs/overlay/alert-dialog"
+              "path": "/overlay/alert-dialog"
             },
             {
               "title": "Drawer",
-              "path": "/docs/overlay/drawer"
+              "path": "/overlay/drawer"
             },
             {
               "title": "Menu",
-              "path": "/docs/overlay/menu"
+              "path": "/overlay/menu"
             },
             {
               "title": "Modal",
-              "path": "/docs/overlay/modal"
+              "path": "/overlay/modal"
             },
             {
               "title": "Popover",
-              "path": "/docs/overlay/popover"
+              "path": "/overlay/popover"
             },
             {
               "title": "Tooltip",
-              "path": "/docs/overlay/tooltip"
+              "path": "/overlay/tooltip"
             }
           ]
         },
         {
           "title": "Disclosure",
-          "path": "/docs/disclosure",
+          "path": "/disclosure",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Accordion",
-              "path": "/docs/disclosure/accordion"
+              "path": "/disclosure/accordion"
             },
             {
               "title": "Tabs",
-              "path": "/docs/disclosure/tabs"
+              "path": "/disclosure/tabs"
             },
             {
               "title": "Visually Hidden",
-              "path": "/docs/disclosure/visually-hidden"
+              "path": "/disclosure/visually-hidden"
             }
           ]
         },
         {
           "title": "Navigation",
-          "path": "/docs/navigation",
+          "path": "/navigation",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Breadcrumb",
-              "path": "/docs/navigation/breadcrumb"
+              "path": "/navigation/breadcrumb"
             },
             {
               "title": "Link",
-              "path": "/docs/navigation/link"
+              "path": "/navigation/link"
             },
             {
               "title": "LinkOverlay",
-              "path": "/docs/navigation/link-overlay"
+              "path": "/navigation/link-overlay"
             }
           ]
         },
         {
           "title": "Media and icons",
-          "path": "/docs/media-and-icons",
+          "path": "/media-and-icons",
           "sort": true,
           "open": true,
           "routes": [
             {
               "title": "Avatar",
-              "path": "/docs/media-and-icons/avatar"
+              "path": "/media-and-icons/avatar"
             },
             {
               "title": "Icon",
-              "path": "/docs/media-and-icons/icon"
+              "path": "/media-and-icons/icon"
             },
             {
               "title": "Image",
-              "path": "/docs/media-and-icons/image"
+              "path": "/media-and-icons/image"
             }
           ]
         },
         {
           "title": "Others",
-          "path": "/docs/components",
+          "path": "/components",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "Transitions",
-              "path": "/docs/components/transitions"
+              "path": "/components/transitions"
             },
             {
               "title": "Portal",
-              "path": "/docs/components/portal"
+              "path": "/components/portal"
             }
           ]
         },
         {
           "title": "Hooks",
-          "path": "/docs/hooks",
+          "path": "/hooks",
           "open": true,
           "sort": true,
           "routes": [
             {
               "title": "useBoolean",
-              "path": "/docs/hooks/use-boolean"
+              "path": "/hooks/use-boolean"
             },
             {
               "title": "useBreakpointValue",
-              "path": "/docs/hooks/use-breakpoint-value"
+              "path": "/hooks/use-breakpoint-value"
             },
             {
               "title": "useClipboard",
-              "path": "/docs/hooks/use-clipboard"
+              "path": "/hooks/use-clipboard"
             },
             {
               "title": "useControllable",
-              "path": "/docs/hooks/use-controllable"
+              "path": "/hooks/use-controllable"
             },
             {
               "title": "useDisclosure",
-              "path": "/docs/hooks/use-disclosure"
+              "path": "/hooks/use-disclosure"
             },
             {
               "title": "useMediaQuery",
-              "path": "/docs/hooks/use-media-query"
+              "path": "/hooks/use-media-query"
             },
             {
               "title": "useMergeRefs",
-              "path": "/docs/hooks/use-merge-refs"
+              "path": "/hooks/use-merge-refs"
             },
             {
               "title": "useOutsideClick",
-              "path": "/docs/hooks/use-outside-click"
+              "path": "/hooks/use-outside-click"
             },
             {
               "title": "usePrefersReducedMotion",
-              "path": "/docs/hooks/use-prefers-reduced-motion"
+              "path": "/hooks/use-prefers-reduced-motion"
             },
             {
               "title": "useTheme",
-              "path": "/docs/hooks/use-theme"
+              "path": "/hooks/use-theme"
             },
             {
               "title": "useToken",
-              "path": "/docs/hooks/use-token"
+              "path": "/hooks/use-token"
             }
           ]
         }
