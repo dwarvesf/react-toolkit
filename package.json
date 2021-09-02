@@ -33,7 +33,8 @@
     "typescript": "^4.3.5"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "docs"
   ],
   "scripts": {
     "lerna": "lerna",
@@ -49,7 +50,9 @@
     "version:canary": "changeset version --snapshot canary",
     "release:canary": "changeset publish --tag canary",
     "format": "prettier -c --write \"*/**\"",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "docs": "yarn workspace @dwarvesf/react-toolkit-docs",
+    "docs:dev": "yarn docs dev"
   },
   "husky": {
     "hooks": {
@@ -65,5 +68,10 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.17"
   }
 }
