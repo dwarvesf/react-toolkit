@@ -1,0 +1,40 @@
+---
+title: truncate
+package: '@dwarvesf/react-utils'
+description: 'A helper is used to truncate a long string.'
+---
+
+`truncate` is a utility to truncate a long string.
+
+## Import
+
+```js
+import { truncate } from '@dwarvesf/react-utils'
+```
+
+## Return value
+
+This method returns a truncated string with a `...` middle or ending.
+
+## Usage
+
+```jsx
+function Example() {
+  return (
+    <Stack>
+      <Box>{truncate('Lorem ipsum dolor sit amet', 20)}</Box>
+      <Box>{truncate('Lorem ipsum dolor sit amet', 10, true)}</Box>
+    </Stack>
+  )
+}
+```
+
+## Parameters
+
+The `truncate(str, max, middle)`:
+
+| Name     | Type      | Default | Description |
+| -------- | --------- | ------- | ----------- |
+| `str`    | `string`  | `_`     |             |
+| `max`    | `number`  | `_`     |             |
+| `middle` | `boolean` | `false` |             |

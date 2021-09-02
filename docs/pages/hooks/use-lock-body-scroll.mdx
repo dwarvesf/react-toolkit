@@ -1,0 +1,68 @@
+---
+title: useLockBodyScroll
+package: '@dwarvesf/react-hooks'
+description: 'A React hooks prevents your users from being able to
+scroll the body of your page.'
+---
+
+`useLockBodyScroll` is a custom hook that prevents your users from being able to
+scroll the body of your page while a particular component is absolutely
+positioned over your page (think modal or full-screen mobile menu).
+
+## Import
+
+```js
+import { useLockBodyScroll } from '@dwarvesf/react-hooks'
+```
+
+## Usage
+
+```jsx
+function Example() {
+  function Modal({ title, content, onClose }) {
+    // Call hook to lock body scroll
+    useLockBodyScroll()
+    return (
+      <div
+        style={{
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          zIndex: 9999,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          position: 'absolute',
+        }}
+        onClick={onClose}
+      >
+        <div style={{ backgroundColor: 'white', padding: '30px' }}>
+          <h2>{title}</h2>
+          <p>{content}</p>
+        </div>
+      </div>
+    )
+  }
+
+  function App() {
+    // State for our modal
+    const [modalOpen, setModalOpen] = useState(false)
+    return (
+      <div>
+        <button onClick={() => setModalOpen(true)}>Show Modal</button>
+        {modalOpen && (
+          <Modal
+            title="Try scrolling"
+            content="I bet you you can't! Muahahaha 😈"
+            onClose={() => setModalOpen(false)}
+          />
+        )}
+      </div>
+    )
+  }
+
+  return <App />
+}
+```

@@ -13,7 +13,6 @@ export default function useWhyDidYouUpdate(
       const allKeys = Object.keys({ ...previousProps.current, ...props })
       // Use this object to keep track of changed props
       const changesObj: Record<string, any> = {}
-      // Iterate through keys
       allKeys.forEach((key) => {
         // If previous is different from current
         if (previousProps.current[key] !== props[key]) {
