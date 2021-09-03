@@ -3,10 +3,7 @@ import { mode } from '@chakra-ui/theme-tools'
 
 const customTheme = extendTheme({
   colors: {
-    brand: {
-      100: '#f7fafc',
-      900: '#1a202c',
-    },
+    brand: {},
   },
   fonts: {
     heading: 'Inter, sans-serif',

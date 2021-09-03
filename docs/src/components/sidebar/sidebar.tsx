@@ -1,24 +1,20 @@
-import NextLink from "next/link"
-import { useRouter } from "next/router"
-import * as React from "react"
-import sortBy from "lodash/sortBy"
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
+import * as React from 'react'
+import sortBy from 'lodash/sortBy'
 import {
   Badge,
   Box,
   Center,
   chakra,
   Flex,
-  List,
-  ListItem,
-  ListProps,
   Stack,
   useColorModeValue,
-} from "@chakra-ui/react"
-import { Routes } from "utils/get-route-context"
-import { convertBackticksToInlineCode } from "utils/convert-backticks-to-inline-code"
-import SidebarCategory from "./sidebar-category"
-import SidebarLink from "./sidebar-link"
-import { DocsIcon, GuidesIcon, TeamIcon, ResourcesIcon } from "./sidebar-icons"
+} from '@chakra-ui/react'
+import { Routes } from 'utils/get-route-context'
+import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
+import SidebarCategory from './sidebar-category'
+import SidebarLink from './sidebar-link'
 
 export type SidebarContentProps = Routes & {
   pathname?: string
@@ -39,7 +35,7 @@ export function SidebarContent(props: SidebarContentProps) {
                 my="1.25rem"
                 textTransform="uppercase"
                 letterSpacing="wider"
-                color={useColorModeValue("gray.700", "inherit")}
+                color={useColorModeValue('gray.700', 'inherit')}
               >
                 {lvl1.title}
               </chakra.h4>
@@ -99,9 +95,9 @@ export function SidebarContent(props: SidebarContentProps) {
 
 const MainNavLink = ({ href, icon, children }) => {
   const { pathname } = useRouter()
-  const [, group] = href.split("/")
+  const [, group] = href.split('/')
   const active = pathname.includes(group)
-  const linkColor = useColorModeValue("gray.900", "whiteAlpha.900")
+  const linkColor = useColorModeValue('gray.900', 'whiteAlpha.900')
 
   return (
     <NextLink href={href} passHref>
@@ -112,7 +108,7 @@ const MainNavLink = ({ href, icon, children }) => {
         fontWeight="semibold"
         transitionProperty="colors"
         transitionDuration="200ms"
-        color={active ? linkColor : "gray.500"}
+        color={active ? linkColor : 'gray.500'}
         _hover={{ color: linkColor }}
       >
         <Center w="6" h="6" bg="teal.400" rounded="base" mr="3">
@@ -121,43 +117,6 @@ const MainNavLink = ({ href, icon, children }) => {
         {children}
       </Flex>
     </NextLink>
-  )
-}
-
-const mainNavLinks = [
-  {
-    icon: <DocsIcon />,
-    href: "/docs/getting-started",
-    label: "Docs",
-  },
-  {
-    icon: <GuidesIcon />,
-    href: "/guides/integrations/with-cra",
-    label: "Guides",
-  },
-  {
-    icon: <ResourcesIcon />,
-    href: "/resources",
-    label: "Resources",
-  },
-  {
-    icon: <TeamIcon />,
-    href: "/team",
-    label: "Team",
-  },
-]
-
-const MainNavLinkGroup = (props: ListProps) => {
-  return (
-    <List spacing="4" styleType="none" {...props}>
-      {mainNavLinks.map((item) => (
-        <ListItem key={item.label}>
-          <MainNavLink icon={item.icon} href={item.href}>
-            {item.label}
-          </MainNavLink>
-        </ListItem>
-      ))}
-    </List>
   )
 }
 
@@ -172,7 +131,7 @@ const Sidebar = ({ routes }) => {
       aria-label="Main Navigation"
       pos="sticky"
       sx={{
-        overscrollBehavior: "contain",
+        overscrollBehavior: 'contain',
       }}
       top="6.5rem"
       w="280px"
@@ -184,9 +143,8 @@ const Sidebar = ({ routes }) => {
       overflowY="auto"
       className="sidebar-content"
       flexShrink={0}
-      display={{ base: "none", md: "block" }}
+      display={{ base: 'none', md: 'block' }}
     >
-      <MainNavLinkGroup mb="10" />
       <SidebarContent routes={routes} pathname={pathname} contentRef={ref} />
     </Box>
   )

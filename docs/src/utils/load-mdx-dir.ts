@@ -10,7 +10,7 @@ async function loadMdxDir(mdxDir: string) {
 
   const data = await Promise.all(dataPromise)
 
-  return data
+  return data as { slug: string; mdxSource: any }[]
 }
 
 export default loadMdxDir
