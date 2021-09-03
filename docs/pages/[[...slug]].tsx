@@ -31,18 +31,23 @@ export async function getStaticPaths() {
   })
 
   return {
-    paths,
+    paths: [...paths, { params: { slug: [''] } }],
     fallback: false,
   }
 }
 
 export async function getStaticProps({ params }) {
-  const slug = params.slug
-  const combinedPageSlug = `${[CONTENT_PATH, ...slug].join('/')}`
+  const { slug } = params
+  const combinedPageSlug = Array.isArray(slug)
+    ? `${[CONTENT_PATH, ...slug].join('/')}`
+    : CONTENT_PATH
   const pages = await loadMDXFromPages(CONTENT_PATH)
 
   const page = pages.find((page) => {
-    return combinedPageSlug === page.slug
+    return (
+      combinedPageSlug === page.slug ||
+      (combinedPageSlug === CONTENT_PATH && page.slug === '/index')
+    )
   })
 
   if (!page) {

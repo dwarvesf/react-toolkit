@@ -10,23 +10,22 @@ import {
   useBreakpointValue,
   useColorModeValue,
   useUpdateEffect,
-} from "@chakra-ui/react"
-import { AnimatePresence, motion, useElementScroll } from "framer-motion"
-import useRouteChanged from "hooks/use-route-changed"
-import { getRoutes } from "layouts/mdx"
-import NextLink from "next/link"
-import { useRouter } from "next/router"
-import * as React from "react"
-import { AiOutlineMenu } from "react-icons/ai"
-import { RemoveScroll } from "react-remove-scroll"
-import Logo from "./logo"
-import { SidebarContent } from "./sidebar/sidebar"
-import SponsorButton from "./sponsor-button"
+} from '@chakra-ui/react'
+import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
+import useRouteChanged from 'hooks/use-route-changed'
+import { getRoutes } from 'layouts/mdx'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
+import * as React from 'react'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { RemoveScroll } from 'react-remove-scroll'
+import Logo from './logo'
+import { SidebarContent } from './sidebar/sidebar'
 
 function NavLink({ href, children }) {
   const { pathname } = useRouter()
 
-  const [, group] = href.split("/")
+  const [, group] = href.split('/')
   const isActive = pathname.includes(group)
 
   return (
@@ -37,14 +36,14 @@ function NavLink({ href, children }) {
         as="button"
         rounded="md"
         transition="0.2s all"
-        fontWeight={isActive ? "semibold" : "medium"}
-        bg={isActive ? "teal.400" : undefined}
-        borderWidth={isActive ? undefined : "1px"}
-        color={isActive ? "white" : undefined}
+        fontWeight={isActive ? 'semibold' : 'medium'}
+        bg={isActive ? 'teal.400' : undefined}
+        borderWidth={isActive ? undefined : '1px'}
+        color={isActive ? 'white' : undefined}
         _hover={{
           bg: isActive
-            ? "teal.500"
-            : useColorModeValue("gray.100", "whiteAlpha.100"),
+            ? 'teal.500'
+            : useColorModeValue('gray.100', 'whiteAlpha.100'),
         }}
       >
         {children}
@@ -100,7 +99,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
             <Flex
               direction="column"
               w="100%"
-              bg={useColorModeValue("white", "gray.800")}
+              bg={useColorModeValue('white', 'gray.800')}
               h="100vh"
               overflow="auto"
               pos="absolute"
@@ -111,9 +110,8 @@ export function MobileNavContent(props: MobileNavContentProps) {
             >
               <Box>
                 <Flex justify="space-between" px="6" pt="5" pb="4">
-                  <Logo sx={{ rect: { fill: "teal.300" } }} />
+                  <Logo sx={{ rect: { fill: 'teal.300' } }} />
                   <HStack spacing="5">
-                    <SponsorButton display="flex" />
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
                 </Flex>
@@ -130,7 +128,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
 
               <ScrollView
                 onScroll={(scrolled) => {
-                  setShadow(scrolled ? "md" : undefined)
+                  setShadow(scrolled ? 'md' : undefined)
                 }}
               >
                 <SidebarContent
@@ -177,10 +175,10 @@ export const MobileNavButton = React.forwardRef(
     return (
       <IconButton
         ref={ref}
-        display={{ base: "flex", md: "none" }}
+        display={{ base: 'flex', md: 'none' }}
         aria-label="Open menu"
         fontSize="20px"
-        color={useColorModeValue("gray.800", "inherit")}
+        color={useColorModeValue('gray.800', 'inherit')}
         variant="ghost"
         icon={<AiOutlineMenu />}
         {...props}
