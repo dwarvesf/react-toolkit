@@ -1,15 +1,16 @@
 ---
-title: useDisclosure
-package: '@dwarvesf/react-hooks'
+title: callAllHandlers
+package: '@dwarvesf/react-utils'
 description: ''
 ---
 
-`useDisclosure` is a custom hook that handles copying content to clipboard.
+`callAllHandlers` is a custom hook used to merge several react refs into a
+single one.
 
 ## Import
 
 ```js
-import { useDisclosure } from '@dwarvesf/react-hooks'
+import { callAllHandlers } from '@dwarvesf/react-utils'
 ```
 
 ## Return value
@@ -25,27 +26,8 @@ The `useDisclosure` hook returns an object with the following fields:
 
 ## Usage
 
-```jsx
-function Example() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
-  return (
-    <>
-      <Button onClick={onOpen}>Open Drawer</Button>
-      <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
-          <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-    </>
-  )
-}
+```js
+callAllHandlers()
 ```
 
 ## Parameters

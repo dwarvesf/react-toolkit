@@ -1,5 +1,7 @@
 import React from 'react'
 import * as Chakra from '@chakra-ui/react'
+import * as reactHooks from '@dwarvesf/react-hooks'
+import * as reactUtils from '@dwarvesf/react-utils'
 import { chakra } from '@chakra-ui/react'
 import * as Icons from '@chakra-ui/icons'
 import * as Formik from 'formik'
@@ -52,6 +54,8 @@ const ReactLiveScope = {
   ...Icons,
   ...Loaders,
   ...reactIcons,
+  ...reactHooks,
+  ...reactUtils,
   StarIcon,
   FocusLock,
   Lorem,

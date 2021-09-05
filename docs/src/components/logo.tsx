@@ -11,7 +11,7 @@ export const Logo = (props: HTMLChakraProps<'svg'>) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g fill-rule="nonzero" fill="none">
+      <g fillRule="nonzero" fill="none">
         <path
           d="M5.208 40.726c-2.804 0-5.074-2.279-5.074-5.093V5.093C.134 2.278 2.404 0 5.208 0l12.703.015c11.292 0 20.433 9.262 20.285 20.623-.149 11.183-9.438 20.088-20.582 20.088H5.208z"
           fill="#E13F5E"

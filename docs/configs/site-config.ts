@@ -24,8 +24,8 @@ const siteConfig = {
       'Simple, Modular and Accessible UI Components for your React Applications.',
     siteUrl: '',
     twitter: {
-      handle: '@chakra-ui',
-      site: '@chakra-ui',
+      handle: '@dwarvesf',
+      site: '@dwarvesf',
       cardType: 'summary_large_image',
     },
     openGraph: {
