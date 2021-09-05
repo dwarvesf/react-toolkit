@@ -19,6 +19,12 @@ function CopyButton({ code, ...props }: CopyButtonProps) {
       top={0}
       zIndex="1"
       right="1.25em"
+      _active={{ backgroundColor: 'brand.500' }}
+      _hover={{ backgroundColor: 'brand.500' }}
+      _focus={{
+        boxShadow: 'none',
+      }}
+      backgroundColor="brand.500"
       {...props}
       onClick={onCopy}
     >

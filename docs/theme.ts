@@ -3,7 +3,10 @@ import { mode } from '@chakra-ui/theme-tools'
 
 const customTheme = extendTheme({
   colors: {
-    brand: {},
+    brand: {
+      100: '#FDEDF0',
+      500: '#E13F5E',
+    },
   },
   fonts: {
     heading: 'Inter, sans-serif',
@@ -83,12 +86,12 @@ const customTheme = extendTheme({
       fontSize: '1.125rem',
     },
     a: {
-      color: 'teal.500',
+      color: 'brand.500',
       fontWeight: 'semibold',
       transition: 'color 0.15s',
       transitionTimingFunction: 'ease-out',
       _hover: {
-        color: 'teal.600',
+        color: 'brand.500',
       },
     },
     p: {

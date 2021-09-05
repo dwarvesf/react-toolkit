@@ -1,37 +1,28 @@
-const baseUrl = 'https://github.com/chakra-ui/chakra-ui'
+const baseUrl = 'https://github.com/dwarvesf/react-toolkit'
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Segun Adebayo. All Rights Reserved.`,
-  algolia: {
-    apiKey: 'df1dcc41f7b8e5d68e73dd56d1e19701',
-    indexName: 'chakra-ui',
-    inputSelector: '#algolia-search',
-  },
+  copyright: `Copyright © ${new Date().getFullYear()} Dwarvesf. All Rights Reserved.`,
   author: {
-    name: 'Segun Adebayo',
-    github: 'https://github.com/segunadebayo',
-    twitter: 'https://twitter.com/thesegunadebayo',
-    linkedin: 'https://linkedin.com/in/thesegunadebayo',
-    email: 'sage@adebayosegun.com',
+    name: '',
+    github: '',
+    twitter: '',
+    linkedin: '',
+    email: '',
   },
   repo: {
     url: baseUrl,
     editUrl: `${baseUrl}/edit/main/website/pages`,
     blobUrl: `${baseUrl}/blob/main`,
   },
-  openCollective: {
-    url: 'https://opencollective.com/chakra-ui',
-  },
   discord: {
-    url: 'https://discord.gg/chakra-ui',
+    url: '',
   },
-  youtube: 'https://www.youtube.com/channel/UC4TmDovH46TB4S0SM0Y4CIg',
   seo: {
-    title: 'Chakra UI',
-    titleTemplate: '%s - Chakra UI',
+    title: 'React Toolkit',
+    titleTemplate: '%s - React Toolkit',
     description:
       'Simple, Modular and Accessible UI Components for your React Applications.',
-    siteUrl: 'https://chakra-ui.com',
+    siteUrl: '',
     twitter: {
       handle: '@chakra-ui',
       site: '@chakra-ui',
@@ -40,24 +31,24 @@ const siteConfig = {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://chakra-ui.com',
-      title: 'Chakra UI',
+      url: '',
+      title: 'React Toolkit',
       description:
         'Simple, Modular and Accessible UI Components for your React Applications.',
       site_name:
-        'Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.',
+        'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
       images: [
         {
-          url: 'https://chakra-ui.com/og-image.png',
+          url: '/og-image.png',
           width: 1240,
           height: 480,
-          alt: 'Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.',
+          alt: 'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
         },
         {
-          url: 'https://chakra-ui.com/twitter-og-image.png',
+          url: '/twitter-og-image.png',
           width: 1012,
           height: 506,
-          alt: 'Chakra UI: Simple, Modular and Accessible UI Components for your React Applications.',
+          alt: 'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
         },
       ],
     },

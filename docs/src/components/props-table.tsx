@@ -91,7 +91,7 @@ Remove the use of <PropsTable of="${of}" /> for this component in the docs.`,
               }}
             >
               <HStack>
-                <Code colorScheme="purple">{prop.name}</Code>
+                <Code colorScheme="blackAlpha">{prop.name}</Code>
                 {prop.required && <Code colorScheme="red">required</Code>}
               </HStack>
             </chakra.h3>

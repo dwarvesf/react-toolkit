@@ -17,7 +17,7 @@ import { useViewportScroll } from 'framer-motion'
 import NextLink from 'next/link'
 import React from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa'
-import Logo, { LogoIcon } from './logo'
+import Logo from './logo'
 import { MobileNavButton, MobileNavContent } from './mobile-nav'
 import Search from './omni-search'
 
@@ -47,10 +47,13 @@ function HeaderContent() {
       <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
         <Flex align="center">
           <NextLink href="/" passHref>
-            <chakra.a display="block" aria-label="Chakra UI, Back to homepage">
+            <chakra.a
+              display="block"
+              aria-label="React Toolkit, Back to homepage"
+            >
               <Logo display={{ base: 'none', md: 'block' }} />
               <Box minW="3rem" display={{ base: 'block', md: 'none' }}>
-                <LogoIcon />
+                <Logo />
               </Box>
             </chakra.a>
           </NextLink>
@@ -67,7 +70,7 @@ function HeaderContent() {
           <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
             <Link
               isExternal
-              aria-label="Go to Chakra UI GitHub page"
+              aria-label="Go to React Toolkit GitHub page"
               href={siteConfig.repo.url}
             >
               <Icon

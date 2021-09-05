@@ -23,7 +23,7 @@ const EditableNotice = (props: BoxProps) => {
       width="full"
       top="-1.25em"
       roundedTop="8px"
-      bg="#011627"
+      bg="#282C34"
       py="2"
       zIndex="0"
       letterSpacing="wide"

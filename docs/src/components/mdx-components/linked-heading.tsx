@@ -7,7 +7,7 @@ export const LinkedHeading = (props: HTMLChakraProps<'h2'>) => (
     {props.id && (
       <chakra.a
         aria-label="anchor"
-        color="teal.500"
+        color="brand.500"
         fontWeight="normal"
         outline="none"
         _focus={{ opacity: 1, boxShadow: 'outline' }}

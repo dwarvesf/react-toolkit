@@ -58,7 +58,7 @@ export type ComponentLinksProps = {
 function ComponentLinks(props: ComponentLinksProps) {
   const { theme, github, npm, storybook, ...rest } = props
 
-  const githubRepoUrl = 'https://github.com/chakra-ui/chakra-ui'
+  const githubRepoUrl = 'https://github.com/dwarvesf/react-toolkit'
 
   const githubLink = (github?.url || github?.package) && (
     <WrapItem>

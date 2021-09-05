@@ -1,6 +1,6 @@
 import { Box, useBoolean } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-import theme from 'prism-react-renderer/themes/nightOwl'
+import theme from 'prism-react-renderer/themes/oceanicNext'
 import React, { useEffect } from 'react'
 import CodeContainer from './code-container'
 import CopyButton from './copy-button'
