@@ -1,6 +1,6 @@
-import * as React from "react"
-import { chakra, Icon, Stack, Link } from "@chakra-ui/react"
-import { MdEdit } from "react-icons/md"
+import * as React from 'react'
+import { chakra, Icon, Stack, Link } from '@chakra-ui/react'
+import { MdEdit } from 'react-icons/md'
 
 const EditPageLink: React.FC<{ href?: string }> = ({ href }) => {
   return (

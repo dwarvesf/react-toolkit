@@ -1,12 +1,12 @@
-import { ColorModeScript } from "@chakra-ui/react"
+import { ColorModeScript } from '@chakra-ui/react'
 import NextDocument, {
   DocumentContext,
   Head,
   Html,
   Main,
   NextScript,
-} from "next/document"
-import React from "react"
+} from 'next/document'
+import React from 'react'
 
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {

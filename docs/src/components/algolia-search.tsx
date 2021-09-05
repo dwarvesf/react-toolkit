@@ -1,4 +1,4 @@
-import { SearchIcon } from "@chakra-ui/icons"
+import { SearchIcon } from '@chakra-ui/icons'
 import {
   chakra,
   HStack,
@@ -8,16 +8,16 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
-} from "@chakra-ui/react"
-import { DocSearchModal, useDocSearchKeyboardEvents } from "@docsearch/react"
-import Head from "next/head"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import * as React from "react"
-import SearchStyle from "./search.styles"
+} from '@chakra-ui/react'
+import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react'
+import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import * as React from 'react'
+import SearchStyle from './search.styles'
 
-const ACTION_KEY_DEFAULT = ["Ctrl", "Control"]
-const ACTION_KEY_APPLE = ["⌘", "Command"]
+const ACTION_KEY_DEFAULT = ['Ctrl', 'Control']
+const ACTION_KEY_APPLE = ['⌘', 'Command']
 
 function Hit(props: any) {
   const { hit, children } = props
@@ -29,12 +29,12 @@ function Hit(props: any) {
 }
 
 export const SearchButton = React.forwardRef(function SearchButton(
-  props: HTMLChakraProps<"button">,
+  props: HTMLChakraProps<'button'>,
   ref: React.Ref<HTMLButtonElement>,
 ) {
   const [actionKey, setActionKey] = React.useState<string[]>(ACTION_KEY_APPLE)
   React.useEffect(() => {
-    if (typeof navigator === "undefined") return
+    if (typeof navigator === 'undefined') return
     const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)
     if (!isMac) {
       setActionKey(ACTION_KEY_DEFAULT)
@@ -50,15 +50,15 @@ export const SearchButton = React.forwardRef(function SearchButton(
       ref={ref}
       lineHeight="1.2"
       w="100%"
-      bg={useColorModeValue("white", "gray.700")}
+      bg={useColorModeValue('white', 'gray.700')}
       whiteSpace="nowrap"
-      display={{ base: "none", sm: "flex" }}
+      display={{ base: 'none', sm: 'flex' }}
       alignItems="center"
       color="gray.400"
       py="3"
       px="4"
       outline="0"
-      _focus={{ shadow: "outline" }}
+      _focus={{ shadow: 'outline' }}
       shadow="base"
       rounded="md"
       aria-label="Search the docs"
@@ -152,9 +152,9 @@ function AlgoliaSearch() {
             hitComponent={Hit}
             transformItems={(items) => {
               return items.map((item) => {
-                const a = document.createElement("a")
+                const a = document.createElement('a')
                 a.href = item.url
-                const hash = a.hash === "#content-wrapper" ? "" : a.hash
+                const hash = a.hash === '#content-wrapper' ? '' : a.hash
                 item.url = `${a.pathname}${hash}`
                 return item
               })

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   Icon,
   Text,
@@ -8,9 +8,9 @@ import {
   useColorModeValue,
   LinkProps,
   WrapItem,
-} from "@chakra-ui/react"
-import { FaNpm, FaGithub } from "react-icons/fa"
-import StorybookIcon from "../storybook-icon"
+} from '@chakra-ui/react'
+import { FaNpm, FaGithub } from 'react-icons/fa'
+import StorybookIcon from '../storybook-icon'
 
 type ComponentLinkProps = LinkProps & {
   icon: React.ElementType
@@ -31,11 +31,11 @@ function ComponentLink(props: ComponentLinkProps) {
       minH="32px"
       borderWidth="1px"
       borderRadius="md"
-      color={useColorModeValue("gray.600", "whiteAlpha.700")}
+      color={useColorModeValue('gray.600', 'whiteAlpha.700')}
       _hover={{
-        color: useColorModeValue("gray.700", "whiteAlpha.900"),
-        boxShadow: "sm",
-        transform: "translateY(-1px)",
+        color: useColorModeValue('gray.700', 'whiteAlpha.900'),
+        boxShadow: 'sm',
+        transform: 'translateY(-1px)',
       }}
       {...rest}
     >
@@ -58,7 +58,7 @@ export type ComponentLinksProps = {
 function ComponentLinks(props: ComponentLinksProps) {
   const { theme, github, npm, storybook, ...rest } = props
 
-  const githubRepoUrl = "https://github.com/chakra-ui/chakra-ui"
+  const githubRepoUrl = 'https://github.com/chakra-ui/chakra-ui'
 
   const githubLink = (github?.url || github?.package) && (
     <WrapItem>
@@ -67,7 +67,7 @@ function ComponentLinks(props: ComponentLinksProps) {
           github.url || `${githubRepoUrl}/tree/main/packages/${github.package}`
         }
         icon={FaGithub}
-        iconColor={useColorModeValue("gray.600", "inherit")}
+        iconColor={useColorModeValue('gray.600', 'inherit')}
         iconSize="1rem"
       >
         View source
@@ -106,7 +106,7 @@ function ComponentLinks(props: ComponentLinksProps) {
       <ComponentLink
         url={`${githubRepoUrl}/tree/main/packages/theme/src/components/${theme.componentName}.ts`}
         icon={FaGithub}
-        iconColor={useColorModeValue("gray.600", "inherit")}
+        iconColor={useColorModeValue('gray.600', 'inherit')}
         iconSize="1rem"
       >
         View theme source

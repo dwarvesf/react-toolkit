@@ -1,18 +1,18 @@
-import * as ComponentProps from "@chakra-ui/props-docs"
-import { chakra, Code, Flex, HStack, Stack, theme } from "@chakra-ui/react"
-import Link from "next/link"
-import * as React from "react"
-import { convertBackticksToInlineCode } from "utils/convert-backticks-to-inline-code"
-import { InlineCode } from "components/mdx-components/inline-code"
-import { Anchor } from "components/mdx-components/anchor"
+import * as ComponentProps from '@chakra-ui/props-docs'
+import { chakra, Code, Flex, HStack, Stack, theme } from '@chakra-ui/react'
+import Link from 'next/link'
+import * as React from 'react'
+import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
+import { InlineCode } from 'components/mdx-components/inline-code'
+import { Anchor } from 'components/mdx-components/anchor'
 
 /**
  * A map of components that use foreign theme key.
  * The key is name of the component and value is the theme key it uses.
  */
 const themeComponentKeyAliases = {
-  AlertDialog: "Modal",
-  IconButton: "Button",
+  AlertDialog: 'Modal',
+  IconButton: 'Button',
 }
 
 export type PropsTableProps = {
@@ -34,20 +34,19 @@ export type PropsTableProps = {
 const PropsTable = ({
   of,
   omit = [
-    "isTruncated",
-    "layerStyle",
-    "noOfLines",
-    "textStyle",
-    "orientation",
-    "styleConfig",
+    'isTruncated',
+    'layerStyle',
+    'noOfLines',
+    'textStyle',
+    'orientation',
+    'styleConfig',
   ],
   only,
 }: PropsTableProps) => {
-  const propList = React.useMemo(() => makePropsTable({ of, omit, only }), [
-    of,
-    omit,
-    only,
-  ])
+  const propList = React.useMemo(
+    () => makePropsTable({ of, omit, only }),
+    [of, omit, only],
+  )
 
   if (!propList.length) {
     // this error breaks the build to notify you when there would be an empty table
@@ -63,29 +62,29 @@ Remove the use of <PropsTable of="${of}" /> for this component in the docs.`,
         <chakra.div
           key={prop.name}
           css={{
-            width: "100%",
-            fontSize: "0.95em",
-            borderCollapse: "collapse",
-            ".row": {
+            width: '100%',
+            fontSize: '0.95em',
+            borderCollapse: 'collapse',
+            '.row': {
               minWidth: 100,
-              width: "20%",
-              fontSize: "0.9em",
-              textAlign: "start",
+              width: '20%',
+              fontSize: '0.9em',
+              textAlign: 'start',
               fontWeight: 500,
-              padding: "4px 16px 4px 8px",
-              whiteSpace: "nowrap",
-              verticalAlign: "baseline",
+              padding: '4px 16px 4px 8px',
+              whiteSpace: 'nowrap',
+              verticalAlign: 'baseline',
             },
-            ".cell": {
-              padding: "4px 0px 4px 8px",
-              width: "100%",
+            '.cell': {
+              padding: '4px 0px 4px 8px',
+              width: '100%',
             },
           }}
         >
-          <chakra.div css={{ textAlign: "start", fontSize: "1em" }}>
+          <chakra.div css={{ textAlign: 'start', fontSize: '1em' }}>
             <chakra.h3
               css={{
-                fontSize: "0.8em",
+                fontSize: '0.8em',
                 paddingBottom: 16,
                 marginBottom: 16,
                 borderBottomWidth: 1,
@@ -135,7 +134,7 @@ export default PropsTable
 
 interface MakePropsTableOptions extends PropsTableProps {}
 
-const TYPE_GENERIC_THEMABLE = "(string & {})"
+const TYPE_GENERIC_THEMABLE = '(string & {})'
 
 function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
   const props = ComponentProps[of]?.props as Record<string, any>
@@ -146,13 +145,13 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
   const featNotImplemented = (feat: string) => (
     <>
       {feat} for <InlineCode>{of}</InlineCode> are not implemented in the
-      default theme. You can{" "}
+      default theme. You can{' '}
       <Link
         href="/docs/theming/customize-theme#customizing-component-styles"
         passHref
       >
         <Anchor>extend the theme</Anchor>
-      </Link>{" "}
+      </Link>{' '}
       to implement them.
     </>
   )
@@ -180,7 +179,7 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
         type: type.name,
       }
 
-      if (name === "size") {
+      if (name === 'size') {
         const defaultSize = componentTheme?.defaultProps?.size
 
         if (defaultSize != null) {
@@ -188,14 +187,14 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
         }
 
         if (prop.type === TYPE_GENERIC_THEMABLE) {
-          prop.type = "string"
-          prop.description = featNotImplemented("Sizes")
+          prop.type = 'string'
+          prop.description = featNotImplemented('Sizes')
         } else {
           prop.type = omitGenericThemableType(prop.type)
         }
       }
 
-      if (name === "variant") {
+      if (name === 'variant') {
         const defaultVariant = componentTheme?.defaultProps?.variant
 
         if (defaultVariant != null) {
@@ -203,14 +202,14 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
         }
 
         if (prop.type === TYPE_GENERIC_THEMABLE) {
-          prop.type = "string"
-          prop.description = featNotImplemented("Variants")
+          prop.type = 'string'
+          prop.description = featNotImplemented('Variants')
         } else {
           prop.type = omitGenericThemableType(prop.type)
         }
       }
 
-      if (name === "colorScheme") {
+      if (name === 'colorScheme') {
         prop.type = omitGenericThemableType(prop.type)
 
         const defaultColorScheme = componentTheme?.defaultProps?.colorScheme
@@ -218,7 +217,7 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
         if (defaultColorScheme != null) {
           prop.defaultValue = `"${defaultColorScheme}"`
         } else {
-          prop.description = featNotImplemented("Color Schemes")
+          prop.description = featNotImplemented('Color Schemes')
         }
       }
 
@@ -234,6 +233,6 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
 
 const omitGenericThemableType = (type: string) =>
   type
-    .split(" | ")
+    .split(' | ')
     .filter((type) => type !== TYPE_GENERIC_THEMABLE)
-    .join(" | ")
+    .join(' | ')

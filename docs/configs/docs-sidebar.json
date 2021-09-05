@@ -7,18 +7,6 @@
         {
           "title": "Installation",
           "path": "/getting-started"
-        },
-        {
-          "title": "Upgrade to v1",
-          "path": "/migration"
-        },
-        {
-          "title": "Design Principles",
-          "path": "/principles"
-        },
-        {
-          "title": "Comparison",
-          "path": "/comparison"
         }
       ]
     },

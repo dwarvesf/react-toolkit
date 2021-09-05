@@ -1,5 +1,5 @@
-import { Button, ButtonProps, useClipboard } from "@chakra-ui/react"
-import React from "react"
+import { Button, ButtonProps, useClipboard } from '@chakra-ui/react'
+import React from 'react'
 
 interface CopyButtonProps extends ButtonProps {
   code: string
@@ -22,7 +22,7 @@ function CopyButton({ code, ...props }: CopyButtonProps) {
       {...props}
       onClick={onCopy}
     >
-      {hasCopied ? "copied" : "copy"}
+      {hasCopied ? 'copied' : 'copy'}
     </Button>
   )
 }

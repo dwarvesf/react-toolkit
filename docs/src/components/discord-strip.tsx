@@ -1,14 +1,14 @@
-import { Box, BoxProps, chakra, Flex, Heading, Text } from "@chakra-ui/react"
-import * as React from "react"
-import DiscordIcon from "./docs/discord-logo"
-import Container from "./container"
+import { Box, BoxProps, chakra, Flex, Heading, Text } from '@chakra-ui/react'
+import * as React from 'react'
+import DiscordIcon from './docs/discord-logo'
+import Container from './container'
 
 function DiscordStrip(props: BoxProps) {
   return (
     <Box bg="#5865F2" {...props}>
       <Container py="8">
         <Flex
-          direction={{ base: "column", md: "row" }}
+          direction={{ base: 'column', md: 'row' }}
           align="center"
           justify="space-between"
         >
@@ -31,8 +31,8 @@ function DiscordStrip(props: BoxProps) {
             </Box>
           </Flex>
           <chakra.button
-            width={{ base: "100%", md: "auto" }}
-            mt={{ base: "6", md: 0 }}
+            width={{ base: '100%', md: 'auto' }}
+            mt={{ base: '6', md: 0 }}
             color="gray.800"
             as="a"
             justifyContent="center"

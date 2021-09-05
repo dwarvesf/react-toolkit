@@ -1,13 +1,13 @@
-import * as path from "path"
-import * as fs from "fs"
-import { processFrontmatter, serializeMdx } from "utils/mdx-utils"
-import { parseMarkdownString } from "@docusaurus/utils"
-import { calcReadTime } from "utils/calc-read-time"
-import siteConfig from "../../configs/site-config"
+import * as path from 'path'
+import * as fs from 'fs'
+import { processFrontmatter, serializeMdx } from 'utils/mdx-utils'
+import { parseMarkdownString } from '@docusaurus/utils'
+import { calcReadTime } from 'utils/calc-read-time'
+import siteConfig from '../../configs/site-config'
 
 export async function loadMdx(filename: string) {
   // get the `pages` directory
-  const pagesDir = path.join(process.cwd(), "pages")
+  const pagesDir = path.join(process.cwd(), 'pages')
 
   // gets the relative mdx path
   // pages/docs/guides.mdx => /docs/guides.mdx

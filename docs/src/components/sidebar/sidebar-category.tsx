@@ -1,5 +1,5 @@
-import { BoxProps, chakra, useColorModeValue } from "@chakra-ui/react"
-import { ReactNode, RefObject, useEffect, useRef, useState } from "react"
+import { BoxProps, chakra, useColorModeValue } from '@chakra-ui/react'
+import { ReactNode, RefObject, useEffect, useRef, useState } from 'react'
 
 interface SidebarCategoryProps extends BoxProps {
   isMobile?: boolean
@@ -16,15 +16,8 @@ interface SidebarState {
 }
 
 function SidebarCategory(props: SidebarCategoryProps) {
-  const {
-    isMobile,
-    title,
-    selected,
-    opened,
-    children,
-    contentRef,
-    ...rest
-  } = props
+  const { isMobile, title, selected, opened, children, contentRef, ...rest } =
+    props
 
   const ref = useRef<HTMLDivElement | null>(null)
 
@@ -71,7 +64,7 @@ function SidebarCategory(props: SidebarCategoryProps) {
         alignItems="center"
         justifyContent="space-between"
         userSelect="none"
-        color={useColorModeValue("gray.500", "inherit")}
+        color={useColorModeValue('gray.500', 'inherit')}
         // onClick={onClick}
       >
         {title}

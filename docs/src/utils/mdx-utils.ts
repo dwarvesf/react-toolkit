@@ -1,12 +1,12 @@
-import path from "path"
-import execa from "execa"
-import format from "date-fns/format"
-import fromUnixTime from "date-fns/fromUnixTime"
-import { addLeadingSlash, getEditUrl } from "@docusaurus/utils"
-import { Dict } from "@chakra-ui/utils"
-import { serialize } from "next-mdx-remote/serialize"
-import matter from "gray-matter"
-import slugger from "github-slugger"
+import path from 'path'
+import execa from 'execa'
+import format from 'date-fns/format'
+import fromUnixTime from 'date-fns/fromUnixTime'
+import { addLeadingSlash, getEditUrl } from '@docusaurus/utils'
+import { Dict } from '@chakra-ui/utils'
+import { serialize } from 'next-mdx-remote/serialize'
+import matter from 'gray-matter'
+import slugger from 'github-slugger'
 
 export async function serializeMdx(source: string) {
   const { content, data } = matter(source)
@@ -15,12 +15,12 @@ export async function serializeMdx(source: string) {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
       remarkPlugins: [
-        require("remark-autolink-headings"),
-        require("remark-emoji"),
-        require("remark-images"),
-        require("remark-slug"),
-        require("remark-toc"),
-        require("remark-unwrap-images"),
+        require('remark-autolink-headings'),
+        require('remark-emoji'),
+        require('remark-images'),
+        require('remark-slug'),
+        require('remark-toc'),
+        require('remark-unwrap-images'),
       ],
     },
     scope: data,
@@ -44,7 +44,7 @@ export async function processFrontmatter<Options extends Dict>(
   } = options
 
   // read the file path
-  const filePath = path.join(process.cwd(), "pages", mdxPath)
+  const filePath = path.join(process.cwd(), 'pages', mdxPath)
 
   // get the last edited author and date
   const lastEdited = await getLastEdited(filePath)
@@ -72,12 +72,12 @@ export async function processFrontmatter<Options extends Dict>(
 }
 
 function fileToPath(str: string) {
-  return addLeadingSlash(str.replace(".mdx", ""))
+  return addLeadingSlash(str.replace('.mdx', ''))
 }
 
 //see https://github.com/hashicorp/next-mdx-remote/issues/53#issuecomment-725906664
 export function getTableOfContents(mdxContent: string) {
-  const regexp = new RegExp(/^(### |## )(.*)\n/, "gm")
+  const regexp = new RegExp(/^(### |## )(.*)\n/, 'gm')
   // @ts-ignore
   const headings = [...mdxContent.matchAll(regexp)]
   let tableOfContents = []
@@ -85,7 +85,7 @@ export function getTableOfContents(mdxContent: string) {
   if (headings.length) {
     tableOfContents = headings.map((heading) => {
       const headingText = heading[2].trim()
-      const headingType = heading[1].trim() === "##" ? "h2" : "h3"
+      const headingType = heading[1].trim() === '##' ? 'h2' : 'h3'
       const headingLink = slugger.slug(headingText, false)
 
       return {
@@ -114,7 +114,7 @@ function getTimestampAndAuthor(str: string) {
   const dateStr = fromUnixTime(+timestamp)
 
   return {
-    date: format(dateStr, "MMMM dd, yyyy"),
+    date: format(dateStr, 'MMMM dd, yyyy'),
     author,
   }
 }
@@ -130,10 +130,10 @@ function getTimestampAndAuthor(str: string) {
  */
 async function getLastEdited(filePath: string) {
   try {
-    const { stdout } = await execa("git", [
-      "log",
-      "-1",
-      "--format=%ct, %an",
+    const { stdout } = await execa('git', [
+      'log',
+      '-1',
+      '--format=%ct, %an',
       filePath,
     ])
     return getTimestampAndAuthor(stdout)

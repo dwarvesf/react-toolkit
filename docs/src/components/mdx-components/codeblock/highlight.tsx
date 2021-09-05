@@ -1,11 +1,11 @@
-import { chakra } from "@chakra-ui/react"
+import { chakra } from '@chakra-ui/react'
 import BaseHighlight, {
   defaultProps,
   Language,
   PrismTheme,
-} from "prism-react-renderer"
-import React from "react"
-import { liveEditorStyle } from "./styles"
+} from 'prism-react-renderer'
+import React from 'react'
+import { liveEditorStyle } from './styles'
 
 const RE = /{([\d,-]+)}/
 
@@ -58,7 +58,7 @@ function Highlight({
               return (
                 <chakra.div
                   px="5"
-                  bg={shouldHighlightLine(i) ? "whiteAlpha.200" : undefined}
+                  bg={shouldHighlightLine(i) ? 'whiteAlpha.200' : undefined}
                   {...lineProps}
                 >
                   {showLines && (

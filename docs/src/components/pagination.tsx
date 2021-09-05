@@ -1,7 +1,7 @@
-import { Link, SimpleGrid, Text } from "@chakra-ui/react"
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons"
-import NextLink from "next/link"
-import React from "react"
+import { Link, SimpleGrid, Text } from '@chakra-ui/react'
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link'
+import React from 'react'
 
 export const PaginationLink = (props) => {
   const { label, href, children, ...rest } = props
@@ -10,7 +10,7 @@ export const PaginationLink = (props) => {
     <NextLink href={href} passHref>
       <Link
         _hover={{
-          textDecor: "none",
+          textDecor: 'none',
         }}
         flex="1"
         borderRadius="md"

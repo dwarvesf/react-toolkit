@@ -27,10 +27,10 @@ root of your application.
 Go to the root of your application and do this:
 
 ```jsx live=false
-import * as React from "react"
+import * as React from 'react'
 
 // 1. import `ChakraProvider` component
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App({ Component }) {
   // 2. Use at the root of your app
@@ -45,6 +45,7 @@ function App({ Component }) {
 > - For Create React App, you need to set this up in `index.js` or `index.tsx`
 
 ### Next.js
+
 <Box mt={3}>
   <AspectRatio ratio={16 / 8.84}>
     <VideoPlayer
@@ -54,9 +55,9 @@ function App({ Component }) {
       config={{
         youtube: {
           playerVars: {
-            controls: true
-          }
-        }
+            controls: true,
+          },
+        },
       }}
     />
   </AspectRatio>
@@ -66,7 +67,7 @@ Go to `pages/_app.js` or `pages/_app.tsx` (create if it doesn't exist) and add
 this:
 
 ```jsx live=false
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from '@chakra-ui/react'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -82,8 +83,8 @@ export default MyApp
 ### Gatsby
 
 Add the
-[@chakra-ui/gatsby-plugin](https://www.gatsbyjs.com/plugins/@chakra-ui/gatsby-plugin/). It
-does everything automatically for you!
+[@chakra-ui/gatsby-plugin](https://www.gatsbyjs.com/plugins/@chakra-ui/gatsby-plugin/).
+It does everything automatically for you!
 
 ```bash
 npm i @chakra-ui/gatsby-plugin
@@ -99,7 +100,7 @@ Then add the plugin to your `gatsby-config`.
 // gatsby-config.js
 
 module.exports = {
-  plugins: ["@chakra-ui/gatsby-plugin"],
+  plugins: ['@chakra-ui/gatsby-plugin'],
 }
 ```
 
@@ -113,14 +114,14 @@ with your customizations.
 
 ```jsx live=false
 // 1. Import the extendTheme function
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from '@chakra-ui/react'
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
+    900: '#1a365d',
+    800: '#153e75',
+    700: '#2a69ac',
   },
 }
 

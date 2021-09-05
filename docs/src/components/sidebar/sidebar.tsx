@@ -1,16 +1,7 @@
-import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 import sortBy from 'lodash/sortBy'
-import {
-  Badge,
-  Box,
-  Center,
-  chakra,
-  Flex,
-  Stack,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Badge, Box, chakra, Stack, useColorModeValue } from '@chakra-ui/react'
 import { Routes } from 'utils/get-route-context'
 import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
 import SidebarCategory from './sidebar-category'
@@ -90,33 +81,6 @@ export function SidebarContent(props: SidebarContentProps) {
         )
       })}
     </>
-  )
-}
-
-const MainNavLink = ({ href, icon, children }) => {
-  const { pathname } = useRouter()
-  const [, group] = href.split('/')
-  const active = pathname.includes(group)
-  const linkColor = useColorModeValue('gray.900', 'whiteAlpha.900')
-
-  return (
-    <NextLink href={href} passHref>
-      <Flex
-        as="a"
-        align="center"
-        fontSize="sm"
-        fontWeight="semibold"
-        transitionProperty="colors"
-        transitionDuration="200ms"
-        color={active ? linkColor : 'gray.500'}
-        _hover={{ color: linkColor }}
-      >
-        <Center w="6" h="6" bg="teal.400" rounded="base" mr="3">
-          {icon}
-        </Center>
-        {children}
-      </Flex>
-    </NextLink>
   )
 }
 

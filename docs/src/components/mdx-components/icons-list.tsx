@@ -1,6 +1,6 @@
-import React from "react"
-import { Grid, Button, Text, useClipboard, useToast } from "@chakra-ui/react"
-import * as icons from "@chakra-ui/icons"
+import React from 'react'
+import { Grid, Button, Text, useClipboard, useToast } from '@chakra-ui/react'
+import * as icons from '@chakra-ui/icons'
 
 const iconList = {
   AddIcon: icons.AddIcon,
@@ -81,7 +81,7 @@ const IconsList = () => {
 
           toast({
             title: `'${key}' copied to clipboard`,
-            status: "success",
+            status: 'success',
             duration: 2000,
             isClosable: false,
           })

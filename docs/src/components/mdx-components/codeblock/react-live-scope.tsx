@@ -1,10 +1,10 @@
-import React from "react"
-import * as Chakra from "@chakra-ui/react"
-import { chakra } from "@chakra-ui/react"
-import * as Icons from "@chakra-ui/icons"
-import * as Formik from "formik"
-import * as ReactTable from "react-table"
-import FocusLock from "react-focus-lock"
+import React from 'react'
+import * as Chakra from '@chakra-ui/react'
+import { chakra } from '@chakra-ui/react'
+import * as Icons from '@chakra-ui/icons'
+import * as Formik from 'formik'
+import * as ReactTable from 'react-table'
+import FocusLock from 'react-focus-lock'
 import {
   MdSettings,
   MdReceipt,
@@ -15,12 +15,12 @@ import {
   MdCall,
   MdPhone,
   MdArrowDropDown,
-} from "react-icons/md"
-import { AiOutlineUser } from "react-icons/ai"
-import { FaFacebook, FaTwitter } from "react-icons/fa"
-import Lorem from "react-lorem-component"
-import * as Loaders from "react-spinners"
-import CircleIcon from "../../docs/icon"
+} from 'react-icons/md'
+import { AiOutlineUser } from 'react-icons/ai'
+import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import Lorem from 'react-lorem-component'
+import * as Loaders from 'react-spinners'
+import CircleIcon from '../../docs/icon'
 
 const reactIcons = {
   MdSettings,

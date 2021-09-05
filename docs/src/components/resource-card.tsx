@@ -8,12 +8,12 @@ import {
   useColorModeValue,
   Wrap,
   WrapItem,
-} from "@chakra-ui/react"
-import * as React from "react"
+} from '@chakra-ui/react'
+import * as React from 'react'
 
 export interface Resource {
   heading: string
-  type: "blog" | "talk" | "video"
+  type: 'blog' | 'talk' | 'video'
   description: string
   url: string
   author: string
@@ -36,7 +36,7 @@ function ResourceCard(props: ResourceCardProps) {
             <Badge
               as="a"
               rel="tag"
-              color={useColorModeValue("teal.600", "teal.400")}
+              color={useColorModeValue('teal.600', 'teal.400')}
               textTransform="uppercase"
               fontSize="xs"
               fontWeight="bold"

@@ -115,15 +115,6 @@ export function MobileNavContent(props: MobileNavContentProps) {
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
                 </Flex>
-                <Box px="6" pb="6" pt="2" shadow={shadow}>
-                  <HStack>
-                    <NavLink href="/docs/getting-started">Docs</NavLink>
-                    <NavLink href="/guides/integrations/with-cra">
-                      Guides
-                    </NavLink>
-                    <NavLink href="/team">Team</NavLink>
-                  </HStack>
-                </Box>
               </Box>
 
               <ScrollView

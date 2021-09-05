@@ -1,8 +1,8 @@
-import { chakra, HTMLChakraProps, useColorModeValue } from "@chakra-ui/react"
-import React from "react"
+import { chakra, HTMLChakraProps, useColorModeValue } from '@chakra-ui/react'
+import React from 'react'
 
-export const Logo = (props: HTMLChakraProps<"svg">) => {
-  const fill = useColorModeValue("#2D3748", "#fff")
+export const Logo = (props: HTMLChakraProps<'svg'>) => {
+  const fill = useColorModeValue('#2D3748', '#fff')
 
   return (
     <chakra.svg
@@ -38,7 +38,7 @@ export const Logo = (props: HTMLChakraProps<"svg">) => {
   )
 }
 
-export const LogoIcon = (props: HTMLChakraProps<"svg">) => {
+export const LogoIcon = (props: HTMLChakraProps<'svg'>) => {
   return (
     <chakra.svg
       height="8"

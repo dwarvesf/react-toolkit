@@ -1,4 +1,3 @@
-import * as React from 'react'
 import PageContainer from 'components/page-container'
 import dynamic from 'next/dynamic'
 
