@@ -36,7 +36,7 @@ function OptionText(props: any) {
     const text = textToHighlight.substr(start, end - start)
     if (highlight) {
       return (
-        <Box as="mark" bg="transparent" color="teal.500">
+        <Box as="mark" bg="transparent" color="brand.500">
           {text}
         </Box>
       )

@@ -3,11 +3,10 @@ const baseUrl = 'https://github.com/dwarvesf/react-toolkit'
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Dwarvesf. All Rights Reserved.`,
   author: {
-    name: '',
-    github: '',
-    twitter: '',
-    linkedin: '',
-    email: '',
+    github: 'https://github.com/dwarvesf',
+    twitter: 'https://twitter.com/dwarvesf',
+    linkedin: 'https://www.linkedin.com/company/dwarvesf/',
+    discord: 'https://discord.com/invite/Y2vvH9rQE4',
   },
   repo: {
     url: baseUrl,
@@ -15,7 +14,7 @@ const siteConfig = {
     blobUrl: `${baseUrl}/blob/main`,
   },
   discord: {
-    url: '',
+    url: 'https://discord.com/invite/Y2vvH9rQE4',
   },
   seo: {
     title: 'React Toolkit',

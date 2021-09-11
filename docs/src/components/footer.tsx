@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Icon, Text, Stack, Link, chakra } from '@chakra-ui/react'
 import { IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io'
-import { FaYoutube } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
+import { FaDiscord } from 'react-icons/fa'
 import { DiGithubBadge } from 'react-icons/di'
+import siteConfig from 'configs/site-config'
 
 type FooterLinkProps = {
   icon?: React.ElementType
@@ -21,33 +21,28 @@ const links = [
   {
     icon: DiGithubBadge,
     label: 'GitHub',
-    href: '/',
+    href: siteConfig.author.github,
   },
   {
     icon: IoLogoTwitter,
     label: 'Twitter',
-    href: '/',
+    href: siteConfig.author.twitter,
   },
   {
     icon: IoLogoLinkedin,
     label: 'LinkedIn',
-    href: '/',
+    href: siteConfig.author.linkedin,
   },
   {
-    icon: MdEmail,
-    label: 'Email',
-    href: '/',
-  },
-  {
-    icon: FaYoutube,
-    label: 'YouTube',
-    href: '/',
+    icon: FaDiscord,
+    label: 'Discord',
+    href: siteConfig.author.github,
   },
 ]
 
 export const Footer = () => (
   <Box as="footer" mt={12} textAlign="center">
-    <Text fontSize="sm">Made with ❤️ by Dwarvesf</Text>
+    <Text fontSize="sm">Made with ❤️ by Dwarves</Text>
     <Stack mt={4} direction="row" spacing="12px" justify="center">
       {links.map((link) => (
         <FooterLink key={link.href} {...link} />

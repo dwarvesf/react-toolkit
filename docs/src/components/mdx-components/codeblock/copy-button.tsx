@@ -13,7 +13,6 @@ function CopyButton({ code, ...props }: CopyButtonProps) {
       size="sm"
       position="absolute"
       textTransform="uppercase"
-      colorScheme="teal"
       fontSize="xs"
       height="24px"
       top={0}

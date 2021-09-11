@@ -22,7 +22,7 @@ const StyledLink = React.forwardRef(function StyledLink(
       color={useColorModeValue('gray.700', 'whiteAlpha.900')}
       transition="all 0.2s"
       _activeLink={{
-        bg: useColorModeValue('brand.100', 'rgba(48, 140, 122, 0.3)'),
+        bg: useColorModeValue('brand.100', 'rgba(225, 63, 94, 0.2)'),
         color: useColorModeValue('brand.500', 'brand.100'),
         fontWeight: '600',
       }}
