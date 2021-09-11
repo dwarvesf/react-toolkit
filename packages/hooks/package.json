@@ -5,7 +5,7 @@
   "author": "Dwarves Foundation",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dwarvesf/react-sdk.git",
+    "url": "git+https://github.com/dwarvesf/react-toolkit.git",
     "directory": "packages/hooks"
   },
   "scripts": {
