@@ -1,0 +1,46 @@
+---
+title: useConstant
+package: '@dwarvesf/react-hooks'
+description: 'A React hook that creates a constant value over the lifecycle
+of a component.'
+---
+
+`useConstant` is a custom hook that creates a constant value over the lifecycle
+of a component. Even if `useMemo` is provided an empty array as its final
+argument, it doesn't offer a guarantee that it won't re-run for performance
+reasons later on. By using `useConstant` you can ensure that initialisers don't
+execute twice or more.
+
+## Import
+
+```js
+import { useConstant } from '@dwarvesf/react-hooks'
+```
+
+## Return value
+
+The `useConstant` hook returns a function that receives the element and assign
+the value to the given React refs.
+
+## Usage
+
+```jsx
+function Example({ ref, ...props }) {
+  const internalRef = React.useRef()
+  const refs = useConstant(internalRef, ref)
+
+  return (
+    <div {...props} ref={refs}>
+      A div with multiple refs.
+    </div>
+  )
+}
+```
+
+## Parameters
+
+The `useConstant` hook accepts a single value param:
+
+| Name    | Type                | Default | Description |
+| ------- | ------------------- | ------- | ----------- |
+| `value` | `any` \| `Function` | `_`     |             |

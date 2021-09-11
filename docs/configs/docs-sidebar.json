@@ -1,0 +1,90 @@
+{
+  "routes": [
+    {
+      "title": "Getting Started",
+      "heading": true,
+      "routes": [
+        {
+          "title": "Installation",
+          "path": "/getting-started"
+        },
+        {
+          "title": "Hooks",
+          "path": "/hooks"
+        },
+        {
+          "title": "Utilities",
+          "path": "/utils"
+        }
+      ]
+    },
+    {
+      "title": "Hooks",
+      "heading": true,
+      "routes": [
+        {
+          "title": "useClipboard",
+          "path": "/hooks/use-clipboard"
+        },
+        {
+          "title": "useDisclosure",
+          "path": "/hooks/use-disclosure"
+        },
+        {
+          "title": "useMergeRefs",
+          "path": "/hooks/use-merge-refs"
+        },
+        {
+          "title": "useDebounce",
+          "path": "/hooks/use-debounce"
+        },
+        {
+          "title": "useLockBodyScroll",
+          "path": "/hooks/use-lock-body-scroll"
+        },
+        {
+          "title": "useConstant",
+          "path": "/hooks/use-constant"
+        },
+        {
+          "title": "usePrevious",
+          "path": "/hooks/use-previous"
+        },
+        {
+          "title": "useWhyDidYouUpdate",
+          "path": "/hooks/use-why-did-you-update"
+        }
+      ]
+    },
+    {
+      "title": "Utilities",
+      "heading": true,
+      "routes": [
+        {
+          "title": "createContext",
+          "path": "/utils/create-context"
+        },
+        {
+          "title": "callAllHandlers",
+          "path": "/utils/call-all-handlers"
+        },
+        {
+          "title": "noop",
+          "path": "/utils/noop"
+        },
+        {
+          "title": "isSSR",
+          "path": "/utils/is-ssr"
+        },
+        {
+          "title": "truncate",
+          "path": "/utils/truncate"
+        },
+        {
+          "title": "cleanChildren",
+          "path": "/utils/clean-children"
+        }
+      ]
+    }
+  ]
+}

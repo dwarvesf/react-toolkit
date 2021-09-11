@@ -1,0 +1,36 @@
+---
+title: createContext
+package: '@dwarvesf/react-utils'
+description:
+  'A React utility helps to create React context without providing a default
+  value.'
+---
+
+`createContext` is a helper function that guards against accessing a `Context`
+whose value wasn't provided. By doing this, API instead, we never have to
+provide a default and nver have to check for `undefined`.
+
+## Import
+
+```js
+import { createContext } from '@dwarvesf/react-utils'
+```
+
+## Usage
+
+```js
+const [useCurrentUserName, CurrentUserProvider] = createContext<string>();
+
+function EnthusasticGreeting() {
+  const currentUser = useCurrentUserName();
+  return <div>HELLO {currentUser.toUpperCase()}!</div>;
+}
+
+function App() {
+  return (
+    <CurrentUserProvider value="Anders">
+      <EnthusasticGreeting />
+    </CurrentUserProvider>
+  );
+}
+```

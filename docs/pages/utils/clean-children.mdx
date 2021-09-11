@@ -1,0 +1,36 @@
+---
+title: cleanChildren
+package: '@dwarvesf/react-utils'
+description:
+  'A React utility to return a list of all valid React child elements.'
+---
+
+`cleanChildren` is a utility to get a list of all valid React child elements.
+
+## Import
+
+```js
+import { cleanChildren } from '@dwarvesf/react-utils'
+```
+
+## Return value
+
+The `cleanChildren` hook returns a list of all valid React child elements.
+
+## Usage
+
+```jsx
+function Example() {
+  function App({ children }) {
+    return <div>{cleanChildren(children)}</div>
+  }
+
+  return (
+    <App>
+      abc
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      9999
+    </App>
+  )
+}
+```

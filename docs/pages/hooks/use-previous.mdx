@@ -1,0 +1,45 @@
+---
+title: usePrevious
+package: '@dwarvesf/react-hooks'
+description: 'A React hook  stores and return the previous value from a state.'
+---
+
+`usePrevious` stores and return the previous value from a state.
+
+## Import
+
+```js
+import { usePrevious } from '@dwarvesf/react-hooks'
+```
+
+## Return value
+
+The `usePrevious` hook returns the previous value.
+
+## Usage
+
+```jsx
+function Exapmle() {
+  // State value and setter for our example
+  const [count, setCount] = useState(0)
+  // Get the previous value (was passed into hook on last render)
+  const prevCount = usePrevious(count)
+  // Display both current and previous count value
+  return (
+    <div>
+      <h1>
+        Now: {count}, before: {prevCount}
+      </h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  )
+}
+```
+
+## Parameters
+
+The `usePrevious` hook accepts a single value param:
+
+| Name    | Type  | Default | Description                                          |
+| ------- | ----- | ------- | ---------------------------------------------------- |
+| `value` | `any` | `_`     | The state that you want to store its previous value. |

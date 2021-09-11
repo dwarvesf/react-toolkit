@@ -1,0 +1,34 @@
+---
+title: callAllHandlers
+package: '@dwarvesf/react-utils'
+description: 'A helper combines multiple functions and call them at once.'
+---
+
+`callAllHandlers` is a utility that combines multiple functions and call them at
+once.
+
+## Import
+
+```js
+import { callAllHandlers } from '@dwarvesf/react-utils'
+```
+
+## Return value
+
+The `callAllHandlers` triggers all functions passed in and return `undefined`:
+
+## Usage
+
+```jsx
+function Example() {
+  function CustomButton(props) {
+    return (
+      <Button onClick={callAllHandlers(props.onClick, () => alert('2'))}>
+        Click me
+      </Button>
+    )
+  }
+
+  return <CustomButton onClick={() => alert(1)} />
+}
+```
