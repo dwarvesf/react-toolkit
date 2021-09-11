@@ -24,7 +24,8 @@
   ],
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "swr": "^1.0.0"
   },
   "dependencies": {
     "@dwarvesf/react-utils": "^0.2.0",
