@@ -7,6 +7,14 @@
         {
           "title": "Installation",
           "path": "/getting-started"
+        },
+        {
+          "title": "Hooks",
+          "path": "/hooks"
+        },
+        {
+          "title": "Utilities",
+          "path": "/utils"
         }
       ]
     },

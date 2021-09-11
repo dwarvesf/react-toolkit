@@ -14,7 +14,6 @@ import {
 import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
 import useRouteChanged from 'hooks/use-route-changed'
 import { getRoutes } from 'layouts/mdx'
-import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
@@ -80,7 +79,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
             >
               <Box>
                 <Flex justify="space-between" px="6" pt="5" pb="4">
-                  <Logo sx={{ rect: { fill: 'teal.300' } }} />
+                  <Logo sx={{ rect: { fill: 'brand.500' } }} />
                   <HStack spacing="5">
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>

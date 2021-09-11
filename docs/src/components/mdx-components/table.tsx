@@ -9,7 +9,7 @@ export const Table = (props) => (
 
 export const THead = (props) => (
   <chakra.th
-    bg={useColorModeValue('gray.50', 'whiteAlpha.100')}
+    bg={useColorModeValue('white', 'whiteAlpha.100')}
     fontWeight="semibold"
     p={2}
     fontSize="sm"

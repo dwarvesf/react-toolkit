@@ -31,7 +31,12 @@ export async function getStaticPaths() {
   })
 
   return {
-    paths: [...paths, { params: { slug: [''] } }],
+    paths: [
+      ...paths,
+      { params: { slug: [''] } },
+      { params: { slug: ['hooks'] } },
+      { params: { slug: ['utils'] } },
+    ],
     fallback: false,
   }
 }
@@ -46,7 +51,9 @@ export async function getStaticProps({ params }) {
   const page = pages.find((page) => {
     return (
       combinedPageSlug === page.slug ||
-      (combinedPageSlug === CONTENT_PATH && page.slug === '/index')
+      (combinedPageSlug === CONTENT_PATH && page.slug === '/index') ||
+      (combinedPageSlug === '/hooks' && page.slug === '/hooks/index') ||
+      (combinedPageSlug === '/utils' && page.slug === '/utils/index')
     )
   })
 
