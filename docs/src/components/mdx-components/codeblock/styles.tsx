@@ -12,5 +12,5 @@ export const liveErrorStyle: React.CSSProperties = {
   padding: '1em',
   overflowX: 'auto',
   color: 'white',
-  backgroundColor: 'red',
+  backgroundColor: '#FF5555',
 }

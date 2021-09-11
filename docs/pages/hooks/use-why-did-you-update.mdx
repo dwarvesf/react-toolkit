@@ -4,7 +4,10 @@ package: '@dwarvesf/react-hooks'
 description: ''
 ---
 
-`useWhyDidYouUpdate` is a custom hook that handles copying content to clipboard.
+`useWhyDidYouUpdate` makes it easy to see which prop changes are causing a
+component to re-render. If a function is particularly expensive to run and you
+know it renders the same results given the same props you can use the
+`React.memo` higher order component.
 
 ## Import
 
@@ -20,14 +23,46 @@ the value to the given React refs.
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
+function Example() {
+  const Counter = React.memo((props) => {
+    useWhyDidYouUpdate('Counter', props)
+    return <div style={props.style}>{props.count}</div>
+  })
 
-  return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
-    </div>
-  )
+  function App() {
+    const [count, setCount] = useState(0)
+    const [userId, setUserId] = useState(0)
+    // Our console output tells use that the style prop for <Counter> ...
+    // ... changes on every render, even when we only change userId state by ...
+    // ... clicking the "switch user" button. Oh of course! That's because the
+    // ... counterStyle object is being re-created on every render.
+    // Thanks to our hook we figured this out and realized we should probably ...
+    // ... move this object outside of the component body.
+    const counterStyle = {
+      fontSize: '3rem',
+      color: 'red',
+    }
+    return (
+      <div>
+        <div className="counter">
+          <Counter count={count} style={counterStyle} />
+          <button onClick={() => setCount(count + 1)}>Increment</button>
+        </div>
+        <div className="user">
+          <img src={`http://i.pravatar.cc/80?img=${userId}`} />
+          <button onClick={() => setUserId(userId + 1)}>Switch User</button>
+        </div>
+      </div>
+    )
+  }
+
+  return <App />
 }
 ```
+
+## Parameters
+
+| Name    | Type                  | Default | Description |
+| ------- | --------------------- | ------- | ----------- |
+| `name`  | `string`              | `_`     |             |
+| `props` | `Record<string, any>` | `_`     |             |

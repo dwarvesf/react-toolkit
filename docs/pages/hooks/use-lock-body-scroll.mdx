@@ -4,7 +4,9 @@ package: '@dwarvesf/react-hooks'
 description: ''
 ---
 
-`useLockBodyScroll` is a custom hook that handles copying content to clipboard.
+`useLockBodyScroll` is a custom hook that prevent your users from being able to
+scroll the body of your page while a particular component is absolutely
+positioned over your page (think modal or full-screen mobile menu).
 
 ## Import
 
@@ -12,22 +14,54 @@ description: ''
 import { useLockBodyScroll } from '@dwarvesf/react-hooks'
 ```
 
-## Return value
-
-The `useMergeRefs` hook returns a function that receives the element and assign
-the value to the given React refs.
-
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
+function Example() {
+  function Modal({ title, content, onClose }) {
+    // Call hook to lock body scroll
+    useLockBodyScroll()
+    return (
+      <div
+        style={{
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          zIndex: 9999,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          position: 'absolute',
+        }}
+        onClick={onClose}
+      >
+        <div style={{ backgroundColor: 'white', padding: '30px' }}>
+          <h2>{title}</h2>
+          <p>{content}</p>
+        </div>
+      </div>
+    )
+  }
 
-  return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
-    </div>
-  )
+  function App() {
+    // State for our modal
+    const [modalOpen, setModalOpen] = useState(false)
+    return (
+      <div>
+        <button onClick={() => setModalOpen(true)}>Show Modal</button>
+        {modalOpen && (
+          <Modal
+            title="Try scrolling"
+            content="I bet you you can't! Muahahaha 😈"
+            onClose={() => setModalOpen(false)}
+          />
+        )}
+      </div>
+    )
+  }
+
+  return <App />
 }
 ```

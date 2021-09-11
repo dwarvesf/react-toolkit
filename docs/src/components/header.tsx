@@ -60,44 +60,46 @@ function HeaderContent() {
         </Flex>
 
         <Flex
-          justify="flex-end"
+          justify={['flex-end', 'space-between']}
           w="100%"
           align="center"
           color="gray.400"
           maxW="1100px"
         >
           <Search />
-          <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
-            <Link
-              isExternal
-              aria-label="Go to React Toolkit GitHub page"
-              href={siteConfig.repo.url}
-            >
-              <Icon
-                as={GithubIcon}
-                display="block"
-                transition="color 0.2s"
-                w="5"
-                h="5"
-                _hover={{ color: 'gray.600' }}
-              />
-            </Link>
-          </HStack>
-          <IconButton
-            size="md"
-            fontSize="lg"
-            aria-label={`Switch to ${text} mode`}
-            variant="ghost"
-            color="current"
-            ml={{ base: '0', md: '3' }}
-            onClick={toggleMode}
-            icon={<SwitchIcon />}
-          />
-          <MobileNavButton
-            ref={mobileNavBtnRef}
-            aria-label="Open Menu"
-            onClick={mobileNav.onOpen}
-          />
+          <Flex justifyItems={'flex-end'}>
+            <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
+              <Link
+                isExternal
+                aria-label="Go to React Toolkit GitHub page"
+                href={siteConfig.repo.url}
+              >
+                <Icon
+                  as={GithubIcon}
+                  display="block"
+                  transition="color 0.2s"
+                  w="5"
+                  h="5"
+                  _hover={{ color: 'gray.600' }}
+                />
+              </Link>
+            </HStack>
+            <IconButton
+              size="md"
+              fontSize="lg"
+              aria-label={`Switch to ${text} mode`}
+              variant="ghost"
+              color="current"
+              ml={{ base: '0', md: '3' }}
+              onClick={toggleMode}
+              icon={<SwitchIcon />}
+            />
+            <MobileNavButton
+              ref={mobileNavBtnRef}
+              aria-label="Open Menu"
+              onClick={mobileNav.onOpen}
+            />
+          </Flex>
         </Flex>
       </Flex>
       <MobileNavContent isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />

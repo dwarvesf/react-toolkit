@@ -45,6 +45,7 @@ export const SearchButton = React.forwardRef(function SearchButton(
       outline="0"
       _focus={{ shadow: 'outline' }}
       shadow="base"
+      maxW="768px"
       rounded="md"
       aria-label="Search the docs"
       {...props}

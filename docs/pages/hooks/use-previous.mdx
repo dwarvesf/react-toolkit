@@ -4,7 +4,7 @@ package: '@dwarvesf/react-hooks'
 description: ''
 ---
 
-`usePrevious` is a custom hook that handles copying content to clipboard.
+`usePrevious` stores and return the previous value from a state.
 
 ## Import
 
@@ -14,20 +14,30 @@ import { usePrevious } from '@dwarvesf/react-hooks'
 
 ## Return value
 
-The `useMergeRefs` hook returns a function that receives the element and assign
-the value to the given React refs.
+The `usePrevious` hook returns the previous value.
 
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
-
+function Exapmle() {
+  // State value and setter for our example
+  const [count, setCount] = useState(0)
+  // Get the previous value (was passed into hook on last render)
+  const prevCount = usePrevious(count)
+  // Display both current and previous count value
   return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
+    <div>
+      <h1>
+        Now: {count}, before: {prevCount}
+      </h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
   )
 }
 ```
+
+## Parameters
+
+| Name    | Type  | Default | Description                                          |
+| ------- | ----- | ------- | ---------------------------------------------------- |
+| `value` | `any` | `_`     | The state that you want to store its previous value. |
