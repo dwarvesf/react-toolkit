@@ -21,7 +21,7 @@ const siteConfig = {
     title: 'React Toolkit',
     titleTemplate: '%s - React Toolkit',
     description:
-      'Simple, Modular and Accessible UI Components for your React Applications.',
+      'Simple, Modular React Hooks and Utilities to build robust React applications.',
     siteUrl: '',
     twitter: {
       handle: '@dwarvesf',
@@ -34,21 +34,15 @@ const siteConfig = {
       url: '',
       title: 'React Toolkit',
       description:
-        'Simple, Modular and Accessible UI Components for your React Applications.',
+        'Simple, Modular React Hooks and Utilities to build robust React applications.',
       site_name:
-        'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
+        'React Toolkit: Simple, Modular React Hooks and Utilities to build robust React applications.',
       images: [
         {
-          url: '/og-image.png',
+          url: '/thumbnail.jpeg',
           width: 1240,
           height: 480,
-          alt: 'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
-        },
-        {
-          url: '/twitter-og-image.png',
-          width: 1012,
-          height: 506,
-          alt: 'React Toolkit: Simple, Modular and Accessible UI Components for your React Applications.',
+          alt: 'React Toolkit: Simple, Modular React Hooks and Utilities to build robust React applications.',
         },
       ],
     },
