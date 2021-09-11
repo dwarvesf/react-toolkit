@@ -1,5 +1,18 @@
 # @dwarvesf/react-hooks
 
+## 0.3.0
+
+### Minor Changes
+
+- [#19](https://github.com/dwarvesf/react-toolkit/pull/19)
+  [`0e46298`](https://github.com/dwarvesf/react-toolkit/commit/0e462985b74b7464efb3d1f3410a0705c2170358)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add
+  `useFetchWithCache`.
+
+* [`266edbc`](https://github.com/dwarvesf/react-toolkit/commit/266edbc3aaee2382cf04d77fa7abfbaaf11ace75)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add `useFetch` and
+  `useAsyncEffect`.
+
 ## 0.2.1
 
 ### Patch Changes
