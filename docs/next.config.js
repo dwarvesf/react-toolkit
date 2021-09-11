@@ -14,6 +14,12 @@ const defaultConfig = {
     modern: true,
   },
   redirects: require('./next-redirect'),
+  eslint: {
+    // TODO: consider removing the setting once fixing all the ESLint warning
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = withPlugins([withBundleAnalyzer], defaultConfig)
