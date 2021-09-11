@@ -1,10 +1,12 @@
 ---
 title: useDebounce
 package: '@dwarvesf/react-hooks'
-description: ''
+description: 'A custom hook that allows you to debounce any fast changing
+value.'
 ---
 
-`useDebounce` is a custom hook that handles copying content to clipboard.
+`useDebounce` is a custom hook that allows you to debounce any fast changing
+value.
 
 ## Import
 
@@ -14,50 +16,88 @@ import { useDebounce } from '@dwarvesf/react-hooks'
 
 ## Return value
 
-The `useMergeRefs` hook returns a function that receives the element and assign
-the value to the given React refs.
+The `useDebounce` hook returns the result of the last func invocation. Note that
+it will return `undefined` if there are no previous invocations.
 
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
+function Example() {
+  // Usage
+  function App() {
+    // State and setters for ...
+    // Search term
+    const [searchTerm, setSearchTerm] = useState('')
+    // API search results
+    const [results, setResults] = useState([])
+    // Searching status (whether there is pending API request)
+    const [isSearching, setIsSearching] = useState(false)
+    // Debounce search term so that it only gives us latest value ...
+    // ... if searchTerm has not been updated within last 500ms.
+    // The goal is to only have the API call fire when user stops typing ...
+    // ... so that we aren't hitting our API rapidly.
+    const debouncedSearchTerm = useDebounce(searchTerm, 500)
+    // Effect for API call
+    useEffect(
+      () => {
+        if (debouncedSearchTerm) {
+          setIsSearching(true)
+          searchCharacters(debouncedSearchTerm).then((results) => {
+            setIsSearching(false)
+            setResults(results)
+          })
+        } else {
+          setResults([])
+          setIsSearching(false)
+        }
+      },
+      [debouncedSearchTerm], // Only call effect if debounced search term changes
+    )
+    return (
+      <Stack direction="column" spacing="10px">
+        <Input
+          placeholder="Search repositories"
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        {isSearching && <Spinner size="sm" />}
+        {results.length > 0 && (
+          <Box>
+            <UnorderedList pr="20px">
+              {results.map((result) => (
+                <ListItem key={result.id}>{result.name}</ListItem>
+              ))}
+            </UnorderedList>
+          </Box>
+        )}
+      </Stack>
+    )
+  }
+  // API search function
+  function searchCharacters(search) {
+    const apiKey = 'f9dfb1e8d466d36c27850bedd2047687'
+    return fetch(
+      `https://api.github.com/search/repositories?per_page=5&q=${search}`,
+      {
+        method: 'GET',
+      },
+    )
+      .then((r) => r.json())
+      .then((r) => r.items)
+      .catch((error) => {
+        console.error(error)
+        return []
+      })
+  }
 
-  return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
-    </div>
-  )
+  return <App />
 }
 ```
 
-### Usage combining with another Chakra-UI hooks
+## Parameters
 
-```jsx
-function Example({ ref, ...props }) {
-  const outsideRef = React.useRef()
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const { popperRef, referenceRef } = usePopper()
+The `useDebounce` hook accepts following params:
 
-  useOutsideClick({
-    ref: outsideRef,
-    handler: () => isOpen && onClose(),
-  })
-
-  const buttonEl = useMergeRefs(outsideRef, referenceRef)
-
-  return (
-    <>
-      <button ref={buttonEl} onClick={onOpen}>
-        Click me to see the popover
-      </button>
-      {isOpen && (
-        <Box ref={popperRef} bg="green">
-          Click outside to close me
-        </Box>
-      )}
-    </>
-  )
-}
-```
+| Name    | Type     | Default | Description                     |
+| ------- | -------- | ------- | ------------------------------- |
+| `value` | `any`    | `_`     |                                 |
+| `delay` | `number` | `_`     | The delay time in milliseconds. |

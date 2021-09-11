@@ -1,7 +1,8 @@
 ---
 title: useConstant
 package: '@dwarvesf/react-hooks'
-description: ''
+description: 'A custom hook that creates a constant value over the lifecycle
+of a component.'
 ---
 
 `useConstant` is a custom hook that creates a constant value over the lifecycle
@@ -18,7 +19,7 @@ import { useConstant } from '@dwarvesf/react-hooks'
 
 ## Return value
 
-The `useMergeRefs` hook returns a function that receives the element and assign
+The `useConstant` hook returns a function that receives the element and assign
 the value to the given React refs.
 
 ## Usage
@@ -26,7 +27,7 @@ the value to the given React refs.
 ```jsx
 function Example({ ref, ...props }) {
   const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
+  const refs = useConstant(internalRef, ref)
 
   return (
     <div {...props} ref={refs}>
@@ -37,6 +38,8 @@ function Example({ ref, ...props }) {
 ```
 
 ## Parameters
+
+The `useConstant` hook accepts a single value param:
 
 | Name    | Type                | Default | Description |
 | ------- | ------------------- | ------- | ----------- |
