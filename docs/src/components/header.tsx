@@ -61,7 +61,7 @@ function HeaderContent() {
               display="block"
               aria-label="React Toolkit, Back to homepage"
             >
-              <Logo display={{ base: 'none', md: 'block' }} />
+              <Logo display={{ base: 'none', md: 'block' }} width="34px" />
               <Box minW="3rem" display={{ base: 'block', md: 'none' }}>
                 <Logo />
               </Box>

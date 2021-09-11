@@ -14,6 +14,7 @@ function CopyButton({ code, ...props }: CopyButtonProps) {
       position="absolute"
       textTransform="uppercase"
       fontSize="xs"
+      textColor="white"
       height="24px"
       top={0}
       zIndex="1"

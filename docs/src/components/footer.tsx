@@ -42,7 +42,12 @@ const links = [
 
 export const Footer = () => (
   <Box as="footer" mt={12} textAlign="center">
-    <Text fontSize="sm">Made with ❤️ by Dwarves</Text>
+    <Text fontSize="sm">
+      Made with ❤️ by{' '}
+      <Link target="_blank" color="brand.500" href={siteConfig.author.site}>
+        Dwarves Foundation
+      </Link>
+    </Text>
     <Stack mt={4} direction="row" spacing="12px" justify="center">
       {links.map((link) => (
         <FooterLink key={link.href} {...link} />

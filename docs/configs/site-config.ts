@@ -3,6 +3,7 @@ const baseUrl = 'https://github.com/dwarvesf/react-toolkit'
 const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Dwarvesf. All Rights Reserved.`,
   author: {
+    site: 'https://dwarves.foundation/',
     github: 'https://github.com/dwarvesf',
     twitter: 'https://twitter.com/dwarvesf',
     linkedin: 'https://www.linkedin.com/company/dwarvesf/',
