@@ -1,11 +1,14 @@
 ---
 title: createContext
 package: '@dwarvesf/react-utils'
-description: ''
+description:
+  'A React utility helps to create React context without providing a default
+  value.'
 ---
 
-`createContext` is a custom hook used to merge several react refs into a single
-one.
+`createContext` is a helper function that guards against accessing a `Context`
+whose value wasn't provided. By doing this, API instead, we never have to
+provide a default and nver have to check for `undefined`.
 
 ## Import
 
@@ -13,52 +16,21 @@ one.
 import { createContext } from '@dwarvesf/react-utils'
 ```
 
-## Return value
-
-The `useClipboard` hook returns an object with the following fields:
-
-| Name        | Type       | Default | Description                              |
-| ----------- | ---------- | ------- | ---------------------------------------- |
-| `value`     | `string`   |         | The copied value.                        |
-| `onCopy`    | `function` |         | Callback function to copy content.       |
-| `hasCopied` | `boolean`  | `false` | If `true`, the content has been copied . |
-
-## Import
-
-```js
-import { useClipboard } from '@chakra-ui/react'
-```
-
 ## Usage
 
-```jsx
-function Example() {
-  const [value, setValue] = React.useState('Hello world')
-  const { hasCopied, onCopy } = useClipboard(value)
+```js
+const [useCurrentUserName, CurrentUserProvider] = createContext<string>();
 
+function EnthusasticGreeting() {
+  const currentUser = useCurrentUserName();
+  return <div>HELLO {currentUser.toUpperCase()}!</div>;
+}
+
+function App() {
   return (
-    <>
-      <Flex mb={2}>
-        <Input value={value} isReadOnly placeholder="Welcome" />
-        <Button onClick={onCopy} ml={2}>
-          {hasCopied ? 'Copied' : 'Copy'}
-        </Button>
-      </Flex>
-      <Editable placeholder="Paste here">
-        <EditablePreview width="100%" />
-        <EditableInput />
-      </Editable>
-    </>
-  )
+    <CurrentUserProvider value="Anders">
+      <EnthusasticGreeting />
+    </CurrentUserProvider>
+  );
 }
 ```
-
-## Parameters
-
-The `createContext()`:
-
-| Name     | Type      | Default | Description |
-| -------- | --------- | ------- | ----------- |
-| `str`    | `string`  | `_`     |             |
-| `max`    | `number`  | `_`     |             |
-| `middle` | `boolean` | `false` |             |

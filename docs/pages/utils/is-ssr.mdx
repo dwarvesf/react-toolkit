@@ -4,7 +4,8 @@ package: '@dwarvesf/react-utils'
 description: ''
 ---
 
-`isSSR` is a utility to
+`isSSR` is a utility to distingush between server environment and client
+environment.
 
 ## Import
 
@@ -12,10 +13,15 @@ description: ''
 import { isSSR } from '@dwarvesf/react-utils'
 ```
 
+## Return value
+
+This method returns `true` if the function is invoked in a browser and returns
+`false` if it is invoked in a server.
+
 ## Usage
 
 ```js
 if (isSSR()) {
-  // do something
+  /// do something
 }
 ```

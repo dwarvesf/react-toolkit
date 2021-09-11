@@ -1,11 +1,11 @@
 ---
 title: cleanChildren
 package: '@dwarvesf/react-utils'
-description: ''
+description:
+  'A React utility to return a list of all valid React child elements.'
 ---
 
-`cleanChildren` is a custom hook used to merge several react refs into a single
-one.
+`cleanChildren` is a utility to get a list of all valid React child elements.
 
 ## Import
 
@@ -15,50 +15,22 @@ import { cleanChildren } from '@dwarvesf/react-utils'
 
 ## Return value
 
-The `useMergeRefs` hook returns a function that receives the element and assign
-the value to the given React refs.
+The `cleanChildren` hook returns a list of all valid React child elements.
 
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useMergeRefs(internalRef, ref)
+function Example() {
+  function App({ children }) {
+    return <div>{cleanChildren(children)}</div>
+  }
 
   return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
-    </div>
-  )
-}
-```
-
-### Usage combining with another Chakra-UI hooks
-
-```jsx
-function Example({ ref, ...props }) {
-  const outsideRef = React.useRef()
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const { popperRef, referenceRef } = usePopper()
-
-  useOutsideClick({
-    ref: outsideRef,
-    handler: () => isOpen && onClose(),
-  })
-
-  const buttonEl = useMergeRefs(outsideRef, referenceRef)
-
-  return (
-    <>
-      <button ref={buttonEl} onClick={onOpen}>
-        Click me to see the popover
-      </button>
-      {isOpen && (
-        <Box ref={popperRef} bg="green">
-          Click outside to close me
-        </Box>
-      )}
-    </>
+    <App>
+      abc
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      9999
+    </App>
   )
 }
 ```

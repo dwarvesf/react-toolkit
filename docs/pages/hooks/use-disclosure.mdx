@@ -1,10 +1,13 @@
 ---
 title: useDisclosure
 package: '@dwarvesf/react-hooks'
-description: ''
+description:
+  'React hook to handle common open and close scenarios in UI components'
 ---
 
-`useDisclosure` is a custom hook that handles copying content to clipboard.
+`useDisclosure` is a custom hook used to help handle common open, close, or
+toggle scenarios. It can be used to control feedback component such as Modal,
+AlertDialog, Drawer.
 
 ## Import
 
@@ -52,5 +55,13 @@ function Example() {
 
 The `useDisclosure` hook accepts an optional object with the following
 properties:
+
+| Name            | Type         | Default | Description |
+| --------------- | ------------ | ------- | ----------- |
+| `defaultIsOpen` | `boolean`    | `false` |             |
+| `id`            | `string`     | `_`     |             |
+| `isOpen`        | `boolean`    | `_`     |             |
+| `onClose`       | `() => void` | `_`     |             |
+| `onOpen`        | `() => void` | `_`     |             |
 
 <PropsTable of="useDisclosure" />
