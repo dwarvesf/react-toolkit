@@ -1,5 +1,19 @@
 [
   {
+    "content": "Getting Started",
+    "id": "85424d72-5239-4f7f-80de-d8cac23a31ca",
+    "type": "lvl1",
+    "url": "/getting-started",
+    "hierarchy": { "lvl1": "Getting Started" }
+  },
+  {
+    "content": "Installation",
+    "id": "8a42s72-5239-4f7f-80de-d8cac23a31ca",
+    "type": "lvl2",
+    "url": "/getting-started#installation",
+    "hierarchy": { "lvl1": "Getting Started", "lvl2": "Installation" }
+  },
+  {
     "content": "useDisclosure",
     "id": "85424d72-58c9-4f7f-80de-d8cac23a31ca",
     "type": "lvl1",
