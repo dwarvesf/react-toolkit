@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "clean": "rimraf .next .mdx-data",
     "analyze": "ANALYZE=true next build"

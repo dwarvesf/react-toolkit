@@ -12,3 +12,4 @@ yarn.lock
 yalc.lock
 
 .next
+out
