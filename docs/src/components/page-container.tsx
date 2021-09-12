@@ -8,7 +8,6 @@ import Header from 'components/header'
 import SEO from 'components/seo'
 import TableOfContent from 'components/table-of-content'
 import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
-import PageTransition from './page-transition'
 
 function useHeadingFocusOnRouteChange() {
   const router = useRouter()
@@ -69,7 +68,7 @@ function PageContainer(props: PageContainerProps) {
                   px={{ base: '4', sm: '6', xl: '8' }}
                   pt="10"
                 >
-                  <PageTransition style={{ maxWidth: '48rem' }}>
+                  <Box style={{ maxWidth: '48rem' }}>
                     <chakra.h1 tabIndex={-1} outline={0} apply="mdx.h1">
                       {convertBackticksToInlineCode(title)}
                     </chakra.h1>
@@ -86,7 +85,7 @@ function PageContainer(props: PageContainerProps) {
                     <Box pb="20">
                       <Footer />
                     </Box>
-                  </PageTransition>
+                  </Box>
                 </Box>
                 <TableOfContent
                   visibility={headings.length === 0 ? 'hidden' : 'initial'}

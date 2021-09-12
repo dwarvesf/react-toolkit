@@ -25,15 +25,13 @@ the value to the given React refs.
 ## Usage
 
 ```jsx
-function Example({ ref, ...props }) {
-  const internalRef = React.useRef()
-  const refs = useConstant(internalRef, ref)
+function Example() {
+  const value = useConstant(() => {
+    // heavy computation
+    return 0
+  })
 
-  return (
-    <div {...props} ref={refs}>
-      A div with multiple refs.
-    </div>
-  )
+  return <p>{value}</p>
 }
 ```
 
