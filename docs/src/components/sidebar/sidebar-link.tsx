@@ -50,7 +50,7 @@ const SidebarLink = (props: SidebarLinkProps) => {
       lineHeight="1.5rem"
       {...rest}
     >
-      <NextLink href={href} passHref>
+      <NextLink href={href} prefetch={false} passHref>
         <StyledLink isActive={isActive}>{children}</StyledLink>
       </NextLink>
     </chakra.div>
