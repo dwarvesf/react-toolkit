@@ -1,10 +1,19 @@
-# Contributing to the
+# Contributing to the React Toolkit
 
 Thanks for taking the time to contribute !
 
 When it comes to open source, there are different ways you can contribute, all
 of which are valuable. Here's a few guidelines that should help you as you
 prepare your contribution.
+
+## Code of Conduct
+
+Radix has adopted the
+[Contributor Covenant](https://www.contributor-covenant.org/) as its Code of
+Conduct, and we expect project participants to adhere to it.
+
+Please read [the full text](/CODE_OF_CONDUCT.md) so that you can understand what
+actions will and will not be tolerated.
 
 ## Setup the Project
 

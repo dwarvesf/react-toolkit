@@ -1,5 +1,7 @@
 # Dwarvesf React Toolkit
 
+A library of React hooks and utilities for building robust React applications.
+
 ## Packages
 
 There are 3 packages by default:
@@ -15,3 +17,12 @@ yarn install
 
 This will install all dependencies in each project, build them, and symlink them
 via Lerna
+
+## Documentation
+
+For full documentation, visit
+[react.toolkit.d.foundation](https://react.toolkit.d.foundation/).
+
+## Contributing
+
+Pelase follow our [contributing guidelines](/CONTRIBUTING.md).
