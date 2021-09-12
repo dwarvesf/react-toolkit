@@ -6,6 +6,7 @@
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@manypkg/cli": "^0.18.0",
     "@testing-library/react-hooks": "^7.0.1",
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
@@ -60,7 +61,11 @@
     "docs": "yarn workspace @dwarvesf/react-toolkit-docs",
     "docs:build": "yarn search-meta:gen && yarn docs build",
     "docs:dev": "yarn docs dev",
-    "search-meta:gen": "ts-node scripts/get-search-meta.ts"
+    "search-meta:gen": "ts-node scripts/get-search-meta.ts",
+    "pkg": "manypkg run",
+    "check:pkgs": "manypkg check",
+    "fix:pkgs": "manypkg fix",
+    "boot": "yarn prestart && yarn build"
   },
   "husky": {
     "hooks": {

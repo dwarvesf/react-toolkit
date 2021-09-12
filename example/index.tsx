@@ -1,12 +1,18 @@
-import 'react-app-polyfill/ie11'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Slug } from '@dwarvesf/react-hooks'
+import { useClipboard } from '@dwarvesf/react-hooks'
 
 const App = () => {
+  const { value, hasCopied, onCopy } = useClipboard('hello worldzz')
   return (
     <div data-test-id="zop">
-      <Slug message="hello worldzz" />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <p>{value}</p>
+        <button onClick={onCopy} style={{ marginLeft: '5px' }}>
+          {hasCopied ? 'Copied' : 'Click to copy'}
+        </button>
+      </div>
+      <input placeholder="Paste your copied content here" />
     </div>
   )
 }
