@@ -12,22 +12,18 @@ export default function useFetch<Data = any, Error = any>(
   const isFirstLoading = data === null && error === null
   const [isLoading, setIsLoading] = useState(true)
 
-  useAsyncEffect(
-    async () => {
-      setIsLoading(true)
-      try {
-        const data = await fetcher()
-        setData(data)
-        setError(null)
-      } catch (error) {
-        setError(error as Error)
-      } finally {
-        setIsLoading(false)
-      }
-    },
-    null,
-    deps,
-  )
+  useAsyncEffect(async () => {
+    setIsLoading(true)
+    try {
+      const data = await fetcher()
+      setData(data)
+      setError(null)
+    } catch (error) {
+      setError(error as Error)
+    } finally {
+      setIsLoading(false)
+    }
+  }, deps)
 
   return { data, error, isFirstLoading, isLoading }
 }

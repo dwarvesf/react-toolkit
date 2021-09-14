@@ -1,15 +1,25 @@
 import { useEffect } from 'react'
 
 export default function useAsyncEffect<Data = any>(
-  effect: (isMounted: () => boolean) => Data | Promise<Data>,
-  destroy: null | ((result?: Data) => void),
-  inputs: any[] = [],
+  callback: (isMounted: () => boolean) => Data | Promise<Data>,
+  onDestroyOrDependencies: null | ((result?: Data) => void) | any[] = [],
+  dependencies: any[] = [],
 ) {
+  let deps: any[]
+  let destroy: (result?: Data) => void
+
+  if (typeof onDestroyOrDependencies === 'function') {
+    destroy = onDestroyOrDependencies
+    deps = dependencies
+  } else {
+    deps = onDestroyOrDependencies || []
+  }
+
   useEffect(() => {
     let result: Data
     let mounted = true
 
-    const maybePromise = effect(() => {
+    const maybePromise = callback(() => {
       return mounted
     })
 
@@ -25,5 +35,5 @@ export default function useAsyncEffect<Data = any>(
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, inputs)
+  }, deps)
 }
