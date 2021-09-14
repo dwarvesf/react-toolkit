@@ -2065,15 +2065,6 @@
     resolve-pathname "^3.0.0"
     tslib "^2.2.0"
 
-"@dwarvesf/react-hooks@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@dwarvesf/react-hooks/-/react-hooks-0.2.1.tgz#7669082e41c6234ef4d49d7dc5e8a3526f33d593"
-  integrity sha512-7zA/ltahera+SBRnj+3OwhnHO+Zt8yFo/KSUJPvwhKXBiwDJ4r5aRyX3pwCYTMoGmZmlyLebO8FIR+vmmLjDyw==
-  dependencies:
-    "@dwarvesf/react-utils" "^0.2.0"
-    copy-to-clipboard "^3.3.1"
-    tslib "^2.3.0"
-
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.3.0.tgz#3a16850ba04d8d9651f07f3fb674b3436a4fb9d7"
