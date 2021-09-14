@@ -1,5 +1,19 @@
 # @dwarvesf/react-hooks
 
+## 0.3.1
+
+### Patch Changes
+
+- [`da06c2f`](https://github.com/dwarvesf/react-toolkit/commit/da06c2f0c584b4c122743765a6790517cdd5cab3)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Make `destroy` from
+  useAsyncEffect optional and the second argument now can be a dependency array
+  as well:
+
+  ```js
+  useAsyncEffect(callback, dependencies?)
+  useAsyncEffect(callback, onDestroy, dependencies?)
+  ```
+
 ## 0.3.0
 
 ### Minor Changes
