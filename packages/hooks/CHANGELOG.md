@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.4.0
+
+### Minor Changes
+
+- [`e7a1787`](https://github.com/dwarvesf/react-toolkit/commit/e7a17875bbf7fbf580a13a5aff6ff742d3f3a941)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Remove useFetch and
+  useFetchWithCache
+
 ## 0.3.1
 
 ### Patch Changes
