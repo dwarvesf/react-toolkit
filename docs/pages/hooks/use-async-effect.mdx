@@ -1,0 +1,68 @@
+---
+title: useAsyncEffect
+package: '@dwarvesf/react-hooks'
+description: 'A React hook handles asynchronous side effects.'
+---
+
+`useAsyncEffect` is an custom hook for handling asynchronous side effects.
+
+## Import
+
+```js
+import { useAsyncEffect } from '@dwarvesf/react-hooks'
+```
+
+## Usage
+
+Basic mount/unmount
+
+```js
+useAsyncEffect(
+  async () => console.log('mount'),
+  () => console.log('unmount'),
+  [],
+)
+```
+
+Omitting destroy
+
+```js
+useAsyncEffect(async () => console.log('mount'), [])
+```
+
+Handle effect result in destroy
+
+```js
+useAsyncEffect(
+  () => fetch('url'),
+  (result) => console.log(result),
+)
+```
+
+Making sure it's still mounted before updating component state
+
+```js
+useAsyncEffect(
+  async (isMounted) => {
+    const data = await fetch(`/users/${id}`).then((res) => res.json())
+    if (!isMounted()) return
+    setUser(data)
+  },
+  [id],
+)
+```
+
+## Parameters
+
+The API is the same as React's `useEffect`, except for some notable difference:
+
+```js
+useAsyncEffect(callback, dependencies?)
+useAsyncEffect(callback, onDestroy, dependencies?)
+```
+
+| Name           | Type                                                  | Default | Description                                                                                          |
+| -------------- | ----------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| `callback`     | `(isMounted?:() => boolean) => Data \| Promise<Data>` | `_`     | The async callback that receieves a single function to check whether the component is still mounted. |
+| `onDestroy`    | `(result?: Data) => void`                             | `_`     | The callback is called when the component is unmounted.                                              |
+| `dependencies` | `any[]`                                               | `_`     | The dependencies array that will re-run the effect when the values within the array change.          |

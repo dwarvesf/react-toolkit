@@ -51,6 +51,10 @@
           "path": "/hooks/use-previous"
         },
         {
+          "title": "useAsyncEffect",
+          "path": "/hooks/use-async-effect"
+        },
+        {
           "title": "useWhyDidYouUpdate",
           "path": "/hooks/use-why-did-you-update"
         }
