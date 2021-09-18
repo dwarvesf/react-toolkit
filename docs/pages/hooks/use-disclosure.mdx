@@ -56,10 +56,8 @@ function Example() {
 The `useDisclosure` hook accepts an optional object with the following
 properties:
 
-| Name            | Type         | Default | Description |
-| --------------- | ------------ | ------- | ----------- |
-| `defaultIsOpen` | `boolean`    | `false` |             |
-| `id`            | `string`     | `_`     |             |
-| `isOpen`        | `boolean`    | `_`     |             |
-| `onClose`       | `() => void` | `_`     |             |
-| `onOpen`        | `() => void` | `_`     |             |
+| Name            | Type         | Default | Description                                       |
+| --------------- | ------------ | ------- | ------------------------------------------------- |
+| `defaultIsOpen` | `boolean`    | `false` | The default value.                                |
+| `onClose`       | `() => void` | `_`     | The callback when the `isOpen` is set to `false`. |
+| `onOpen`        | `() => void` | `_`     | The callback when the `isOpen` is set to `true`.  |

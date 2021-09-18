@@ -43,6 +43,10 @@
           "path": "/hooks/use-lock-body-scroll"
         },
         {
+          "title": "useMedia",
+          "path": "/hooks/use-media"
+        },
+        {
           "title": "useConstant",
           "path": "/hooks/use-constant"
         },

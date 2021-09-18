@@ -1,0 +1,49 @@
+---
+title: useMedia
+package: '@dwarvesf/react-hooks'
+description:
+  'A React hook makes it easy to utilize media queries in your component logic.'
+---
+
+`useMedia` is an custom hook for utilizing media queries in your component
+logic.
+
+## Import
+
+```js
+import { useMedia } from '@dwarvesf/react-hooks'
+```
+
+## Usage
+
+```jsx
+function Example() {
+  const columnCount = useMedia(
+    ['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'],
+    [5, 4, 3],
+    2,
+  )
+  return <div>Resize your browser window: {columnCount}</div>
+}
+```
+
+```jsx
+function Example() {
+  const isMobile = useMedia(['(max-width: 512px)'], [true], false)
+  return <div>{isMobile ? 'Mobile view' : 'Desktop view'}</div>
+}
+```
+
+## Parameters
+
+The `useDisclosure` hook accepts an list of following paramesters:
+
+```js
+useMedia(queries, values, defaultValue)
+```
+
+| Name           | Type       | Default | Description                                                        |
+| -------------- | ---------- | ------- | ------------------------------------------------------------------ |
+| `queries`      | `string[]` | `_`     | The list of media queries.                                         |
+| `values`       | `any[]`    | `_`     | The values relate to the list of media queries by array index.     |
+| `defaultValue` | `any`      | `_`     | The default value if none of the values matches the media queries. |

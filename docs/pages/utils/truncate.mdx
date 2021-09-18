@@ -31,10 +31,14 @@ function Example() {
 
 ## Parameters
 
-The `truncate(str, max, middle)`:
+The `truncate` method accepts an list of following paramesters:
 
-| Name     | Type      | Default | Description |
-| -------- | --------- | ------- | ----------- |
-| `str`    | `string`  | `_`     |             |
-| `max`    | `number`  | `_`     |             |
-| `middle` | `boolean` | `false` |             |
+```js
+truncate(str, max, middle)
+```
+
+| Name     | Type      | Default | Description                                                               |
+| -------- | --------- | ------- | ------------------------------------------------------------------------- |
+| `str`    | `string`  | `_`     | The string to truncate.                                                   |
+| `max`    | `number`  | `_`     | The maximum string length.                                                |
+| `middle` | `boolean` | `false` | Whether to put `...` in the middle or at the end of the truncated string. |
