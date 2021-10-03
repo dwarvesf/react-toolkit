@@ -19,7 +19,7 @@ import { createContext } from '@dwarvesf/react-utils'
 ## Usage
 
 ```js
-const [useCurrentUserName, CurrentUserProvider] = createContext<string>();
+const [CurrentUserProvider, useCurrentUserName] = createContext<string>({});
 
 function EnthusasticGreeting() {
   const currentUser = useCurrentUserName();
