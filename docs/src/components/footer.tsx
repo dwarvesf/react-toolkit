@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Icon, Text, Stack, Link, chakra } from '@chakra-ui/react'
+import { Box, Icon, Text, Stack, Link } from '@chakra-ui/react'
 import { IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io'
 import { FaDiscord } from 'react-icons/fa'
 import { DiGithubBadge } from 'react-icons/di'
@@ -36,7 +36,7 @@ const links = [
   {
     icon: FaDiscord,
     label: 'Discord',
-    href: siteConfig.author.github,
+    href: siteConfig.author.discord,
   },
 ]
 

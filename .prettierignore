@@ -4,3 +4,5 @@ coverage
 .next
 build
 CHANGELOG.md
+out
+.cache
