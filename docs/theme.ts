@@ -7,6 +7,18 @@ const customTheme = extendTheme({
       100: '#FDEDF0',
       500: '#E13F5E',
     },
+    gray: {
+      100: '#F8F8F8',
+      200: '#EEEEEE',
+      300: '#dddddd',
+      400: '#9b9b9b',
+      600: '#272c34',
+      700: '#1f242e',
+      800: '#14171e',
+    },
+  },
+  shadows: {
+    outline: 'rgba(225, 63, 94, 0.25) 0px 0px 0px 3px',
   },
   fonts: {
     heading: 'Inter, sans-serif',
