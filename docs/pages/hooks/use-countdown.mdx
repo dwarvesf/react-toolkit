@@ -1,0 +1,71 @@
+---
+title: useCountdown
+package: '@dwarvesf/react-hooks'
+description: 'A React hook that creates a countdown timer.'
+---
+
+`useCountdown` is a React hook that creates a countdown to allow for easy display of e.g product launch on ecommerce sites.
+
+## Import
+
+```js
+import { useCountdown } from '@dwarvesf/react-hooks'
+```
+
+## Return value
+
+The `useCountdown` hook returns an object with a shape of:
+```ts
+{
+  seconds: number,
+  minutes: number,
+  hours: number,
+  days: number,
+  done: boolean
+}
+```
+
+## Usage
+
+### Normal timer (reset on refresh)
+
+```jsx
+function Example() {
+  const value = useCountdown(60000)
+
+  useEffect(() => {
+    if(value.done) {
+      console.log('Done!')
+    }
+  }, [value.done])
+
+  return <Code>{JSON.stringify(value, null, 4)}</Code>
+}
+```
+
+### Fixed date (countdown)
+
+```jsx
+function Example() {
+  // Jan 15th 2030, 06:00 AM
+  const future = new Date(2030, 0, 15, 6, 0, 0);
+  const value = useCountdown(future);
+
+  return <Flex flexDirection="column" justifyContent="center" textAlign="center"><p>
+    <span>{value.days}</span> days
+    <span>{value.hours}</span> hours
+    <span>{value.minutes}</span> minutes
+    <span>{value.seconds}</span> seconds
+  </p>
+  <p>until product launch</p>
+  </Flex>
+}
+```
+
+## Parameters
+
+The `useCountdown` hook accepts a single value param:
+
+| Name    | Type               | Default | Description                                 |
+| ------- | ------------------ | ------- | ------------------------------------------- |
+| `input` | `number` \| `Date` | `_`     | The numer to set the timer or a fixed date. |

@@ -27,6 +27,10 @@
           "path": "/hooks/use-clipboard"
         },
         {
+          "title": "useCountdown",
+          "path": "/hooks/use-countdown"
+        },
+        {
           "title": "useDisclosure",
           "path": "/hooks/use-disclosure"
         },
