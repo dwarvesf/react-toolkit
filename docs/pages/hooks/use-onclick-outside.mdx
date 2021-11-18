@@ -1,0 +1,80 @@
+---
+title: useOnClickOutside
+package: '@dwarvesf/react-hooks'
+description:
+  'A React hook allows you to detect clicks outside of a specified element.'
+---
+
+`useOnClickOutside` is a custom hook that allows you to detect clicks outside of
+a specified element. In the example below we use it to close a modal when any
+element outside of the modal is clicked. By abstracting this logic out into a
+hook we can easily use it across all of our components that need this kind of
+functionality (dropdown menus, tooltips, etc)
+
+## Import
+
+```js
+import { useOnClickOutside } from '@dwarvesf/react-hooks'
+```
+
+## Usage
+
+```jsx
+function Example() {
+  function Modal({ title, content, onClose }) {
+    const ref = React.useRef(null)
+    // Call hook to lock body scroll
+    useOnClickOutside(ref, onClose)
+    return (
+      <div
+        style={{
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          zIndex: 9999,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          position: 'absolute',
+        }}
+      >
+        <div style={{ backgroundColor: 'white', padding: '30px' }} ref={ref}>
+          <h2>{title}</h2>
+          <p>{content}</p>
+        </div>
+      </div>
+    )
+  }
+
+  function App() {
+    // State for our modal
+    const [modalOpen, setModalOpen] = useState(false)
+    return (
+      <div>
+        <button onClick={() => setModalOpen(true)}>Show Modal</button>
+        {modalOpen && (
+          <Modal
+            title="Try clicking outside"
+            content="The modal should be closed 😎"
+            onClose={() => setModalOpen(false)}
+          />
+        )}
+      </div>
+    )
+  }
+
+  return <App />
+}
+```
+
+## Parameters
+
+The `useOnClickOutside` hook accepts an optional object with the following
+properties:
+
+| Name       | Type              | Default | Description                                     |
+| ---------- | ----------------- | ------- | ----------------------------------------------- |
+| `ref`      | `React.RefObject` | `_`     | The ref of the element.                         |
+| `callback` | `(event) => void` | `_`     | The callback when clicking outside the element. |

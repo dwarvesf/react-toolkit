@@ -43,6 +43,10 @@
           "path": "/hooks/use-lock-body-scroll"
         },
         {
+          "title": "useOnClickOutside",
+          "path": "/hooks/use-onclick-outside"
+        },
+        {
           "title": "useMedia",
           "path": "/hooks/use-media"
         },
