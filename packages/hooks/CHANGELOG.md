@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.5.0
+
+### Minor Changes
+
+- [#27](https://github.com/dwarvesf/react-toolkit/pull/27)
+  [`4873f81`](https://github.com/dwarvesf/react-toolkit/commit/4873f81ed44b88aee71424f78246eb6fd57af186)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Add onClickOutside hook
+
 ## 0.4.0
 
 ### Minor Changes
