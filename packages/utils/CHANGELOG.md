@@ -1,5 +1,13 @@
 # @dwarvesf/react-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- [#29](https://github.com/dwarvesf/react-toolkit/pull/29)
+  [`4ceb7a6`](https://github.com/dwarvesf/react-toolkit/commit/4ceb7a6d6c26c99d003f9d7643c94811d9282c88)
+  Thanks [@tuanddd](https://github.com/tuanddd)! - Add maskChar as option
+
 ## 0.2.1
 
 ### Patch Changes
