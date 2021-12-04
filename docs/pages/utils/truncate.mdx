@@ -29,6 +29,20 @@ function Example() {
 }
 ```
 
+## Masking character
+
+Alternatively, you can use other character instead of `"."`, for example `"*"`:
+
+```jsx
+function Example() {
+  return (
+    <Stack>
+      <Box>{truncate('Lorem ipsum dolor sit amet', 10, true, "*")}</Box>
+    </Stack>
+  )
+}
+```
+
 ## Parameters
 
 The `truncate` method accepts an list of following paramesters:
@@ -37,8 +51,9 @@ The `truncate` method accepts an list of following paramesters:
 truncate(str, max, middle)
 ```
 
-| Name     | Type      | Default | Description                                                               |
-| -------- | --------- | ------- | ------------------------------------------------------------------------- |
-| `str`    | `string`  | `_`     | The string to truncate.                                                   |
-| `max`    | `number`  | `_`     | The maximum string length.                                                |
-| `middle` | `boolean` | `false` | Whether to put `...` in the middle or at the end of the truncated string. |
+| Name       | Type      | Default | Description                                                               |
+| ---------- | --------- | ------- | ------------------------------------------------------------------------- |
+| `str`      | `string`  | `_`     | The string to truncate.                                                   |
+| `max`      | `number`  | `_`     | The maximum string length.                                                |
+| `middle`   | `boolean` | `false` | Whether to put `...` in the middle or at the end of the truncated string. |
+| `maskChar` | `string`  | `"."`   | What to use as the masking character when truncating.                     |
