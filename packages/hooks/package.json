@@ -1,6 +1,6 @@
 {
   "name": "@dwarvesf/react-hooks",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Official React hooks for @dwarvesf",
   "author": "Dwarves Foundation",
   "repository": {
@@ -27,7 +27,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@dwarvesf/react-utils": "^0.2.0",
+    "@dwarvesf/react-utils": "^0.3.0",
     "copy-to-clipboard": "^3.3.1",
     "tslib": "^2.3.0"
   },
