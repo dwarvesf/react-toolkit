@@ -65,6 +65,10 @@
         {
           "title": "useWhyDidYouUpdate",
           "path": "/hooks/use-why-did-you-update"
+        },
+        {
+          "title": "useHasMounted",
+          "path": "/hooks/use-has-mounted"
         }
       ]
     },
