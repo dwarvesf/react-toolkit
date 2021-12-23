@@ -1,5 +1,17 @@
 # @dwarvesf/react-toolkit-docs
 
+## 0.1.1
+
+### Patch Changes
+
+- [#32](https://github.com/dwarvesf/react-toolkit/pull/32)
+  [`56d68c3`](https://github.com/dwarvesf/react-toolkit/commit/56d68c39c57d951be7a6aa5a9e972c0f630a9199)
+  Thanks [@trankhacvy](https://github.com/trankhacvy)! - add useHasMounted hook
+
+- Updated dependencies
+  [[`56d68c3`](https://github.com/dwarvesf/react-toolkit/commit/56d68c39c57d951be7a6aa5a9e972c0f630a9199)]:
+  - @dwarvesf/react-hooks@0.6.0
+
 ## 0.1.0
 
 ### Minor Changes
