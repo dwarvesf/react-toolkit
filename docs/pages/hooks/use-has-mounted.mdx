@@ -1,0 +1,31 @@
+---
+title: useHasMounted
+package: '@dwarvesf/react-hooks'
+description: 'Lifecycle hook checking if a component has mounted yet'
+---
+
+Lifecycle hook providing ability to check component's mount state. Returns
+`true` if component mounted and `false` otherwise.
+
+## Import
+
+```js
+import { useHasMounted } from '@dwarvesf/react-hooks'
+```
+
+## Return value
+
+Returns `true` if component mounted and `false` otherwise.
+
+## Usage
+
+```jsx
+function Example() {
+  const hasMounted = useHasMounted()
+
+  if (!hasMounted) {
+    return null
+  }
+  return <p>My component</p>
+}
+```
