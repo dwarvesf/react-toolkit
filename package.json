@@ -7,12 +7,12 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "start": "lerna run start --stream --parallel",
-    "test": "lerna run test --",
+    "start": "nx run-many --target=start --all --parallel",
+    "test": "nx run-many --target=test --all",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "lerna run build",
-    "prepublish": "lerna run prepublish",
+    "build": "nx run-many --target=build --all",
+    "prepublish": "nx run-many --target=prepublish --all",
     "start:app": "yarn run build && yarn --cwd example && yarn --cwd example start",
     "changeset": "changeset",
     "release": "changeset publish",
@@ -84,6 +84,10 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@testing-library/react": "^12.1.0"
+    "@testing-library/react": "^12.1.0",
+    "@nrwl/workspace": "latest",
+    "@nrwl/cli": "latest",
+    "@nrwl/tao": "latest",
+    "@nrwl/nx-cloud": "latest"
   }
 }

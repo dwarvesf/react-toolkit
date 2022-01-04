@@ -1,0 +1,36 @@
+{
+  "extends": "@nrwl/workspace/presets/npm.json",
+  "npmScope": "dwarvesf-react-toolkit",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"],
+        "accessToken": "MzIzNjY4YTQtM2NkZC00NDQ5LWEyNTMtNGI3MTVmMTk3ZTk3fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "prepare": [
+      {
+        "target": "prepare",
+        "projects": "dependencies"
+      }
+    ],
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "affected": {
+    "defaultBase": "master"
+  }
+}
