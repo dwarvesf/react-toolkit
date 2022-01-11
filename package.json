@@ -7,12 +7,11 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "start": "lerna run start --stream --parallel",
-    "test": "lerna run test --",
+    "dev": "turbo run dev --parallel --no-cache",
+    "test": "turbo run test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "lerna run build",
-    "prepublish": "lerna run prepublish",
+    "build": "turbo run build",
     "start:app": "yarn run build && yarn --cwd example && yarn --cwd example start",
     "changeset": "changeset",
     "release": "changeset publish",
@@ -20,9 +19,8 @@
     "release:canary": "changeset publish --tag canary",
     "format": "prettier -c --write \"*/**\"",
     "postinstall": "husky install",
-    "docs": "yarn workspace @dwarvesf/react-toolkit-docs",
-    "docs:build": "yarn search-meta:gen && yarn docs build",
-    "docs:dev": "yarn docs dev",
+    "docs:build": "yarn search-meta:gen && turbo run build --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
+    "docs:dev": "turbo run dev --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
     "search-meta:gen": "ts-node scripts/get-search-meta.ts",
     "pkg": "manypkg run",
     "check:pkgs": "manypkg check",
@@ -84,6 +82,27 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@testing-library/react": "^12.1.0"
+    "@testing-library/react": "^12.1.0",
+    "turbo": "^1.0.24"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".next/**",
+          "out/**"
+        ]
+      },
+      "test": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
   }
 }
