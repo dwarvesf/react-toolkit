@@ -8,7 +8,7 @@
   "scripts": {
     "lerna": "lerna",
     "dev": "turbo run dev --parallel --no-cache",
-    "test": "turbo run test",
+    "test": "lerna run test --",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "turbo run build",
