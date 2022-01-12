@@ -12,6 +12,7 @@
     "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
     "test": "tsdx test",
+    "test:ci": "tsdx test --ci --coverage",
     "lint": "tsdx lint"
   },
   "main": "dist/index.js",
