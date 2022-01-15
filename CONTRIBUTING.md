@@ -37,7 +37,7 @@ cd react-toolkit
 In one terminal, run tsdx watch in parallel:
 
 ```sh
-yarn start
+yarn dev
 ```
 
 This builds each package to `<packages>/<package>/dist` and runs the project in
