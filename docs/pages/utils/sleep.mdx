@@ -1,0 +1,48 @@
+---
+title: sleep
+package: '@dwarvesf/react-utils'
+description: 'A helper to delay execution for a specific duration.'
+---
+
+`sleep` is a utility to delay execution for a specific duration.
+
+## Import
+
+```js
+import { sleep } from "@dwarvesf/react-utils";
+```
+
+## Return value
+
+This method returns a promise that will resolve after X ms has passed.
+
+## Usage
+
+```jsx
+function Example() {
+  const [state, setState] = useState('Click me and I'll change after 5 seconds!!')
+
+  const onClick = async () => {
+    await sleep(5000);
+    setState('Tada!')
+  }
+
+  return (
+    <Stack>
+      <Button onClick={onClick}>{state}</Button>
+    </Stack>
+  )
+}
+```
+
+## Parameters
+
+The `sleep` method accepts a time parameter in miliseconds:
+
+```js
+sleep(time);
+```
+
+| Name   | Type     | Default | Description                                     |
+| ------ | -------- | ------- | ----------------------------------------------- |
+| `time` | `number` | `_`     | The time to wait for before continue execution. |
