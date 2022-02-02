@@ -1,5 +1,18 @@
 # @dwarvesf/react-hooks
 
+## 0.6.2
+
+### Patch Changes
+
+- [#37](https://github.com/dwarvesf/react-toolkit/pull/37)
+  [`abffce6`](https://github.com/dwarvesf/react-toolkit/commit/abffce61719c0d123df365b767379fd4bb09692b)
+  Thanks [@tuanddd](https://github.com/tuanddd)! - Add missing `prepublish`
+  script that causes no build ouput on release
+
+- Updated dependencies
+  [[`abffce6`](https://github.com/dwarvesf/react-toolkit/commit/abffce61719c0d123df365b767379fd4bb09692b)]:
+  - @dwarvesf/react-utils@0.4.1
+
 ## 0.6.1
 
 ### Patch Changes
