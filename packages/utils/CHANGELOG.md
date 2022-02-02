@@ -1,5 +1,14 @@
 # @dwarvesf/react-utils
 
+## 0.4.0
+
+### Minor Changes
+
+- [#35](https://github.com/dwarvesf/react-toolkit/pull/35)
+  [`f1516e1`](https://github.com/dwarvesf/react-toolkit/commit/f1516e15473687ab4000c3336ee1706a1ecb8c11)
+  Thanks [@tuanddd](https://github.com/tuanddd)! - Add `sleep` function to
+  utility package
+
 ## 0.3.0
 
 ### Minor Changes

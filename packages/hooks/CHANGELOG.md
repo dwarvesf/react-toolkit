@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.6.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`f1516e1`](https://github.com/dwarvesf/react-toolkit/commit/f1516e15473687ab4000c3336ee1706a1ecb8c11)]:
+  - @dwarvesf/react-utils@0.4.0
+
 ## 0.6.0
 
 ### Minor Changes
