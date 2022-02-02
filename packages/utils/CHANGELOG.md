@@ -1,5 +1,14 @@
 # @dwarvesf/react-utils
 
+## 0.4.1
+
+### Patch Changes
+
+- [#37](https://github.com/dwarvesf/react-toolkit/pull/37)
+  [`abffce6`](https://github.com/dwarvesf/react-toolkit/commit/abffce61719c0d123df365b767379fd4bb09692b)
+  Thanks [@tuanddd](https://github.com/tuanddd)! - Add missing `prepublish`
+  script that causes no build ouput on release
+
 ## 0.4.0
 
 ### Minor Changes
