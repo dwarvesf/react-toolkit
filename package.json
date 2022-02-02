@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "turbo run build",
+    "prepublish": "yarn run build",
     "start:app": "yarn run build && yarn --cwd example && yarn --cwd example start",
     "changeset": "changeset",
     "release": "changeset publish",
