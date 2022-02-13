@@ -1,0 +1,75 @@
+---
+title: usePagination
+package: '@dwarvesf/react-hooks'
+description: 'A React hook that provides methods for manipulating pages'
+---
+
+`usePagination` is a custom hook that provides methods for manipulating pages.
+
+## Import
+
+```js
+import { usePagination } from "@dwarvesf/react-hooks";
+```
+
+## Return value
+
+The `usePagination` hook returns the result in the shape of below:
+
+```ts
+{
+  page: number
+  // go to next page, optionally taking a boolean param to decide whether to go the last page immediately
+  next: (toLast?: boolean) => void
+  // back to previous page, optionally taking a boolean param to decide whether to go back to page 1 immediately
+  back: (toFirst?: boolean) => void
+  // jump to a specific page
+  go: (page: number) => void
+  hasNextPage: boolean
+  hasPreviousPage: boolean
+  totalPage: number
+  pageSize: number
+}
+```
+
+## Usage
+
+```jsx
+function Example() {
+  const { page, totalPage, next, back, go, hasNextPage, hasPreviousPage } = usePagination({
+    pageSize: 2,
+    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  });
+
+  return (
+    <ul style={{listStyleType: 'none'}}>
+      <li>Page: {page}</li>
+      <li>Total page: {totalPage}</li>
+      <li>Has next page: {String(hasNextPage)}</li>
+      <li>Has previous page: {String(hasPreviousPage)}</li>
+      <li>
+        <button onClick={() => next(true)}>go to last page</button>
+      </li>
+      <li>
+        <button onClick={() => back(true)}>go to first page</button>
+      </li>
+      <li>
+        <button onClick={() => next()}>next page</button>
+      </li>
+      <li>
+        <button onClick={() => back()}>previous page</button>
+      </li>
+    </ul>
+  );
+}
+```
+
+## Parameters
+
+The `usepagination` hook accepts a param of below shape:
+
+| Name        | Type         | Default | Description                    |
+| ----------- | ------------ | ------- | ------------------------------ |
+| `pageSize`  | `number`     | `_`     |                                |
+| `data`      | `Array<any>` |         | Used to calculate `totalPage`. |
+| `totalPage` | `number`     |         | Override `data` is provided.   |
