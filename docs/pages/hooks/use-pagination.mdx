@@ -1,10 +1,10 @@
 ---
 title: usePagination
 package: '@dwarvesf/react-hooks'
-description: 'A React hook that provides methods for manipulating pages'
+description: 'A React hook that manages pagination state'
 ---
 
-`usePagination` is a custom hook that provides methods for manipulating pages.
+`usePagination` is a custom hook that provides methods for managing pagination state.
 
 ## Import
 
@@ -18,6 +18,9 @@ The `usePagination` hook returns the result in the shape of below:
 
 ```ts
 {
+  totalPage: number
+  pageSize: number
+  // initial value, but changing it will update the hook's `currentPage` return value
   page: number
   // go to next page, optionally taking a boolean param to decide whether to go the last page immediately
   next: (toLast?: boolean) => void
@@ -27,8 +30,6 @@ The `usePagination` hook returns the result in the shape of below:
   go: (page: number) => void
   hasNextPage: boolean
   hasPreviousPage: boolean
-  totalPage: number
-  pageSize: number
 }
 ```
 
@@ -36,14 +37,15 @@ The `usePagination` hook returns the result in the shape of below:
 
 ```jsx
 function Example() {
-  const { page, totalPage, next, back, go, hasNextPage, hasPreviousPage } = usePagination({
+  const { currentPage, totalPage, next, back, go, hasNextPage, hasPreviousPage } = usePagination({
     pageSize: 2,
-    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    page: 1,
+    totalPage: 6
   });
 
   return (
     <ul style={{listStyleType: 'none'}}>
-      <li>Page: {page}</li>
+      <li>Page: {currentPage}</li>
       <li>Total page: {totalPage}</li>
       <li>Has next page: {String(hasNextPage)}</li>
       <li>Has previous page: {String(hasPreviousPage)}</li>
@@ -66,10 +68,10 @@ function Example() {
 
 ## Parameters
 
-The `usepagination` hook accepts a param of below shape:
+The `usePagination` hook accepts a param of below shape:
 
 | Name        | Type         | Default | Description                    |
 | ----------- | ------------ | ------- | ------------------------------ |
 | `pageSize`  | `number`     | `_`     |                                |
-| `data`      | `Array<any>` |         | Used to calculate `totalPage`. |
-| `totalPage` | `number`     |         | Override `data` is provided.   |
+| `totalPage` | `number`     |         |    |
+| `currentPage` | `number`     |         |  |

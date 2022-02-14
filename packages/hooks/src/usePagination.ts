@@ -1,21 +1,15 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 
-type UsePaginationParamsCaseOne = {
-  totalPage: number
-}
-
-type UsePaginationParamsCaseTwo = {
-  data: Array<any>
-}
-
-type OneOf = UsePaginationParamsCaseOne | UsePaginationParamsCaseTwo
-
-export type UsePaginationParams = OneOf & {
+export type UsePaginationParams = {
   pageSize: number
+  totalPage: number
+  page: number
 }
 
 export type UsePaginationResult = {
-  page: number
+  totalPage: number
+  pageSize: number
+  currentPage: number
   // go to next page, optionally taking a boolean param to decide whether to go the last page immediately
   next: (toLast?: boolean) => void
   // back to previous page, optionally taking a boolean param to decide whether to go back to page 1 immediately
@@ -24,28 +18,25 @@ export type UsePaginationResult = {
   go: (page: number) => void
   hasNextPage: boolean
   hasPreviousPage: boolean
-  totalPage: number
-  pageSize: number
 }
 
 /**
  * React hook that provides method for manipulating pages
  *
- * @param pageSize Required, the page's size
- * @param data Optional if `totalPage` is present, an array of elements, this is used to calculate total page, will be ignored if `totalPage` is provided
- * @param totalPage Optional if `data` is present, if this is provided, `data` param is ignored
+ * @param pageSize Required
+ * @param page Required
+ * @param totalPage Required
  */
 export default function usePagination(
   params: UsePaginationParams,
 ): UsePaginationResult {
-  const { pageSize } = params
+  const { pageSize, totalPage, page: _page } = params
 
-  const totalPage =
-    'totalPage' in params
-      ? params.totalPage
-      : Math.max(Math.ceil(params.data.length / pageSize), 1)
+  const [page, setPage] = useState(_page)
 
-  const [page, setPage] = useState(1)
+  useEffect(() => {
+    setPage(params.page)
+  }, [params.page])
 
   const hasNextPage = useMemo(() => page + 1 <= totalPage, [page, totalPage])
   const hasPreviousPage = useMemo(() => page - 1 >= 1, [page])
@@ -86,7 +77,7 @@ export default function usePagination(
   )
 
   return {
-    page,
+    currentPage: page,
     pageSize,
     totalPage,
     hasNextPage,
