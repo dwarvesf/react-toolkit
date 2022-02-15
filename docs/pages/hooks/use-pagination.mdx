@@ -1,0 +1,77 @@
+---
+title: usePagination
+package: '@dwarvesf/react-hooks'
+description: 'A React hook that manages pagination state'
+---
+
+`usePagination` is a custom hook that provides methods for managing pagination state.
+
+## Import
+
+```js
+import { usePagination } from "@dwarvesf/react-hooks";
+```
+
+## Return value
+
+The `usePagination` hook returns the result in the shape of below:
+
+```ts
+{
+  totalPage: number
+  pageSize: number
+  // initial value, but changing it will update the hook's `currentPage` return value
+  page: number
+  // go to next page, optionally taking a boolean param to decide whether to go the last page immediately
+  next: (toLast?: boolean) => void
+  // back to previous page, optionally taking a boolean param to decide whether to go back to page 1 immediately
+  back: (toFirst?: boolean) => void
+  // jump to a specific page
+  go: (page: number) => void
+  hasNextPage: boolean
+  hasPreviousPage: boolean
+}
+```
+
+## Usage
+
+```jsx
+function Example() {
+  const { currentPage, totalPage, next, back, go, hasNextPage, hasPreviousPage } = usePagination({
+    pageSize: 2,
+    page: 1,
+    totalPage: 6
+  });
+
+  return (
+    <ul style={{listStyleType: 'none'}}>
+      <li>Page: {currentPage}</li>
+      <li>Total page: {totalPage}</li>
+      <li>Has next page: {String(hasNextPage)}</li>
+      <li>Has previous page: {String(hasPreviousPage)}</li>
+      <li>
+        <button onClick={() => next(true)}>go to last page</button>
+      </li>
+      <li>
+        <button onClick={() => back(true)}>go to first page</button>
+      </li>
+      <li>
+        <button onClick={() => next()}>next page</button>
+      </li>
+      <li>
+        <button onClick={() => back()}>previous page</button>
+      </li>
+    </ul>
+  );
+}
+```
+
+## Parameters
+
+The `usePagination` hook accepts a param of below shape:
+
+| Name        | Type         | Default | Description                    |
+| ----------- | ------------ | ------- | ------------------------------ |
+| `pageSize`  | `number`     | `_`     |                                |
+| `totalPage` | `number`     |         |    |
+| `currentPage` | `number`     |         |  |
