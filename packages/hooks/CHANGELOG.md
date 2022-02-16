@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.7.0
+
+### Minor Changes
+
+- [#39](https://github.com/dwarvesf/react-toolkit/pull/39)
+  [`d4774a9`](https://github.com/dwarvesf/react-toolkit/commit/d4774a969704ce0b012c0c0b455d756d1de75cd7)
+  Thanks [@tuanddd](https://github.com/tuanddd)! - Add `usePagination` hook
+
 ## 0.6.2
 
 ### Patch Changes
