@@ -30,7 +30,7 @@ cd react-toolkit
 ```
 
 3. Setup all the dependencies and packages by running `yarn prestart`. This
-   command will install dependencies and bootstrap the repo using `lerna`
+   command will install dependencies and bootstrap the repo using `turborepo`
 
 ## Development workflow
 
@@ -47,7 +47,7 @@ terminal.
 
 ### Tooling
 
-- [Lerna](https://lerna.js.org/) to manage installation of dependencies and
+- [Turbo](https://turborepo.org/) to manage installation of dependencies and
   running various scripts. We also have yarn workspaces enabled by default.
 - [Testing Library](https://testing-library.com/) for testing components and
   hooks
@@ -64,7 +64,7 @@ You can play with local packages in the Parcel-powered example/playground.
 yarn start:app
 ```
 
-This will start the example/playground on `localhost:1234`. If you have lerna
+This will start the example/playground on `localhost:1234`. If you have Turbo
 running watch in parallel mode in one terminal, and then you run parcel, your
 playground will hot reload when you make changes to any imported module whose
 source is inside of `packages/*/src/*`. Note that to accomplish this, each
