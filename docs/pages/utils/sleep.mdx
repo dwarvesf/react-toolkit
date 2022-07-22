@@ -9,7 +9,7 @@ description: 'A helper to delay execution for a specific duration.'
 ## Import
 
 ```js
-import { sleep } from "@dwarvesf/react-utils";
+import { sleep } from '@dwarvesf/react-utils'
 ```
 
 ## Return value
@@ -18,12 +18,14 @@ This method returns a promise that will resolve after X ms has passed.
 
 ## Usage
 
-```jsx
+```js
 function Example() {
-  const [state, setState] = useState('Click me and I'll change after 5 seconds!!')
+  const [state, setState] = useState(
+    "Click me and I'll change after 5 seconds!!",
+  )
 
   const onClick = async () => {
-    await sleep(5000);
+    await sleep(5000)
     setState('Tada!')
   }
 
@@ -40,7 +42,7 @@ function Example() {
 The `sleep` method accepts a time parameter in miliseconds:
 
 ```js
-sleep(time);
+sleep(time)
 ```
 
 | Name   | Type     | Default | Description                                     |
