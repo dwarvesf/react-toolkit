@@ -103,6 +103,10 @@
         {
           "title": "cleanChildren",
           "path": "/utils/clean-children"
+        },
+        {
+          "title": "sleep",
+          "path": "/utils/sleep"
         }
       ]
     }
