@@ -6,7 +6,6 @@
     "docs"
   ],
   "scripts": {
-    "lerna": "lerna",
     "dev": "turbo run dev --parallel --no-cache",
     "test": "turbo run test --parallel",
     "test:ci": "turbo run test:ci --parallel",
@@ -84,29 +83,6 @@
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.0",
-    "turbo": "^1.0.24"
-  },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**",
-          "out/**"
-        ]
-      },
-      "test": {
-        "outputs": []
-      },
-      "test:ci": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+    "turbo": "1.8.8"
   }
 }
