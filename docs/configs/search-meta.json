@@ -1,14 +1,14 @@
 [
   {
     "content": "Getting Started",
-    "id": "add9056f-a353-4ec5-bf15-75dfb121981f",
+    "id": "d497c3e7-255b-4cc8-ac74-11a1328dd0a4",
     "type": "lvl1",
     "url": "/getting-started",
     "hierarchy": { "lvl1": "Getting Started" }
   },
   {
     "content": "Installation",
-    "id": "aa37a35e-121d-4b5a-bdd5-7231c8436bf2",
+    "id": "158c02cd-0b6e-4c4c-91ea-9c9efdac21d6",
     "type": "lvl2",
     "url": "/getting-started#installation",
     "hierarchy": {
@@ -19,7 +19,7 @@
   },
   {
     "content": "React Hooks",
-    "id": "470d6ddc-64f5-407a-9ce3-ded680286518",
+    "id": "60d522a0-df51-45a5-b8c2-e7aa51c85d64",
     "type": "lvl3",
     "url": "/getting-started#react-hooks",
     "hierarchy": {
@@ -30,7 +30,7 @@
   },
   {
     "content": "React Utilities",
-    "id": "499afea7-1f19-4985-a91d-74d7ee288102",
+    "id": "2dfc14fc-36ff-4ceb-9583-577b45989a81",
     "type": "lvl3",
     "url": "/getting-started#react-utilities",
     "hierarchy": {
@@ -41,49 +41,49 @@
   },
   {
     "content": "React Hooks",
-    "id": "13f18434-a45f-4c6c-88a9-0fa4b516d3bd",
+    "id": "e09619d6-7954-49e9-9d77-6b50bb570194",
     "type": "lvl1",
     "url": "/hooks/",
     "hierarchy": { "lvl1": "React Hooks" }
   },
   {
     "content": "Installation",
-    "id": "5669a3ce-69cd-4977-895f-8d328f795fdf",
+    "id": "48e28509-3c84-4581-b9c9-50180b1e1bff",
     "type": "lvl2",
     "url": "/hooks/#installation",
     "hierarchy": { "lvl1": "React Hooks", "lvl2": "Installation", "lvl3": null }
   },
   {
     "content": "Import",
-    "id": "28d19c97-85c3-4146-b565-97f4966114ea",
+    "id": "873227b0-48e2-4409-bcf1-e42890ddd4fe",
     "type": "lvl2",
     "url": "/hooks/#import",
     "hierarchy": { "lvl1": "React Hooks", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "useAsyncEffect",
-    "id": "ac83041e-fca7-4545-96ac-d494a5e6208e",
+    "id": "3b089430-b969-44ce-9198-4c654295f699",
     "type": "lvl1",
     "url": "/hooks/use-async-effect",
     "hierarchy": { "lvl1": "useAsyncEffect" }
   },
   {
     "content": "Import",
-    "id": "758005d6-a82e-4a65-863a-abd2becb1240",
+    "id": "4fc3b6be-b711-491a-8315-ddca555e3389",
     "type": "lvl2",
     "url": "/hooks/use-async-effect#import",
     "hierarchy": { "lvl1": "useAsyncEffect", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "d345b468-df3e-4c42-aeaa-6de85b0480cd",
+    "id": "8714adc9-2d8b-47de-b9ab-5b3d67afd4ef",
     "type": "lvl2",
     "url": "/hooks/use-async-effect#usage",
     "hierarchy": { "lvl1": "useAsyncEffect", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "30bcbb8e-17c1-42f0-9930-89197daf0ffe",
+    "id": "60503300-443b-4703-832a-b39b3738dded",
     "type": "lvl2",
     "url": "/hooks/use-async-effect#parameters",
     "hierarchy": {
@@ -94,21 +94,21 @@
   },
   {
     "content": "useClipboard",
-    "id": "b963abad-1a13-4425-be7b-a642c8f5b56a",
+    "id": "fa4b1233-449d-4ae6-a8c7-2e3e4081ee18",
     "type": "lvl1",
     "url": "/hooks/use-clipboard",
     "hierarchy": { "lvl1": "useClipboard" }
   },
   {
     "content": "Import",
-    "id": "d8a2edee-d1f4-44c9-ad38-2636ed8cef18",
+    "id": "ee905c64-af4e-4de8-8241-d09e2ad94768",
     "type": "lvl2",
     "url": "/hooks/use-clipboard#import",
     "hierarchy": { "lvl1": "useClipboard", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "806122a4-4a7d-4b9e-bb44-a57ae5b94072",
+    "id": "bac77655-0c70-45b9-9c2a-9f447e94df39",
     "type": "lvl2",
     "url": "/hooks/use-clipboard#return-value",
     "hierarchy": {
@@ -119,105 +119,105 @@
   },
   {
     "content": "Usage",
-    "id": "0603f700-a0b2-48df-b3fd-cb73436dba71",
+    "id": "5c96b89b-4fca-4f49-9bef-9ae7afbdf61d",
     "type": "lvl2",
     "url": "/hooks/use-clipboard#usage",
     "hierarchy": { "lvl1": "useClipboard", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "129ef76d-a834-47c9-abee-06f00930ba8f",
+    "id": "3645c6fb-d45e-46e4-9b69-e3cc4573eaf8",
     "type": "lvl2",
     "url": "/hooks/use-clipboard#parameters",
     "hierarchy": { "lvl1": "useClipboard", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useConstant",
-    "id": "f89b1c49-f4f5-4aed-852c-a6bcd2eb09b7",
+    "id": "af214bc5-b8e5-43e9-a866-e53e5997a109",
     "type": "lvl1",
     "url": "/hooks/use-constant",
     "hierarchy": { "lvl1": "useConstant" }
   },
   {
     "content": "Import",
-    "id": "ee5a670e-c002-431e-87aa-c770e64ec8f4",
+    "id": "d1c83e30-93f5-43f1-b553-4432bedad30b",
     "type": "lvl2",
     "url": "/hooks/use-constant#import",
     "hierarchy": { "lvl1": "useConstant", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "9b4f2c92-a380-4a41-940a-d6a48ecf6f47",
+    "id": "8cc2af3f-ccb5-492a-8f59-1682974adf01",
     "type": "lvl2",
     "url": "/hooks/use-constant#return-value",
     "hierarchy": { "lvl1": "useConstant", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "a5ce105d-02e9-4939-91d9-9d2bc7663b71",
+    "id": "b12ccaec-6212-4614-8872-aaf3b6117767",
     "type": "lvl2",
     "url": "/hooks/use-constant#usage",
     "hierarchy": { "lvl1": "useConstant", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "ca652dea-373f-43ad-ae30-a1e89817819e",
+    "id": "c54d4c0d-f80a-4b98-b1f4-11acdcfac159",
     "type": "lvl2",
     "url": "/hooks/use-constant#parameters",
     "hierarchy": { "lvl1": "useConstant", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useDebounce",
-    "id": "0d1d0332-183c-485a-8f86-8e6938731c90",
+    "id": "e628912d-df1c-4a5b-a5e1-286a4732bccb",
     "type": "lvl1",
     "url": "/hooks/use-debounce",
     "hierarchy": { "lvl1": "useDebounce" }
   },
   {
     "content": "Import",
-    "id": "95fbe527-c85b-42d3-b764-d5f292037526",
+    "id": "70ac33bf-ab00-4d4a-a412-98ec9de1726c",
     "type": "lvl2",
     "url": "/hooks/use-debounce#import",
     "hierarchy": { "lvl1": "useDebounce", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "4b1c3c32-191a-4d3d-ab21-99fb62c63221",
+    "id": "cfc67225-0776-4fbc-935f-454c2c72234a",
     "type": "lvl2",
     "url": "/hooks/use-debounce#return-value",
     "hierarchy": { "lvl1": "useDebounce", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "1594c07d-7a2c-4a32-9c9d-e258f1b5a927",
+    "id": "5466593a-01be-485a-b904-20c8e26017b3",
     "type": "lvl2",
     "url": "/hooks/use-debounce#usage",
     "hierarchy": { "lvl1": "useDebounce", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "625135ef-537f-401d-ad67-e8ca9bccf3aa",
+    "id": "3693a7a4-63e7-4037-b090-0113dced879b",
     "type": "lvl2",
     "url": "/hooks/use-debounce#parameters",
     "hierarchy": { "lvl1": "useDebounce", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useDisclosure",
-    "id": "7d054bc1-74cf-47d5-a96b-dac61086faeb",
+    "id": "3036a1f6-232c-475c-8562-9b06aa490eb1",
     "type": "lvl1",
     "url": "/hooks/use-disclosure",
     "hierarchy": { "lvl1": "useDisclosure" }
   },
   {
     "content": "Import",
-    "id": "fee46200-c7de-4e87-81b9-3300578b32bc",
+    "id": "94d1f103-93ed-4073-a48f-88c62bc6b18a",
     "type": "lvl2",
     "url": "/hooks/use-disclosure#import",
     "hierarchy": { "lvl1": "useDisclosure", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "bca916a8-2c8a-4a95-a1b4-c0fe6cc9cb28",
+    "id": "d69b6032-cc0c-4811-a924-0fd056415cf9",
     "type": "lvl2",
     "url": "/hooks/use-disclosure#return-value",
     "hierarchy": {
@@ -228,35 +228,35 @@
   },
   {
     "content": "Usage",
-    "id": "c07f4108-5085-472c-8b76-fdf3a6de2f34",
+    "id": "c893fb68-a8b2-44aa-98b1-e3462e72951d",
     "type": "lvl2",
     "url": "/hooks/use-disclosure#usage",
     "hierarchy": { "lvl1": "useDisclosure", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "66396f91-bc83-48de-8bfa-cf5fc69a4327",
+    "id": "35d48b8d-a8b2-4266-914d-ddabb65f988e",
     "type": "lvl2",
     "url": "/hooks/use-disclosure#parameters",
     "hierarchy": { "lvl1": "useDisclosure", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useHasMounted",
-    "id": "69179476-9332-48a2-93c0-66b1cdc169fa",
+    "id": "2759eb34-a746-4fa2-bffd-77beb284a0e8",
     "type": "lvl1",
     "url": "/hooks/use-has-mounted",
     "hierarchy": { "lvl1": "useHasMounted" }
   },
   {
     "content": "Import",
-    "id": "0b0a4ad3-db7c-4e09-9b2c-0b0635905248",
+    "id": "22c6a281-9801-4cbd-a8a3-a41012c60b61",
     "type": "lvl2",
     "url": "/hooks/use-has-mounted#import",
     "hierarchy": { "lvl1": "useHasMounted", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "e327e294-c382-4c13-9dfd-c38cff98fb2f",
+    "id": "b4382b2d-db99-4dcc-ae49-0a048838bc96",
     "type": "lvl2",
     "url": "/hooks/use-has-mounted#return-value",
     "hierarchy": {
@@ -267,77 +267,77 @@
   },
   {
     "content": "Usage",
-    "id": "ba9c16f8-f510-40b5-b0e3-6e40559ab566",
+    "id": "fafe6eba-9365-440a-9a3d-fe9cdffe4d12",
     "type": "lvl2",
     "url": "/hooks/use-has-mounted#usage",
     "hierarchy": { "lvl1": "useHasMounted", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "useLockBodyScroll",
-    "id": "fa397cc1-e9fd-4749-ae65-d7b9bb0f798b",
+    "id": "0e21ed75-a8f5-4b1e-bbdb-8ac9b7d32478",
     "type": "lvl1",
     "url": "/hooks/use-lock-body-scroll",
     "hierarchy": { "lvl1": "useLockBodyScroll" }
   },
   {
     "content": "Import",
-    "id": "1f2e87c0-f64a-4a77-a541-bff2010f62ca",
+    "id": "35a46ba4-db19-4a34-aaae-2d331179e3d9",
     "type": "lvl2",
     "url": "/hooks/use-lock-body-scroll#import",
     "hierarchy": { "lvl1": "useLockBodyScroll", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "e316c7e2-a640-4690-9093-809380ce1178",
+    "id": "92a77a27-8133-459e-879c-48874488a098",
     "type": "lvl2",
     "url": "/hooks/use-lock-body-scroll#usage",
     "hierarchy": { "lvl1": "useLockBodyScroll", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "useMedia",
-    "id": "1df78563-34b1-459e-9a28-51c4d8fc5c72",
+    "id": "e9acadf7-1bc1-46e2-b8c7-97ef2b538983",
     "type": "lvl1",
     "url": "/hooks/use-media",
     "hierarchy": { "lvl1": "useMedia" }
   },
   {
     "content": "Import",
-    "id": "d8444553-559e-4fb7-9e28-ed112bdc1fd2",
+    "id": "2d02c7f3-e8fe-4b44-b0f3-4592f0ee3eb1",
     "type": "lvl2",
     "url": "/hooks/use-media#import",
     "hierarchy": { "lvl1": "useMedia", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "5766a586-73db-4a2f-a87d-2928f33ff6c4",
+    "id": "4ef77b6b-7abc-472d-99cf-ddd1a03e5607",
     "type": "lvl2",
     "url": "/hooks/use-media#usage",
     "hierarchy": { "lvl1": "useMedia", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "43d536d5-97de-426a-9a2c-c77e35f3968a",
+    "id": "dc8e0521-560e-466b-8146-93f788742e16",
     "type": "lvl2",
     "url": "/hooks/use-media#parameters",
     "hierarchy": { "lvl1": "useMedia", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useMergeRefs",
-    "id": "6abd602c-6fd1-43c8-b1dc-3bde096e195b",
+    "id": "c5fbb16e-0bdd-4c41-b30c-5c2b785017dd",
     "type": "lvl1",
     "url": "/hooks/use-merge-refs",
     "hierarchy": { "lvl1": "useMergeRefs" }
   },
   {
     "content": "Import",
-    "id": "ad487b18-f8c1-49a8-8b52-d2cbc2ca3e36",
+    "id": "1ff14743-1f19-42a7-9066-4d53c22c1928",
     "type": "lvl2",
     "url": "/hooks/use-merge-refs#import",
     "hierarchy": { "lvl1": "useMergeRefs", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "f6b3fc40-6a03-4955-b08e-688a2cdbef32",
+    "id": "0cd7e017-6f40-4285-8825-74d348e52ee1",
     "type": "lvl2",
     "url": "/hooks/use-merge-refs#return-value",
     "hierarchy": {
@@ -348,35 +348,35 @@
   },
   {
     "content": "Usage",
-    "id": "df74e6c4-f075-4fe1-966a-17bd55722f42",
+    "id": "1c05f484-e725-4844-9a4a-6145748cff68",
     "type": "lvl2",
     "url": "/hooks/use-merge-refs#usage",
     "hierarchy": { "lvl1": "useMergeRefs", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "useOnClickOutside",
-    "id": "4f0bbfe7-2a68-4d1f-95c3-2d555a57d994",
+    "id": "81bbf944-937b-4b41-aad6-d415f7ca0e62",
     "type": "lvl1",
     "url": "/hooks/use-onclick-outside",
     "hierarchy": { "lvl1": "useOnClickOutside" }
   },
   {
     "content": "Import",
-    "id": "183162bb-5975-4067-bd24-524c5a6f288f",
+    "id": "8e60d321-9353-42d8-ad5f-63cc60a26948",
     "type": "lvl2",
     "url": "/hooks/use-onclick-outside#import",
     "hierarchy": { "lvl1": "useOnClickOutside", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "9d878d2c-65f1-4c2d-bd1e-364910e34796",
+    "id": "cddf87b7-2465-4466-a23b-bcc6fadba28e",
     "type": "lvl2",
     "url": "/hooks/use-onclick-outside#usage",
     "hierarchy": { "lvl1": "useOnClickOutside", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "e7aaf2d7-89ce-4728-ab59-97e0f1feca67",
+    "id": "be50a8cf-9236-41d0-b868-eaf46748dcdb",
     "type": "lvl2",
     "url": "/hooks/use-onclick-outside#parameters",
     "hierarchy": {
@@ -386,50 +386,89 @@
     }
   },
   {
+    "content": "usePagination",
+    "id": "648267d5-19ba-49d0-b857-93f59727f166",
+    "type": "lvl1",
+    "url": "/hooks/use-pagination",
+    "hierarchy": { "lvl1": "usePagination" }
+  },
+  {
+    "content": "Import",
+    "id": "4960deed-0b00-4d32-803e-ac916338e709",
+    "type": "lvl2",
+    "url": "/hooks/use-pagination#import",
+    "hierarchy": { "lvl1": "usePagination", "lvl2": "Import", "lvl3": null }
+  },
+  {
+    "content": "Return value",
+    "id": "f2e39442-b36b-4bbc-859d-5368cee20e94",
+    "type": "lvl2",
+    "url": "/hooks/use-pagination#return-value",
+    "hierarchy": {
+      "lvl1": "usePagination",
+      "lvl2": "Return value",
+      "lvl3": null
+    }
+  },
+  {
+    "content": "Usage",
+    "id": "f6c0626b-38c6-4042-abee-48ee6bda94ce",
+    "type": "lvl2",
+    "url": "/hooks/use-pagination#usage",
+    "hierarchy": { "lvl1": "usePagination", "lvl2": "Usage", "lvl3": null }
+  },
+  {
+    "content": "Parameters",
+    "id": "80daa329-9b58-46a4-b6b3-32b3d2d48f6e",
+    "type": "lvl2",
+    "url": "/hooks/use-pagination#parameters",
+    "hierarchy": { "lvl1": "usePagination", "lvl2": "Parameters", "lvl3": null }
+  },
+  {
     "content": "usePrevious",
-    "id": "1f570a11-e956-4152-bf0f-91fc94b9b2b8",
+    "id": "76e52745-b67c-413a-a87e-9de024760826",
     "type": "lvl1",
     "url": "/hooks/use-previous",
     "hierarchy": { "lvl1": "usePrevious" }
   },
   {
     "content": "Import",
-    "id": "053b1dd2-01b0-465e-8cfe-336c99ec5303",
+    "id": "8e60154b-1c83-4c7d-82bd-9d7a8f56e1fd",
     "type": "lvl2",
     "url": "/hooks/use-previous#import",
     "hierarchy": { "lvl1": "usePrevious", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "d26dd7d1-2683-469b-ad94-84dc6cf87140",
+    "id": "27951465-702b-485a-9bf4-1cd1f06cff17",
     "type": "lvl2",
     "url": "/hooks/use-previous#return-value",
     "hierarchy": { "lvl1": "usePrevious", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "c353d7e0-889f-49e0-ae1d-7e8f190fa2ff",
+    "id": "343ccf0e-3dac-40f4-b650-906541a00b23",
     "type": "lvl2",
     "url": "/hooks/use-previous#usage",
     "hierarchy": { "lvl1": "usePrevious", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "054737d4-dc38-416d-b4ee-c7cc0f482449",
+    "id": "7bfe6352-2051-42ea-8d31-176a9eb29eae",
     "type": "lvl2",
     "url": "/hooks/use-previous#parameters",
     "hierarchy": { "lvl1": "usePrevious", "lvl2": "Parameters", "lvl3": null }
   },
   {
     "content": "useWhyDidYouUpdate",
-    "id": "8485baf6-2fc3-455a-a534-25479a6a1db4",
+    "id": "ef63bad0-b989-4ad6-a9d8-bcca838fb09d",
     "type": "lvl1",
     "url": "/hooks/use-why-did-you-update",
     "hierarchy": { "lvl1": "useWhyDidYouUpdate" }
   },
   {
     "content": "Import",
-    "id": "f34b5932-54ea-4bd7-8e91-295a18751c3f",
+    "id": "e8d9aaea-610b-4ec4-a6f0-d3442fe326a7",
     "type": "lvl2",
     "url": "/hooks/use-why-did-you-update#import",
     "hierarchy": {
@@ -440,7 +479,7 @@
   },
   {
     "content": "Return value",
-    "id": "3cd47496-abb7-46d1-bd26-fc734af2a7f7",
+    "id": "8c45efb5-88b2-467c-8aa0-352630f4a039",
     "type": "lvl2",
     "url": "/hooks/use-why-did-you-update#return-value",
     "hierarchy": {
@@ -451,14 +490,14 @@
   },
   {
     "content": "Usage",
-    "id": "6a55ad6c-bfb8-4446-b9b0-e46c6d4c7c41",
+    "id": "1d769a5a-d504-42f6-93bd-d61a8e2d3643",
     "type": "lvl2",
     "url": "/hooks/use-why-did-you-update#usage",
     "hierarchy": { "lvl1": "useWhyDidYouUpdate", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Parameters",
-    "id": "63c19ade-222b-473c-9130-c69d458e0301",
+    "id": "1536f801-fc4c-46af-b9e8-52772a5f1829",
     "type": "lvl2",
     "url": "/hooks/use-why-did-you-update#parameters",
     "hierarchy": {
@@ -469,28 +508,28 @@
   },
   {
     "content": "React Toolkit",
-    "id": "61cf27a4-7e89-4c54-898b-1b2cf2497f19",
+    "id": "fe1c7074-1948-4ab6-8316-42f2f7828ed1",
     "type": "lvl1",
     "url": "/",
     "hierarchy": { "lvl1": "React Toolkit" }
   },
   {
     "content": "callAllHandlers",
-    "id": "17772926-3b26-4fb7-8ee7-68c6a23fc809",
+    "id": "4aa5815c-5fc5-4019-970f-017fd33b6b83",
     "type": "lvl1",
     "url": "/utils/call-all-handlers",
     "hierarchy": { "lvl1": "callAllHandlers" }
   },
   {
     "content": "Import",
-    "id": "7141feb1-74f5-4f48-b066-3e6f82585db7",
+    "id": "bca55e0f-f109-4cef-8e01-6b77063d9c11",
     "type": "lvl2",
     "url": "/utils/call-all-handlers#import",
     "hierarchy": { "lvl1": "callAllHandlers", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "af7c7be3-553c-4943-81e6-46c88d3255c1",
+    "id": "987fa54e-0f49-4f9d-90e1-f68faca70883",
     "type": "lvl2",
     "url": "/utils/call-all-handlers#return-value",
     "hierarchy": {
@@ -501,28 +540,28 @@
   },
   {
     "content": "Usage",
-    "id": "cf9ee969-eef2-4cf9-b4f8-bb18cff634db",
+    "id": "5b22af90-2b6b-4d85-92a8-cc3472be257d",
     "type": "lvl2",
     "url": "/utils/call-all-handlers#usage",
     "hierarchy": { "lvl1": "callAllHandlers", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "cleanChildren",
-    "id": "94e8a58a-1b8e-46c1-a22a-649a1d7d187a",
+    "id": "3389b97a-906c-44b4-8c17-83dc220e615e",
     "type": "lvl1",
     "url": "/utils/clean-children",
     "hierarchy": { "lvl1": "cleanChildren" }
   },
   {
     "content": "Import",
-    "id": "a98c2198-e6b4-46e7-8227-8950f3ad99fd",
+    "id": "d7b122cc-283a-4858-a3ca-830a2c072b41",
     "type": "lvl2",
     "url": "/utils/clean-children#import",
     "hierarchy": { "lvl1": "cleanChildren", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "aa5c64fa-6f25-471c-b26d-ec21d4073674",
+    "id": "60dcdda6-5c0b-426c-b620-55c0c2a8abee",
     "type": "lvl2",
     "url": "/utils/clean-children#return-value",
     "hierarchy": {
@@ -533,140 +572,175 @@
   },
   {
     "content": "Usage",
-    "id": "7c1f6fdd-ceba-49b0-a00c-78cf38c3575d",
+    "id": "4a512f05-c3bc-4554-af79-ef7d0eed83f9",
     "type": "lvl2",
     "url": "/utils/clean-children#usage",
     "hierarchy": { "lvl1": "cleanChildren", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "createContext",
-    "id": "668d23a9-a44d-4b0b-b7dd-f4124b86b1b3",
+    "id": "bbb6a7b2-6ede-4446-8d55-0d866c1739f3",
     "type": "lvl1",
     "url": "/utils/create-context",
     "hierarchy": { "lvl1": "createContext" }
   },
   {
     "content": "Import",
-    "id": "43742fb9-5132-46d9-a2cc-4ec0b4a6bf64",
+    "id": "417b99e6-f1bb-45f8-a471-6fa6417bc8d0",
     "type": "lvl2",
     "url": "/utils/create-context#import",
     "hierarchy": { "lvl1": "createContext", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "2e7ef0e0-3db6-4e1d-ad02-47c3a1ec5b86",
+    "id": "d05cec8e-f82b-438a-963c-a67dc28af24a",
     "type": "lvl2",
     "url": "/utils/create-context#usage",
     "hierarchy": { "lvl1": "createContext", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "React Utils",
-    "id": "ad5a17c2-ce59-44a0-8d9b-999d15e9547a",
+    "id": "c5553239-a4ee-4fa8-97cc-0394d2996d10",
     "type": "lvl1",
     "url": "/utils/",
     "hierarchy": { "lvl1": "React Utils" }
   },
   {
     "content": "Installation",
-    "id": "415188ff-0c5c-4f7c-8f3a-548bd3aefe85",
+    "id": "4b02f79b-dcf2-46db-9afc-f91fb9dfba87",
     "type": "lvl2",
     "url": "/utils/#installation",
     "hierarchy": { "lvl1": "React Utils", "lvl2": "Installation", "lvl3": null }
   },
   {
     "content": "Import",
-    "id": "0044f242-ccff-483c-a18e-142d5688a74c",
+    "id": "c1a0f4b8-842b-467b-85b0-ffec9406b3ce",
     "type": "lvl2",
     "url": "/utils/#import",
     "hierarchy": { "lvl1": "React Utils", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "isSSR",
-    "id": "e5a5c12c-b401-4c9e-8c52-4f8b94a82cee",
+    "id": "d6f1c637-33bf-4c16-bb93-9c3e5eea6097",
     "type": "lvl1",
     "url": "/utils/is-ssr",
     "hierarchy": { "lvl1": "isSSR" }
   },
   {
     "content": "Import",
-    "id": "5aced3aa-14cf-451a-b875-7c47b8b9d58f",
+    "id": "b544bfac-88a5-4a83-9019-bed87c84d9dc",
     "type": "lvl2",
     "url": "/utils/is-ssr#import",
     "hierarchy": { "lvl1": "isSSR", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "627bb3e3-3333-42bd-aa13-3f875ade89ce",
+    "id": "051f010d-4580-48ae-8194-c9acb744eddc",
     "type": "lvl2",
     "url": "/utils/is-ssr#return-value",
     "hierarchy": { "lvl1": "isSSR", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "028074a6-dd2e-46ca-bb87-1d6059e03371",
+    "id": "513993e9-01f6-4b8a-8eec-03feb8caed26",
     "type": "lvl2",
     "url": "/utils/is-ssr#usage",
     "hierarchy": { "lvl1": "isSSR", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "noop",
-    "id": "51989a6b-3e1f-4b6f-8ead-931dec141de9",
+    "id": "4a10a46a-afe2-4f9b-a6a4-f3264ad663be",
     "type": "lvl1",
     "url": "/utils/noop",
     "hierarchy": { "lvl1": "noop" }
   },
   {
     "content": "Import",
-    "id": "e0cb66f9-5dd3-4d46-9c01-401ae5f3cae6",
+    "id": "e68f5b3c-1788-40fa-bc77-efb205cd9e40",
     "type": "lvl2",
     "url": "/utils/noop#import",
     "hierarchy": { "lvl1": "noop", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "e405e524-0fb3-4b53-83cc-7c62c71bb4b3",
+    "id": "5d5bf3b0-5f0d-49fa-97bb-5f37ac93b77a",
     "type": "lvl2",
     "url": "/utils/noop#return-value",
     "hierarchy": { "lvl1": "noop", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "73c1303d-c3fd-4014-91b0-78a17da00dd1",
+    "id": "0bb06b41-fa5e-408d-ae43-9b1c44bb9e00",
     "type": "lvl2",
     "url": "/utils/noop#usage",
     "hierarchy": { "lvl1": "noop", "lvl2": "Usage", "lvl3": null }
   },
   {
+    "content": "sleep",
+    "id": "ef9d841e-cc32-4852-b2e2-099b4738933d",
+    "type": "lvl1",
+    "url": "/utils/sleep",
+    "hierarchy": { "lvl1": "sleep" }
+  },
+  {
+    "content": "Import",
+    "id": "f2e3a1ea-7b28-4ec1-95be-5a57de79f8f7",
+    "type": "lvl2",
+    "url": "/utils/sleep#import",
+    "hierarchy": { "lvl1": "sleep", "lvl2": "Import", "lvl3": null }
+  },
+  {
+    "content": "Return value",
+    "id": "747e0a1a-d102-485d-a6c6-a4cdd5ccc293",
+    "type": "lvl2",
+    "url": "/utils/sleep#return-value",
+    "hierarchy": { "lvl1": "sleep", "lvl2": "Return value", "lvl3": null }
+  },
+  {
+    "content": "Usage",
+    "id": "5f1cfa80-7000-4363-bb30-9e4ce7747c4d",
+    "type": "lvl2",
+    "url": "/utils/sleep#usage",
+    "hierarchy": { "lvl1": "sleep", "lvl2": "Usage", "lvl3": null }
+  },
+  {
+    "content": "Parameters",
+    "id": "b60ed42d-1951-4887-8b97-4422844f712b",
+    "type": "lvl2",
+    "url": "/utils/sleep#parameters",
+    "hierarchy": { "lvl1": "sleep", "lvl2": "Parameters", "lvl3": null }
+  },
+  {
     "content": "truncate",
-    "id": "0fa631f6-c01f-45b6-87bf-77b287c80979",
+    "id": "27320095-5014-4d3b-b075-ef9413067bbc",
     "type": "lvl1",
     "url": "/utils/truncate",
     "hierarchy": { "lvl1": "truncate" }
   },
   {
     "content": "Import",
-    "id": "420539bc-07a5-4ece-a845-00011a7e4d8a",
+    "id": "2c769c89-149b-4e92-a002-0cf402e2207c",
     "type": "lvl2",
     "url": "/utils/truncate#import",
     "hierarchy": { "lvl1": "truncate", "lvl2": "Import", "lvl3": null }
   },
   {
     "content": "Return value",
-    "id": "8d9c95e5-ae97-4214-a0e0-e6d618aaa14c",
+    "id": "34056f77-6bc1-4b37-9afd-927b90ba13f1",
     "type": "lvl2",
     "url": "/utils/truncate#return-value",
     "hierarchy": { "lvl1": "truncate", "lvl2": "Return value", "lvl3": null }
   },
   {
     "content": "Usage",
-    "id": "ddf1da45-2e82-4181-8d36-58f3439d1953",
+    "id": "7d8c4796-8d09-4c71-8eea-52c2112cb8d3",
     "type": "lvl2",
     "url": "/utils/truncate#usage",
     "hierarchy": { "lvl1": "truncate", "lvl2": "Usage", "lvl3": null }
   },
   {
     "content": "Masking character",
-    "id": "a76b6348-c9e1-4dc0-b509-57556edcc634",
+    "id": "49be83db-6d62-4932-a100-02c2ddfe6402",
     "type": "lvl2",
     "url": "/utils/truncate#masking-character",
     "hierarchy": {
@@ -677,7 +751,7 @@
   },
   {
     "content": "Parameters",
-    "id": "93341e33-0271-4c50-99d6-8818ac30192d",
+    "id": "b17a6530-2883-4833-8fda-45e80e50586f",
     "type": "lvl2",
     "url": "/utils/truncate#parameters",
     "hierarchy": { "lvl1": "truncate", "lvl2": "Parameters", "lvl3": null }

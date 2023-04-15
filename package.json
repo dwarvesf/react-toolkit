@@ -21,8 +21,7 @@
     "search-meta:gen": "ts-node scripts/get-search-meta.ts",
     "pkg": "manypkg run",
     "check:pkgs": "manypkg check",
-    "fix:pkgs": "manypkg fix",
-    "boot": "pnpm prestart && pnpm build"
+    "fix:pkgs": "manypkg fix"
   },
   "husky": {
     "hooks": {
@@ -44,6 +43,7 @@
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@docusaurus/utils": "2.0.0-beta.5",
     "@manypkg/cli": "^0.18.0",
     "@testing-library/react-hooks": "^7.0.1",
     "@types/jest": "^29.5.0",
@@ -65,6 +65,7 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "eslint-plugin-testing-library": "4.10.1",
+    "graceful-fs": "4.2.8",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
     "markdown-toc": "^1.2.0",
@@ -73,13 +74,15 @@
     "react-dom": "^17.0.2",
     "shelljs": "^0.8.4",
     "swr": "^1.0.0",
-    "ts-node": "^10.2.1",
+    "ts-node": "^9.1.1",
     "tsdx": "^0.14.1",
+    "tslib": "2.3.1",
     "typescript": "^4.3.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.0",
+    "@types/graceful-fs": "4.1.5",
     "turbo": "1.8.8"
   },
   "engines": {
