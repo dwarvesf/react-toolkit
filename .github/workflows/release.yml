@@ -15,18 +15,23 @@ jobs:
           # This makes action fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
 
-      - name: Use Node.js 14.x
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          version: 14.x
+          version: 16.x
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.2.0
 
       - name: Install Dependencies
-        run: yarn
+        run: pnpm
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@master
         with:
-          publish: yarn release
+          publish: pnpm release
           commit: 'release: bump package(s)'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
