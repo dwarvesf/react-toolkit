@@ -1,6 +1,7 @@
 {
   "name": "dwarvesf-react-toolkit",
   "private": true,
+  "version": "0.0.1",
   "scripts": {
     "dev": "turbo run dev --parallel --no-cache",
     "test": "turbo run test --parallel",
