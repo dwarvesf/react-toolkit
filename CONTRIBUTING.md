@@ -29,7 +29,7 @@ git clone https://github.com/<your_github_username>/react-toolkit.git
 cd react-toolkit
 ```
 
-3. Setup all the dependencies and packages by running `yarn prestart`. This
+1. Setup all the dependencies and packages by running `pnpm install`. This
    command will install dependencies and bootstrap the repo using `turborepo`
 
 ## Development workflow
@@ -37,7 +37,7 @@ cd react-toolkit
 In one terminal, run tsdx watch in parallel:
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 This builds each package to `<packages>/<package>/dist` and runs the project in
@@ -48,7 +48,7 @@ terminal.
 ### Tooling
 
 - [Turbo](https://turborepo.org/) to manage installation of dependencies and
-  running various scripts. We also have yarn workspaces enabled by default.
+  running various scripts. We also have pnpm workspaces enabled by default.
 - [Testing Library](https://testing-library.com/) for testing components and
   hooks
 - [Nextjs](https://www.nextjs.org/) for a blazing fast documentation website.
@@ -61,7 +61,7 @@ terminal.
 You can play with local packages in the Parcel-powered example/playground.
 
 ```sh
-yarn start:app
+pnpm start:app
 ```
 
 This will start the example/playground on `localhost:1234`. If you have Turbo
@@ -81,7 +81,7 @@ Don't forget to setup your IDE with `eslint` and `prettier`.
 ## Documentation
 
 The documentation site is built with Next.js. If you'd like to contribute to the
-docs, simply run `yarn build`, and `yarn docs:dev`
+docs, simply run `pnpm build`, and `pnpm docs:dev`
 
 ## Making a Pull Request?
 
@@ -127,19 +127,19 @@ https://www.conventionalcommits.org/ or check out the
 
 3. Make and commit your changes following the
    [commit convention](https://github.com/dwarvesf/react-toolkit/blob/master/CONTRIBUTING.md#commit-convention).
-   As you develop, you can run `yarn pkg <module> build` and
-   `yarn pkg <module> test` to make sure everything works as expected. Please
-   note that you might have to run `yarn boot` first in order to build all
+   As you develop, you can run `pnpm pkgs <module> build` and
+   `pnpm pkgs <module> test` to make sure everything works as expected. Please
+   note that you might have to run `pnpm build` first in order to build all
    dependencies.
 
-4. Run `yarn changeset` to create a detailed description of your changes. This
+4. Run `pnpm changeset` to create a detailed description of your changes. This
    will be used to generate a changelog when we publish an update.
    [Learn more about Changeset](https://github.com/atlassian/changesets/tree/master/packages/cli).
    Please note that you might have to run `git fetch origin main:master` (where
-   origin will be your fork on GitHub) before `yarn changeset` works.
+   origin will be your fork on GitHub) before `pnpm changeset` works.
 
 > If you made minor changes like CI config, prettier, etc, you can run
-> `yarn changeset add --empty` to generate an empty changeset file to document
+> `pnpm changeset add --empty` to generate an empty changeset file to document
 > your changes.
 
 ### Tests

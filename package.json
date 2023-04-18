@@ -19,7 +19,7 @@
     "docs:build": "pnpm search-meta:gen && turbo run build --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
     "docs:dev": "turbo run dev --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
     "search-meta:gen": "ts-node scripts/get-search-meta.ts",
-    "pkg": "manypkg run",
+    "pkgs": "manypkg run",
     "check:pkgs": "manypkg check",
     "fix:pkgs": "manypkg fix"
   },
