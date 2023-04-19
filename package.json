@@ -1,33 +1,27 @@
 {
   "name": "dwarvesf-react-toolkit",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "docs"
-  ],
   "scripts": {
-    "lerna": "lerna",
     "dev": "turbo run dev --parallel --no-cache",
     "test": "turbo run test --parallel",
     "test:ci": "turbo run test:ci --parallel",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "turbo run build",
-    "prepublish": "yarn run build",
-    "start:app": "yarn run build && yarn --cwd example && yarn --cwd example start",
+    "prepare": "pnpm run build",
+    "start:app": "pnpm run build && pnpm -C ./example start",
     "changeset": "changeset",
     "release": "changeset publish",
     "version:canary": "changeset version --snapshot canary",
     "release:canary": "changeset publish --tag canary",
     "format": "prettier -c --write \"*/**\"",
     "postinstall": "husky install",
-    "docs:build": "yarn search-meta:gen && turbo run build --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
+    "docs:build": "pnpm search-meta:gen && turbo run build --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
     "docs:dev": "turbo run dev --scope=@dwarvesf/react-toolkit-docs --include-dependencies --parallel",
     "search-meta:gen": "ts-node scripts/get-search-meta.ts",
-    "pkg": "manypkg run",
+    "pkgs": "manypkg run",
     "check:pkgs": "manypkg check",
-    "fix:pkgs": "manypkg fix",
-    "boot": "yarn prestart && yarn build"
+    "fix:pkgs": "manypkg fix"
   },
   "husky": {
     "hooks": {
@@ -49,8 +43,10 @@
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@docusaurus/utils": "2.0.0-beta.5",
     "@manypkg/cli": "^0.18.0",
     "@testing-library/react-hooks": "^7.0.1",
+    "@types/jest": "^29.5.0",
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
     "@types/shelljs": "^0.8.9",
@@ -69,44 +65,31 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "eslint-plugin-testing-library": "4.10.1",
+    "graceful-fs": "4.2.8",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
     "markdown-toc": "^1.2.0",
+    "object-assign": "4.1.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "scheduler": "0.20.2",
     "shelljs": "^0.8.4",
     "swr": "^1.0.0",
-    "ts-node": "^10.2.1",
+    "toggle-selection": "1.0.6",
+    "ts-node": "^9.1.1",
     "tsdx": "^0.14.1",
+    "tslib": "2.3.1",
     "typescript": "^4.3.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.0",
-    "turbo": "^1.0.24"
+    "@types/graceful-fs": "4.1.5",
+    "turbo": "1.8.8"
   },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**",
-          "out/**"
-        ]
-      },
-      "test": {
-        "outputs": []
-      },
-      "test:ci": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+  "packageManager": "pnpm@8.2.0",
+  "engines": {
+    "pnpm": ">=8.2.0"
   }
 }

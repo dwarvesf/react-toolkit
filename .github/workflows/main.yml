@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['12.x', '14.x']
+        node: ['16.x']
         os: [ubuntu-latest]
 
     steps:
@@ -20,7 +20,12 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.2.0
+      - run: pnpm i
+      - run: pnpm build
+      - run: rm -rf .next
 
       - name: Test
-        run: yarn test:ci
+        run: pnpm test:ci
