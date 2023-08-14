@@ -4,7 +4,7 @@ import useConstant from '../useConstant'
 
 describe('useConstant', () => {
   it('if the param is a state, it should always return the initial value', () => {
-    const Component = () => {
+    function Component() {
       const [count, setCount] = useState(0)
       const constCount = useConstant(count)
 
@@ -41,7 +41,7 @@ describe('useConstant', () => {
 
   it('if the param is a function, the function should call only one', () => {
     const spy = jest.fn()
-    const Component = () => {
+    function Component() {
       const [count, setCount] = useState(0)
       const constCount = useConstant(() => {
         spy()
