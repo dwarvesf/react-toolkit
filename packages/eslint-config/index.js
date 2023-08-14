@@ -67,19 +67,6 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/lines-between-class-members': 'off',
-    '@typescript-eslint/padding-line-between-statements': [
-      'error',
-      {
-        blankLine: 'always',
-        prev: '*',
-        next: 'return',
-      },
-      {
-        blankLine: 'always',
-        prev: ['case', 'default', 'block-like', 'export', 'for', 'function'],
-        next: '*',
-      },
-    ],
 
     // React
     'react/forbid-prop-types': 'off',
