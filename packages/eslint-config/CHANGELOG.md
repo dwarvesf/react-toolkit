@@ -1,5 +1,14 @@
 # @dwarvesf/react-eslint-config
 
+## 1.0.0
+
+### Major Changes
+
+- [#51](https://github.com/dwarvesf/react-toolkit/pull/51)
+  [`1b55afb`](https://github.com/dwarvesf/react-toolkit/commit/1b55afba3e9ac1c65d98509f4d5e7c52b3687832)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Use latest base
+  packages
+
 ## 0.1.3
 
 ### Patch Changes
