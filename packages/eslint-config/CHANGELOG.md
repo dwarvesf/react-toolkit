@@ -1,5 +1,14 @@
 # @dwarvesf/react-eslint-config
 
+## 1.0.1
+
+### Patch Changes
+
+- [#54](https://github.com/dwarvesf/react-toolkit/pull/54)
+  [`9da4c20`](https://github.com/dwarvesf/react-toolkit/commit/9da4c209f96e8557f4a4ac72f50d2eaba7552888)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Remove padding between
+  statement rule
+
 ## 1.0.0
 
 ### Major Changes
