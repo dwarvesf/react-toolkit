@@ -14,38 +14,48 @@
     "index.js"
   ],
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.x",
-    "@typescript-eslint/parser": "4.0.1",
+    "@typescript-eslint/eslint-plugin": "6.x",
+    "@typescript-eslint/parser": "6.x",
     "babel-eslint": "10.x",
-    "eslint": "7.x",
-    "eslint-config-airbnb": "18.x",
-    "eslint-config-airbnb-typescript": "12.x",
+    "eslint": "8.x",
+    "eslint-config-airbnb": "19.x",
+    "eslint-config-airbnb-typescript": "17.x",
     "eslint-config-prettier": "8.x",
     "eslint-config-react": "1.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "3.x",
+    "eslint-plugin-prettier": "5.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
-    "eslint-plugin-testing-library": "4.x"
+    "eslint-plugin-testing-library": "5.x"
   },
   "engines": {
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.x",
-    "@typescript-eslint/parser": "4.29.0",
-    "babel-eslint": "10.x",
-    "eslint": "7.x",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-typescript": "12.x",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-config-react": "1.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "3.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "4.x",
-    "eslint-plugin-testing-library": "4.10.1"
+    "@typescript-eslint/eslint-plugin": "~6.3.0",
+    "@typescript-eslint/parser": "6.3.0",
+    "babel-eslint": "~10.1.0",
+    "eslint": "~8.47.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "~17.1.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-config-react": "~1.1.7",
+    "eslint-plugin-import": "~2.28.0",
+    "eslint-plugin-jsx-a11y": "~6.7.1",
+    "eslint-plugin-prettier": "~5.0.0",
+    "eslint-plugin-react": "~7.33.1",
+    "eslint-plugin-react-hooks": "~4.6.0",
+    "eslint-plugin-testing-library": "6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dwarvesf/react-toolkit/issues"
+  },
+  "homepage": "https://github.com/dwarvesf/react-toolkit#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

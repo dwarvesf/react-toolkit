@@ -1,3 +1,10 @@
+const jsxSortPropsOptions = {
+  callbacksLast: true,
+  ignoreCase: false,
+  reservedFirst: ['key', 'ref'],
+  shorthandLast: true,
+}
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -60,6 +67,19 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/lines-between-class-members': 'off',
+    '@typescript-eslint/padding-line-between-statements': [
+      'error',
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: 'return',
+      },
+      {
+        blankLine: 'always',
+        prev: ['case', 'default', 'block-like', 'export', 'for', 'function'],
+        next: '*',
+      },
+    ],
 
     // React
     'react/forbid-prop-types': 'off',
@@ -70,6 +90,7 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-sort-props': ['error', jsxSortPropsOptions],
     'react/no-array-index-key': 'off',
     'react/require-default-props': 'off',
     'react/sort-prop-types': 'error',
