@@ -22,7 +22,7 @@ jobs:
       - name: Install deps and build (with cache)
         uses: pnpm/action-setup@v2
         with:
-          version: 8.2.0
+          version: 8.5.1
       - run: pnpm i
       - run: pnpm build
       - run: rm -rf .next
