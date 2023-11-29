@@ -19,12 +19,13 @@ import { useDisclosure } from '@dwarvesf/react-hooks'
 
 The `useDisclosure` hook returns an object with the following fields:
 
-| Name       | Type       | Default | Description                                                         |
-| ---------- | ---------- | ------- | ------------------------------------------------------------------- |
-| `isOpen`   | `boolean`  | `false` | If `true`, it sets the controlled component to its visible state.   |
-| `onClose`  | `function` | `_`     | Callback function to set a falsy value for the `isOpen` parameter.  |
-| `onOpen`   | `function` | `_`     | Callback function to set a truthy value for the `isOpen` parameter. |
-| `onToggle` | `function` | `_`     | Callback function to toggle the value of the `isOpen` parameter.    |
+| Name           | Type                        | Default | Description                                                         |
+| -------------- | --------------------------- | ------- | ------------------------------------------------------------------- |
+| `isOpen`       | `boolean`                   | `false` | If `true`, it sets the controlled component to its visible state.   |
+| `onClose`      | `() => void`                | `_`     | Callback function to set a falsy value for the `isOpen` parameter.  |
+| `onOpen`       | `() => void`                | `_`     | Callback function to set a truthy value for the `isOpen` parameter. |
+| `onToggle`     | `() => void`                | `_`     | Callback function to toggle the value of the `isOpen` parameter.    |
+| `onOpenChange` | `(isOpen: boolean) => void` | `_`     | Callback function to set the value for the `isOpen` parameter.      |
 
 ## Usage
 

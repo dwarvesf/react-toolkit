@@ -36,6 +36,7 @@ export default function useDisclosure(props: UseDisclosureProps = {}) {
   return {
     isOpen: !!isOpen,
     prevIsOpen: !!prevIsOpen,
+    onOpenChange: setIsOpen,
     onOpen,
     onClose,
     onToggle,
