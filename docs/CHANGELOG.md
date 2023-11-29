@@ -1,5 +1,19 @@
 # @dwarvesf/react-toolkit-docs
 
+## 0.3.0
+
+### Minor Changes
+
+- [#56](https://github.com/dwarvesf/react-toolkit/pull/56)
+  [`b4f230f`](https://github.com/dwarvesf/react-toolkit/commit/b4f230f017bc54be899c21165d22d22e2c87a7bb)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Expose onOpenChange
+
+### Patch Changes
+
+- Updated dependencies
+  [[`b4f230f`](https://github.com/dwarvesf/react-toolkit/commit/b4f230f017bc54be899c21165d22d22e2c87a7bb)]:
+  - @dwarvesf/react-hooks@0.8.0
+
 ## 0.2.0
 
 ### Minor Changes
