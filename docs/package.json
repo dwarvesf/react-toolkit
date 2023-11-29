@@ -1,6 +1,6 @@
 {
   "name": "@dwarvesf/react-toolkit-docs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next",
@@ -20,7 +20,7 @@
     "@chakra-ui/utils": "1.8.2",
     "@docsearch/react": "^3.0.0",
     "@docusaurus/utils": "^2.0.0-alpha.69",
-    "@dwarvesf/react-hooks": "^0.7.0",
+    "@dwarvesf/react-hooks": "^0.8.0",
     "@dwarvesf/react-utils": "^0.4.1",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
