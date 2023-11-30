@@ -1,5 +1,13 @@
 # @dwarvesf/react-hooks
 
+## 0.8.1
+
+### Patch Changes
+
+- [#58](https://github.com/dwarvesf/react-toolkit/pull/58)
+  [`6d52deb`](https://github.com/dwarvesf/react-toolkit/commit/6d52deb04eb9cfc7b66da9f137deb6c89e7ec146)
+  Thanks [@zlatanpham](https://github.com/zlatanpham)! - Release packages
+
 ## 0.8.0
 
 ### Minor Changes
