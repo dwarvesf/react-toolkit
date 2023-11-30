@@ -7,19 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
-        with:
-          version: 16.x
-
       - uses: pnpm/action-setup@v2
         with:
-          version: 8.2.0
-
+          version: 8.5.1
+          run_install: false
+      - uses: actions/checkout@v3
       - uses: preactjs/compressed-size-action@v2
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          build-script: 'build:packages'
