@@ -16,7 +16,7 @@
     "lint": "tsdx lint"
   },
   "main": "dist/index.js",
-  "module": "dist/utils.esm.js",
+  "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
   "files": [
     "README.md",
