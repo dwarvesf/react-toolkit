@@ -396,7 +396,7 @@ importers:
   packages/hooks:
     dependencies:
       '@dwarvesf/react-utils':
-        specifier: ^0.4.1
+        specifier: workspace:*
         version: link:../utils
       copy-to-clipboard:
         specifier: ^3.3.1

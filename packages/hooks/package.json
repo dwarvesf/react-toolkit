@@ -27,7 +27,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@dwarvesf/react-utils": "^0.4.1",
+    "@dwarvesf/react-utils": "workspace:*",
     "copy-to-clipboard": "^3.3.1",
     "tslib": "^2.3.0"
   },
