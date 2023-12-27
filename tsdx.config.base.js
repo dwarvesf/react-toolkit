@@ -5,7 +5,7 @@ module.exports = {
       config.output = {
         ...config.output,
         dir: 'dist/',
-        entryFileNames: '[name].esm.js',
+        entryFileNames: '[name].mjs',
       }
       delete config.output.file
     }

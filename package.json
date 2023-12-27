@@ -9,7 +9,7 @@
     "lint:fix": "eslint --fix .",
     "build": "turbo run build",
     "build:packages": "turbo build --filter=./packages/**/*",
-    "prepare": "pnpm run build",
+    "prepare": "pnpm run build:packages",
     "start:app": "pnpm run build && pnpm -C ./example start",
     "changeset": "changeset",
     "release": "changeset publish",
