@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "react-app-polyfill": "^2.0.0",
-    "@dwarvesf/react-hooks": "*",
-    "@dwarvesf/react-utils": "*"
+    "@dwarvesf/react-hooks": "workspace:*",
+    "@dwarvesf/react-utils": "workspace:*"
   },
   "alias": {
     "@dwarvesf/react-hooks": "../packages/hooks",

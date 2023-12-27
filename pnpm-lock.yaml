@@ -181,10 +181,10 @@ importers:
         specifier: ^2.0.0-alpha.69
         version: 2.0.0-beta.5
       '@dwarvesf/react-hooks':
-        specifier: ^0.8.0
+        specifier: workspace:*
         version: link:../packages/hooks
       '@dwarvesf/react-utils':
-        specifier: ^0.4.1
+        specifier: workspace:*
         version: link:../packages/utils
       '@emotion/react':
         specifier: ^11.4.1
@@ -335,10 +335,10 @@ importers:
   example:
     dependencies:
       '@dwarvesf/react-hooks':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../packages/hooks
       '@dwarvesf/react-utils':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../packages/utils
       react-app-polyfill:
         specifier: ^2.0.0
